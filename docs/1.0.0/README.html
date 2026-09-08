@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Nexi .NET SDK | Nexi .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Nexi .NET SDK | Nexi .NET SDK ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/richiehug/nexi-dotnet-sdk-dev/blob/main/artifacts/docs-build/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="nexi-net-sdk">Nexi .NET SDK</h1>
+
+<p>Bring Nexi payments straight into your cashier app. 🎉✨</p>
+<p>The Nexi .NET SDK brings your cashier app and the Nexi EP2 payment terminal together in one seamless payment experience. Its modern C# API makes it easy to start transactions, work with receipts, and manage the terminal without leaving your app. It simplifies integrating your ECR app with Nexi Switzerland.</p>
+<h2 id="full-and-lite">Full and Lite</h2>
+<table>
+<thead>
+<tr>
+<th>Edition</th>
+<th>Compatibility</th>
+<th>Presentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Full</strong> — <code>nexi-dotnet-sdk-&lt;version&gt;.zip</code></td>
+<td>Windows, .NET 10 (<code>net10.0-windows</code>) with WPF support</td>
+<td>Optional SDK overlay included in <code>Nexi.Sdk.dll</code></td>
+</tr>
+<tr>
+<td><strong>Lite</strong> — <code>nexi-dotnet-sdk-lite-&lt;version&gt;.zip</code></td>
+<td>Windows, .NET Framework 4.8 / 4.8.1 (<code>net48</code>)</td>
+<td>No SDK overlay; use your application's UI</td>
+</tr>
+</tbody>
+</table>
+<p>Use Full for modern Windows integrations. Lite provides backward compatibility for existing .NET Framework 4.8 cashier applications. Both editions expose the same payment, receipt, terminal-operation and recovery API. Choose one distribution; do not combine their DLLs. Lite includes the Microsoft dependency DLLs required by Framework 4.8.</p>
+<p>Full and Lite use version <strong>1.0.0</strong> and are available from the <a href="https://github.com/richiehug/nexi-dotnet-sdk/releases/tag/1.0.0">GitHub release</a>.</p>
+<h2 id="quick-start">Quick start</h2>
+<p>First, <a href="integration.html#add-the-sdk-to-an-application">add the local SDK DLL to your application</a>. Then create an instance for your network terminal and take your first payment:</p>
+<pre><code class="lang-csharp">using Nexi.Sdk;
+
+await using var nexiSdk = new NexiClient(new NexiOptions
+{
+    TerminalHost = &quot;192.168.0.69&quot;,
+    WorkstationId = &quot;CASHIER-01&quot;
+});
+
+async Task TakePaymentAsync()
+{
+    var result = await nexiSdk.PaymentAsync(
+        amount: 1250,
+        currency: &quot;CHF&quot;
+    );
+
+    switch (result.Status)
+    {
+        case ResultState.Success:
+            ShowSuccess(result);
+            break;
+        case ResultState.Declined:
+            ShowDecline(result.ErrorCode);
+            break;
+        default:
+            ShowPaymentError(result);
+            break;
+    }
+}
+</code></pre>
+<p>Amounts use the currency's minor unit, so <code>1250</code> represents CHF 12.50. The <code>Show…</code> methods above are supplied by your cashier application.</p>
+<h2 id="what-the-sdk-provides">What the SDK provides</h2>
+<ul>
+<li>Take payments, issue refunds, and reverse transactions through a clean C# API.</li>
+<li>Run terminal operations and retrieve terminal information directly from your app.</li>
+<li>Handle every outcome with typed results and structured errors.</li>
+<li>Print merchant and customer receipts on the terminal or return them to your app for display and storage.</li>
+<li>Receive Dynamic Currency Conversion (DCC) details when offered and returned by the terminal.</li>
+<li>Use the payment experience in English, German, French, or Italian.</li>
+<li>Configure timeouts, receipt handling, and Force Acceptance to match your integration.</li>
+<li>Show an optional Windows transaction overlay with a configurable Abort button (<strong>Full only</strong>), or provide your own UI in either edition.</li>
+<li>Recover uncertain transaction results without automatically resending the payment.</li>
+<li>Diagnose integration issues with optional file logging that excludes raw card and receipt data.</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="integration.html">Integration guide and API overview</a></li>
+<li><a href="https://richiehug.github.io/nexi-dotnet-sdk/">Detailed C# API reference</a></li>
+</ul>
+<p>The integration guide covers installation, configuration, all public terminal methods, request and response models, result states, errors, receipts, recovery, and operation events. XML IntelliSense documentation is included with the DLLs.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Full: a Windows .NET 10 application with WPF support</li>
+<li>Lite: a Windows .NET Framework 4.8 or 4.8.1 application; no WPF dependency in the SDK</li>
+<li>Asynchronous C# support; see the integration guide for older C# syntax</li>
+<li>A provisioned Nexi EP2 payment application reachable through the terminal's network address</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>For help, questions, or bug reports, please <a href="https://github.com/richiehug/nexi-dotnet-sdk/issues">open an issue in this repository</a>.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

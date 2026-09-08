@@ -1,0 +1,16 @@
+Nexi .NET SDK Binary License
+
+These terms apply only to the compiled Nexi .NET SDK libraries distributed
+through NuGet packages or official release channels. They do not grant access
+to or rights in the SDK source code.
+
+You may use and bundle the unmodified SDK in applications integrating with
+Nexi Switzerland payment services, and distribute those applications to
+their end users.
+
+You may not modify the SDK or distribute it separately, including by
+mirroring or republishing it in another repository or package registry. You
+may not sublicense, resell, reverse engineer, repackage, or present the SDK
+as a separate product.
+
+All other rights are reserved.
