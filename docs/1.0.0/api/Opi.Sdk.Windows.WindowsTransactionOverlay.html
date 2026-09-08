@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class EmbeddedTransactionOverlay | Nexi .NET SDK </title>
+      <title>Class WindowsTransactionOverlay | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class EmbeddedTransactionOverlay | Nexi .NET SDK ">
+      <meta name="title" content="Class WindowsTransactionOverlay | OPI .NET SDK ">
       
-      <meta name="description" content="Full edition only (.NET 10 Windows). SDK-owned presentation inside a WPF host. Pass an empty topmost Grid and the sibling cashier content to block and blur.">
+      <meta name="description" content="Full edition only (.NET 10 Windows). Optional Windows payment dialog on a dedicated UI thread. Works with WPF and WinForms hosts. Pass the cashier window handle to disable that window during operations. Dispose after the SDK.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,25 +70,27 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay">
+        <article data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay">
 
 
 
-  <h1 id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay" class="text-break">
-Class EmbeddedTransactionOverlay  
+  <h1 id="Opi_Sdk_Windows_WindowsTransactionOverlay" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay" class="text-break">
+Class WindowsTransactionOverlay  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a>.<a class="xref" href="Nexi.Sdk.Windows.html">Windows</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a>.<a class="xref" href="Opi.Sdk.Windows.html">Windows</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Full edition only (.NET 10 Windows). SDK-owned presentation inside a WPF host. Pass an empty topmost Grid and the sibling cashier content to block and blur.</p>
+  <div class="markdown summary"><p>Full edition only (.NET 10 Windows).
+Optional Windows payment dialog on a dedicated UI thread. Works with WPF and WinForms hosts.
+Pass the cashier window handle to disable that window during operations. Dispose after the SDK.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class EmbeddedTransactionOverlay : ITransactionOverlay, IAsyncDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class WindowsTransactionOverlay : ITransactionOverlay, IAsyncDisposable</code></pre>
   </div>
 
 
@@ -98,14 +100,14 @@ Class EmbeddedTransactionOverlay
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">EmbeddedTransactionOverlay</span></div>
+      <div><span class="xref">WindowsTransactionOverlay</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="Nexi.Sdk.ITransactionOverlay.html">ITransactionOverlay</a></div>
+      <div><a class="xref" href="Opi.Sdk.ITransactionOverlay.html">ITransactionOverlay</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     </dd>
   </dl>
@@ -143,28 +145,25 @@ Class EmbeddedTransactionOverlay
 </h2>
 
 
-  <a id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay__ctor_" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor*"></a>
+  <a id="Opi_Sdk_Windows_WindowsTransactionOverlay__ctor_" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.#ctor*"></a>
 
-  <h3 id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay__ctor_System_Windows_Controls_Grid_System_Windows_UIElement_System_Nullable_System_TimeSpan__" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor(System.Windows.Controls.Grid,System.Windows.UIElement,System.Nullable{System.TimeSpan})">
-  EmbeddedTransactionOverlay(Grid, UIElement, TimeSpan?)
+  <h3 id="Opi_Sdk_Windows_WindowsTransactionOverlay__ctor_System_IntPtr_Opi_Sdk_Windows_OverlayBrandingOptions_" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.#ctor(System.IntPtr,Opi.Sdk.Windows.OverlayBrandingOptions)">
+  WindowsTransactionOverlay(nint, OverlayBrandingOptions?)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Create on the application's dispatcher. Host must be outside the cashier content and cover the full client area.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EmbeddedTransactionOverlay(Grid host, UIElement content, TimeSpan? abortRetryDelay = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public WindowsTransactionOverlay(nint ownerHandle = 0, OverlayBrandingOptions? branding = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>host</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.grid">Grid</a></dt>
+    <dt><code>ownerHandle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
     <dd></dd>
-    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.uielement">UIElement</a></dt>
-    <dd></dd>
-    <dt><code>abortRetryDelay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</dt>
+    <dt><code>branding</code> <a class="xref" href="Opi.Sdk.Windows.OverlayBrandingOptions.html">OverlayBrandingOptions</a></dt>
     <dd></dd>
   </dl>
 
@@ -183,9 +182,9 @@ Class EmbeddedTransactionOverlay
 </h2>
 
 
-  <a id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay_CloseAsync_" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync*"></a>
+  <a id="Opi_Sdk_Windows_WindowsTransactionOverlay_CloseAsync_" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync*"></a>
 
-  <h3 id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay_CloseAsync" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync">
+  <h3 id="Opi_Sdk_Windows_WindowsTransactionOverlay_CloseAsync" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync">
   CloseAsync()
   
   </h3>
@@ -214,9 +213,9 @@ Class EmbeddedTransactionOverlay
 
 
 
-  <a id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay_DisposeAsync_" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync*"></a>
+  <a id="Opi_Sdk_Windows_WindowsTransactionOverlay_DisposeAsync_" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync*"></a>
 
-  <h3 id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay_DisposeAsync" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync">
+  <h3 id="Opi_Sdk_Windows_WindowsTransactionOverlay_DisposeAsync" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync">
   DisposeAsync()
   
   </h3>
@@ -248,9 +247,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay_OnEvent_" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent*"></a>
+  <a id="Opi_Sdk_Windows_WindowsTransactionOverlay_OnEvent_" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.OnEvent*"></a>
 
-  <h3 id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay_OnEvent_Nexi_Sdk_OperationEvent_" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)">
+  <h3 id="Opi_Sdk_Windows_WindowsTransactionOverlay_OnEvent_Opi_Sdk_OperationEvent_" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)">
   OnEvent(OperationEvent)
   
   </h3>
@@ -259,12 +258,12 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnEvent(OperationEvent evt)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnEvent(OperationEvent operationEvent)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>evt</code> <a class="xref" href="Nexi.Sdk.OperationEvent.html">OperationEvent</a></dt>
+    <dt><code>operationEvent</code> <a class="xref" href="Opi.Sdk.OperationEvent.html">OperationEvent</a></dt>
     <dd></dd>
   </dl>
 
@@ -279,10 +278,10 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay_ShowAsync_" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync*"></a>
+  <a id="Opi_Sdk_Windows_WindowsTransactionOverlay_ShowAsync_" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync*"></a>
 
-  <h3 id="Nexi_Sdk_Windows_EmbeddedTransactionOverlay_ShowAsync_Nexi_Sdk_NexiOperation_System_String_System_Func_System_Threading_Tasks_Task_Nexi_Sdk_NexiResult___" data-uid="Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})">
-  ShowAsync(NexiOperation, string, Func&lt;Task&lt;NexiResult&gt;&gt;?)
+  <h3 id="Opi_Sdk_Windows_WindowsTransactionOverlay_ShowAsync_Opi_Sdk_OpiOperation_System_String_System_Func_System_Threading_Tasks_Task_Opi_Sdk_OpiResult___" data-uid="Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation,System.String,System.Func{System.Threading.Tasks.Task{Opi.Sdk.OpiResult}})">
+  ShowAsync(OpiOperation, string, Func&lt;Task&lt;OpiResult&gt;&gt;?)
   
   </h3>
 
@@ -290,16 +289,16 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ShowAsync(NexiOperation operation, string language, Func&lt;Task&lt;NexiResult&gt;&gt;? abort)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ShowAsync(OpiOperation operation, string language, Func&lt;Task&lt;OpiResult&gt;&gt;? abort)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>operation</code> <a class="xref" href="Nexi.Sdk.NexiOperation.html">NexiOperation</a></dt>
+    <dt><code>operation</code> <a class="xref" href="Opi.Sdk.OpiOperation.html">OpiOperation</a></dt>
     <dd></dd>
     <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>abort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;&gt;</dt>
+    <dt><code>abort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;&gt;</dt>
     <dd></dd>
   </dl>
 

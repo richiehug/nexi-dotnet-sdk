@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Integrating the Nexi .NET SDK | Nexi .NET SDK </title>
+      <title>Integrating the OPI .NET SDK | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Integrating the Nexi .NET SDK | Nexi .NET SDK ">
+      <meta name="title" content="Integrating the OPI .NET SDK | OPI .NET SDK ">
       
       
       <link rel="icon" href="favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="">
       
       
-      <meta name="docfx:docurl" content="https://github.com/richiehug/nexi-dotnet-sdk-dev/blob/main/artifacts/docs-build/integration.md/#L1">
+      
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -71,16 +71,16 @@
         </div>
 
         <article data-uid="">
-<h1 id="integrating-the-nexi-net-sdk">Integrating the Nexi .NET SDK</h1>
+<h1 id="integrating-the-opi-net-sdk">Integrating the OPI .NET SDK</h1>
 
-<p>This guide covers installation, configuration, terminal operations, result handling, recovery, and diagnostics. For platform requirements, see the <a href="README.html">README</a>. The <a href="https://richiehug.github.io/nexi-dotnet-sdk/">generated C# API reference</a> lists every public type, member and overload after publication.</p>
+<p>This guide covers installation, configuration, terminal operations, result handling, recovery, and diagnostics. For platform requirements, see the <a href="README.html">README</a>. The <a href="https://richiehug.github.io/opi-dotnet-sdk/">generated C# API reference</a> lists every public type, member and overload after publication.</p>
 <h2 id="add-the-sdk-to-an-application">Add the SDK to an application</h2>
 <h3 id="local-dll">Local DLL</h3>
-<p>Choose <strong>Full</strong> for Windows .NET 10 (<code>net10.0-windows</code>, WPF support) or <strong>Lite</strong> for backward compatibility with .NET Framework 4.8/4.8.1 (<code>net48</code>). Both expose the same <code>Nexi.Sdk</code> payment API. Full includes the optional Windows overlay in the same DLL; Lite has no SDK UI.</p>
-<p>Copy <code>Nexi.Sdk.dll</code> and its XML IntelliSense file from the chosen ZIP to <code>libs/</code>. For Full, add this reference:</p>
+<p>Choose <strong>Full</strong> for Windows .NET 10 (<code>net10.0-windows</code>, WPF support) or <strong>Lite</strong> for backward compatibility with .NET Framework 4.8/4.8.1 (<code>net48</code>). Both expose the same <code>Opi.Sdk</code> payment API. Full includes the optional Windows overlay in the same DLL; Lite has no SDK UI.</p>
+<p>Copy <code>Opi.Sdk.dll</code> and its XML IntelliSense file from the chosen ZIP to <code>libs/</code>. For Full, add this reference:</p>
 <pre><code class="lang-xml">&lt;ItemGroup&gt;
-  &lt;Reference Include=&quot;Nexi.Sdk&quot;&gt;
-    &lt;HintPath&gt;libs/Nexi.Sdk.dll&lt;/HintPath&gt;
+  &lt;Reference Include=&quot;Opi.Sdk&quot;&gt;
+    &lt;HintPath&gt;libs/Opi.Sdk.dll&lt;/HintPath&gt;
     &lt;Private&gt;true&lt;/Private&gt;
   &lt;/Reference&gt;
 &lt;/ItemGroup&gt;
@@ -98,11 +98,11 @@
 &lt;/ItemGroup&gt;
 </code></pre>
 <p>For older project formats, use <strong>Add Reference → Browse</strong> to select those DLLs and enable automatic binding redirects in the executable project. Deploy the generated application <code>.config</code> file as well. Test with the cashier's existing dependency versions; do not overwrite its Microsoft DLLs blindly.</p>
-<p>Full uses the Windows Desktop runtime; Lite uses the installed .NET Framework 4.8/4.8.1 runtime and its bundled dependencies. Distribution remains DLL-only; integrators do not need a Nexi NuGet package. Do not reference Full and Lite together. If upgrading from the initial two-DLL download, remove the separate <code>Nexi.Sdk.Windows.dll</code> reference and use the new Full <code>Nexi.Sdk.dll</code> instead.</p>
+<p>Full uses the Windows Desktop runtime; Lite uses the installed .NET Framework 4.8/4.8.1 runtime and its bundled dependencies. Distribution remains DLL-only; integrators do not need a NuGet package. Do not reference Full and Lite together. If upgrading from the initial two-DLL download, remove the separate <code>Opi.Sdk.Windows.dll</code> reference and use the new Full <code>Opi.Sdk.dll</code> instead.</p>
 <h2 id="initialize-the-sdk">Initialize the SDK</h2>
-<pre><code class="lang-csharp">using Nexi.Sdk;
+<pre><code class="lang-csharp">using Opi.Sdk;
 
-var options = new NexiOptions
+var options = new OpiOptions
 {
     TerminalHost = &quot;192.168.0.69&quot;,
     WorkstationId = &quot;CASHIER-01&quot;,
@@ -111,7 +111,7 @@ var options = new NexiOptions
     Language = &quot;de&quot;,
     DataDirectory = Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-        &quot;YourCashier&quot;, &quot;Nexi&quot;),
+        &quot;YourCashier&quot;, &quot;Opi&quot;),
     Receipts = new ReceiptHandling
     {
         MerchantReceipt = ReceiptHandlingMode.Available,
@@ -119,10 +119,10 @@ var options = new NexiOptions
     }
 };
 
-await using var terminal = new NexiClient(options);
+await using var terminal = new OpiClient(options);
 </code></pre>
-<p>The examples use modern C# syntax. Older C# 7.3 applications can use ordinary object initializers for <code>NexiOptions</code> and <code>ReceiptHandling</code>; <code>required</code> and <code>init</code> are not required to configure the SDK. Replace <code>await using</code> with explicit asynchronous cleanup:</p>
-<pre><code class="lang-csharp">var terminal = new NexiClient(options);
+<p>The examples use modern C# syntax. Older C# 7.3 applications can use ordinary object initializers for <code>OpiOptions</code> and <code>ReceiptHandling</code>; <code>required</code> and <code>init</code> are not required to configure the SDK. Replace <code>await using</code> with explicit asynchronous cleanup:</p>
+<pre><code class="lang-csharp">var terminal = new OpiClient(options);
 try
 {
     var result = await terminal.PaymentAsync(1250, &quot;CHF&quot;);
@@ -137,7 +137,7 @@ finally
 <p>Retain one instance per terminal. Use a stable workstation ID and storage directory across application restarts. The terminal's callback configuration must point to the cashier machine. Configure Windows Firewall to allow callbacks from the terminal on the device port. A callback listener is created internally during each exchange, and callback peers are restricted to the resolved terminal address. This is raw OPI TCP on a trusted shop network; it is not an internet endpoint.</p>
 <p>Do not create competing instances with different host aliases or data directories for the same terminal. Multiple terminals on a single cashier need explicitly coordinated, distinct callback ports and matching terminal configuration. This initial SDK is intended for one owner per terminal.</p>
 <h2 id="optional-windows-overlay">Optional Windows overlay</h2>
-<p><strong>Full only:</strong> <code>EmbeddedTransactionOverlay</code> and <code>WindowsTransactionOverlay</code> are included in the Full <code>Nexi.Sdk.dll</code>, under the existing <code>Nexi.Sdk.Windows</code> namespace. No second SDK DLL is needed. Full hosts must include WPF support, including WinForms applications:</p>
+<p><strong>Full only:</strong> <code>EmbeddedTransactionOverlay</code> and <code>WindowsTransactionOverlay</code> are included in the Full <code>Opi.Sdk.dll</code>, under the existing <code>Opi.Sdk.Windows</code> namespace. No second SDK DLL is needed. Full hosts must include WPF support, including WinForms applications:</p>
 <pre><code class="lang-xml">&lt;PropertyGroup&gt;
   &lt;TargetFramework&gt;net10.0-windows&lt;/TargetFramework&gt;
   &lt;UseWPF&gt;true&lt;/UseWPF&gt;
@@ -152,12 +152,12 @@ finally
 &lt;/Grid&gt;
 </code></pre>
 <p>Create the adapter on the UI thread, then pass it to the core SDK:</p>
-<pre><code class="lang-csharp">using Nexi.Sdk;
-using Nexi.Sdk.Windows;
+<pre><code class="lang-csharp">using Opi.Sdk;
+using Opi.Sdk.Windows;
 
 await using var overlay = new EmbeddedTransactionOverlay(
     SdkOverlayHost, CashierContent, options.AbortRetryDelay);
-await using var terminal = new NexiClient(options with
+await using var terminal = new OpiClient(options with
 {
     Overlay = overlay,
     ShowAbortButton = true
@@ -171,7 +171,7 @@ var result = await terminal.PaymentWithRecoveryAsync(1250, &quot;CHF&quot;, &quo
 <pre><code class="lang-csharp">var payment = await terminal.PaymentAsync(1250, &quot;CHF&quot;);
 </code></pre>
 <p>Amounts are positive integer minor units. CHF 12.50 is <code>1250</code>. Currency codes are normalized and validated; conversion also supports zero-, three- and four-decimal currencies. Merchant and authorization references are separate. References accept 1–20 ASCII letters, digits, underscores or hyphens. Reverse-last has no amount or reference and can only reverse the terminal's last eligible transaction.</p>
-<p>An ordinary operational failure is returned as <code>NexiResult</code>. Invalid SDK configuration, unavailable/corrupt storage during construction and use after disposal can throw. Persist each financial result against its sale using <code>CorrelationId</code>. A final <code>Amount</code> includes any positive <code>Tip</code> reported by the terminal.</p>
+<p>An ordinary operational failure is returned as <code>OpiResult</code>. Invalid SDK configuration, unavailable/corrupt storage during construction and use after disposal can throw. Persist each financial result against its sale using <code>CorrelationId</code>. A final <code>Amount</code> includes any positive <code>Tip</code> reported by the terminal.</p>
 <h2 id="refunds">Refunds</h2>
 <pre><code class="lang-csharp">// Unreferenced refund; no original authorization identifier is needed.
 var refund = await terminal.RefundAsync(1250, &quot;CHF&quot;);
@@ -270,11 +270,11 @@ SaveNewSaleResult(current);
 <p><code>PaymentWithRecoveryAsync</code> returns one result for the payment being requested. Its pending-ticket helper may emit reprint receipts from an older transaction, but does not return a pair of old/new financial results. Use <code>ReconcilePendingAsync</code> for the previous unfinished financial outcome. Returned receipt copies, when present, are in each result's <code>Transaction.Receipts</code>.</p>
 <h2 id="file-logging-and-deployment">File logging and deployment</h2>
 <p><code>LoggingEnabled = true</code> enables bounded daily files in <code>DataDirectory/logs</code>. Logs include configured ports/timeouts, connection stages, socket error codes, request/response byte counts, elapsed times, lifecycle events, receipt type/length, outcome/error codes and numbered recovery attempts. Raw XML, terminal-message text, receipt text and card fields are excluded. <code>Logger</code> optionally receives those same diagnostics. Diagnostic writes run on the background event queue rather than delaying callback acknowledgements; dispose the SDK to flush queued entries. A logging failure does not change a payment result.</p>
-<p>Deploy the selected <code>Nexi.Sdk.dll</code> alongside the cashier. Lite also needs its dependency DLLs and the host's binding-redirect configuration; .NET Framework 4.8/4.8.1 must be installed. A Full .NET 10 cashier can be published self-contained. No separate OPI Proxy process is needed.</p>
+<p>Deploy the selected <code>Opi.Sdk.dll</code> alongside the cashier. Lite also needs its dependency DLLs and the host's binding-redirect configuration; .NET Framework 4.8/4.8.1 must be installed. A Full .NET 10 cashier can be published self-contained. No separate OPI Proxy process is needed.</p>
 <h2 id="api-overview">API overview</h2>
-<p>Namespace: <code>Nexi.Sdk</code>. Optional Windows UI namespace: <code>Nexi.Sdk.Windows</code>.</p>
+<p>Namespace: <code>Opi.Sdk</code>. Optional Windows UI namespace: <code>Opi.Sdk.Windows</code>.</p>
 <h2 id="terminal-operations">Terminal operations</h2>
-<p>All terminal calls return <code>Task&lt;NexiResult&gt;</code> unless indicated otherwise.</p>
+<p>All terminal calls return <code>Task&lt;OpiResult&gt;</code> unless indicated otherwise.</p>
 <table>
 <thead>
 <tr>
@@ -349,7 +349,7 @@ SaveNewSaleResult(current);
 </tr>
 <tr>
 <td><code>ReconcilePendingAsync()</code></td>
-<td><code>Task&lt;NexiResult?&gt;</code>; recover an earlier uncertain transaction</td>
+<td><code>Task&lt;OpiResult?&gt;</code>; recover an earlier uncertain transaction</td>
 </tr>
 <tr>
 <td><code>DisposeAsync()</code></td>
@@ -358,10 +358,10 @@ SaveNewSaleResult(current);
 </tbody>
 </table>
 <h2 id="result-and-event-models">Result and event models</h2>
-<p><code>NexiResult</code> contains <code>Status</code>, <code>Error</code>, <code>ErrorCode</code>, <code>CorrelationId</code>, optional <code>Transaction</code>, optional <code>Terminal</code> and <code>IsSuccessful</code>.</p>
+<p><code>OpiResult</code> contains <code>Status</code>, <code>Error</code>, <code>ErrorCode</code>, <code>CorrelationId</code>, optional <code>Transaction</code>, optional <code>Terminal</code> and <code>IsSuccessful</code>.</p>
 <p><code>TransactionResult</code> contains <code>Reference</code>, <code>Amount</code>, <code>Currency</code>, <code>Tip</code>, <code>PaymentMethod</code>, <code>MaskedCardNumber</code>, <code>AuthReference</code>, <code>ApprovalCode</code>, <code>TransactionDate</code>, <code>AcquirerId</code>, <code>Receipts</code>, and <code>Dcc</code>. Fields are optional and depend on terminal evidence. <code>ReceiptDetails</code> separates <code>MerchantReceipt</code> and <code>CustomerReceipt</code>; <code>Receipt.Content</code> is plain text.</p>
 <p><code>OperationEvent</code> contains <code>Operation</code>, <code>CorrelationId</code>, <code>Kind</code>, and optional <code>Message</code>, <code>ReceiptType</code>, <code>Receipt</code>, and <code>Result</code>. Kinds include Started, Connected, TerminalMessage, ReceiptCaptured, DccCaptured, RecoveryStarted, RecoveryCompleted, TransactionRecovered and Completed.</p>
-<p><code>NexiOptions</code> contains the client configuration. The client snapshots these settings when constructed; changing the options afterwards does not reconfigure an existing client. Supply <code>TerminalHost</code> and <code>WorkstationId</code>. Optional settings cover ports, language, receipts, force acceptance, PAN request preference, timeouts, recovery, data directory, logging and presentation. See configuration defaults below and the generated API reference for the full property list.</p>
+<p><code>OpiOptions</code> contains the client configuration. The client snapshots these settings when constructed; changing the options afterwards does not reconfigure an existing client. Supply <code>TerminalHost</code> and <code>WorkstationId</code>. Optional settings cover ports, language, receipts, force acceptance, PAN request preference, timeouts, recovery, data directory, logging and presentation. See configuration defaults below and the generated API reference for the full property list.</p>
 <h2 id="optional-overlay">Optional overlay</h2>
 <p><code>ITransactionOverlay</code> has <code>ShowAsync(operation, language, abort?)</code>, non-blocking <code>OnEvent(event)</code>, and <code>CloseAsync()</code>.</p>
 <p><strong>Full only:</strong> <code>EmbeddedTransactionOverlay(hostGrid, cashierContent, abortRetryDelay?)</code> and <code>WindowsTransactionOverlay(ownerHandle?)</code> implement the adapter and <code>IAsyncDisposable</code>. Lite supports app-owned adapters through the same interface.</p>
@@ -408,7 +408,7 @@ SaveNewSaleResult(current);
 </tr>
 </tbody>
 </table>
-<p><code>NexiError</code> provides stable categories: Failure, Aborted, ReprintRequired, DeviceUnavailable, TerminalBusy, LoginRequired, ResultUnknown, RecoveryMismatch, ConnectionError, OperationTimeout, InvalidRequest, InvalidOpiResponse, StorageError and Other. <code>ErrorCode</code> preserves a more specific terminal or SDK reason.</p>
+<p><code>OpiError</code> provides stable categories: Failure, Aborted, ReprintRequired, DeviceUnavailable, TerminalBusy, LoginRequired, ResultUnknown, RecoveryMismatch, ConnectionError, OperationTimeout, InvalidRequest, InvalidOpiResponse, StorageError and Other. <code>ErrorCode</code> preserves a more specific terminal or SDK reason.</p>
 <h2 id="configuration-defaults">Configuration defaults</h2>
 <table>
 <thead>
@@ -472,7 +472,7 @@ SaveNewSaleResult(current);
 </tr>
 <tr>
 <td><code>DataDirectory</code></td>
-<td>Local application data / Nexi / Sdk</td>
+<td>Local application data / Opi / Sdk</td>
 </tr>
 <tr>
 <td><code>LoggingEnabled</code>, <code>MaxLogStorageBytes</code></td>
@@ -495,9 +495,35 @@ SaveNewSaleResult(current);
 <p>This sends OPI <code>RepeatLastMessage</code>, never a new payment. With an SDK pending record it applies the same request-ID and request-type checks as <code>ReconcilePendingAsync</code>. Without a pending record it returns the terminal's original financial outcome for inspection; its correlation ID belongs to this lookup. Do not automatically associate that response with a saved sale. Missing or unsupported original financial headers return <code>Unknown</code> rather than treating the outer response's success as payment approval.</p>
 <p><code>ReconcilePendingAsync</code> shows the configured overlay while recovery runs, without an Abort button. A null result means there is no recovery record for this SDK configuration; it does not prove that a separately saved cashier intent failed. Keep the original terminal/workstation settings and storage when restarting.</p>
 <h2 id="storage-locations">Storage locations</h2>
-<p>The host application sets <code>NexiOptions.DataDirectory</code>. The default is the current user's local application data directory followed by <code>Nexi/Sdk</code>. Recovery metadata is scoped to terminal host and payment port beneath that directory. Daily diagnostics are in <code>DataDirectory/logs</code> when <code>LoggingEnabled</code> is true. The SDK does not save a cashier transaction-history database: the application owns transaction and receipt persistence.</p>
-<p>The Windows demo chooses <code>%LOCALAPPDATA%/Nexi/DemoWin</code> in <code>App.xaml.cs</code> and passes its <code>sdk</code> subfolder to the SDK through <code>DemoSettings.SdkOptions</code>. Its <code>transactions</code> subfolder holds saved attempts/results and receipts; <code>recovered-receipts</code> holds separately recovered tickets. Renaming the app does not change these locations or migrate/delete existing data.</p>
+<p>The host application sets <code>OpiOptions.DataDirectory</code>. The default is the current user's local application data directory followed by <code>Opi/Sdk</code>. Recovery metadata is scoped to terminal host and payment port beneath that directory. Daily diagnostics are in <code>DataDirectory/logs</code> when <code>LoggingEnabled</code> is true. The SDK does not save a cashier transaction-history database: the application owns transaction and receipt persistence.</p>
+<p>The application owns its storage paths. The new default is <code>Opi/Sdk</code>; existing recovery data is not automatically moved. Before changing an existing integration's storage directory, reconcile outstanding operations and preserve its data, or explicitly pass its current directory to <code>OpiOptions.DataDirectory</code>.</p>
 <p>Repeat Last Message omits the receipt-header request flag, matching the proxy. A successful repeat envelope with original <code>PrintLastTicket</code> maps to <code>TerminalError</code> / <code>ReprintRequired</code>; a matching pending record is resolved without sending another payment. Diagnostics include outer/original result codes and request IDs/types for troubleshooting, without raw payloads.</p>
+<h2 id="custom-overlay-branding-full-only">Custom overlay branding (Full only)</h2>
+<p>Both <code>WindowsTransactionOverlay</code> and <code>EmbeddedTransactionOverlay</code> accept an optional immutable <code>OverlayBrandingOptions</code> object. Assign the overlay to <code>OpiOptions.Overlay</code> as before; branding does not change transaction events, abort eligibility, retry behavior, focus handling or recovery. Lite has no SDK overlay and keeps its application-owned UI.</p>
+<pre><code class="lang-csharp">using Opi.Sdk;
+using Opi.Sdk.Windows;
+
+var branding = new OverlayBrandingOptions
+{
+    SvgLogo = &quot;&lt;svg xmlns=\&quot;http://www.w3.org/2000/svg\&quot; viewBox=\&quot;0 0 400 100\&quot;&gt;&lt;path fill=\&quot;currentColor\&quot; d=\&quot;M0 0 H100 V100 H0 Z M140 0 H400 V40 H140 Z\&quot;/&gt;&lt;/svg&gt;&quot;,
+    BrandColor = &quot;#156B55&quot;,
+    TextColor = OverlayTextColor.White // or OverlayTextColor.Black
+};
+await using var overlay = new WindowsTransactionOverlay(branding: branding);
+await using var terminal = new OpiClient(new OpiOptions
+{
+    TerminalHost = &quot;192.168.0.69&quot;,
+    Overlay = overlay
+});
+var result = await terminal.PaymentAsync(1250, &quot;CHF&quot;);
+// Reverse disposal order above disposes the client before its overlay.
+</code></pre>
+<p>For an embedded WPF overlay, pass the same options to
+<code>new EmbeddedTransactionOverlay(overlayHostGrid, cashierContent, branding: branding)</code>.
+The host Grid must remain an empty sibling above the cashier content, as described earlier.</p>
+<p>For the generic default, use <code>new WindowsTransactionOverlay()</code> or omit <code>branding</code> from the embedded constructor. The header displays <strong>OPI</strong> with a neutral slate header/button (<code>#334155</code>) and white text. No provider logo is bundled. You can supply colors without a logo. Invalid colors fall back to slate; unknown text-color enum values fall back to white. The text choice affects the header label, SVG <code>currentColor</code>, and primary/Abort button; SVG artwork with explicit colors retains those colors. Disabled buttons retain the configured brand color at reduced opacity.</p>
+<p><code>SvgLogo</code> accepts inline XML, never a filename or URL. If loading your own file, read it in your application before creating the overlay. File I/O failures belong to the application; malformed SVG strings are handled by the SDK. Logos fit within <strong>154 × 54 device-independent pixels</strong>, preserve aspect ratio and scale down only. Positive <code>viewBox</code> width/height define the canvas (nonzero origins are supported); without a viewBox, positive numeric width and height are required. Large canvases are fitted by WPF layout without rewriting the supplied SVG. Content outside the declared viewport is clipped.</p>
+<p>The supported static SVG subset is <code>svg</code>, <code>g</code>, <code>path</code>, <code>rect</code> (square corners), <code>circle</code>, <code>ellipse</code>, <code>polygon</code>, and <code>polyline</code>, with solid <code>fill</code> (named colors, <code>#RGB</code>, <code>#RRGGBB</code>, <code>none</code>, or <code>currentColor</code>), inherited <code>fill-rule</code>, opacity, and matrix/translate/scale/rotate transforms. Use whitespace or commas between coordinate-list values. Export text as outlines and use filled paths for strokes. Scripts, DTDs/entities, external resources, images, text/fonts, CSS/style, strokes, gradients, filters, masks, clipping definitions, <code>use</code>, and other unsupported features cause the <strong>whole logo to fall back to the generic OPI label</strong>. The configured colors still apply. Limits are 256 KiB of XML characters, 2,048 elements, 32 nesting levels and absolute numeric attribute values up to 1 billion. SVG parsing failures do not propagate into a transaction.</p>
 
 </article>
 

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class TerminalInformation | Nexi .NET SDK </title>
+      <title>Class TransactionResult | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class TerminalInformation | Nexi .NET SDK ">
+      <meta name="title" content="Class TransactionResult | OPI .NET SDK ">
       
-      <meta name="description" content="Terminal identity, software, configuration and capabilities when returned by a service operation.">
+      <meta name="description" content="Terminal-provided financial details. All fields are optional and must not be used to infer success; inspect OpiResult.Status.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,25 +70,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.TerminalInformation">
+        <article data-uid="Opi.Sdk.TransactionResult">
 
 
 
-  <h1 id="Nexi_Sdk_TerminalInformation" data-uid="Nexi.Sdk.TerminalInformation" class="text-break">
-Class TerminalInformation  
+  <h1 id="Opi_Sdk_TransactionResult" data-uid="Opi.Sdk.TransactionResult" class="text-break">
+Class TransactionResult  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Terminal identity, software, configuration and capabilities when returned by a service operation.</p>
+  <div class="markdown summary"><p>Terminal-provided financial details. All fields are optional and must not be used to infer success; inspect OpiResult.Status.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record TerminalInformation : IEquatable&lt;TerminalInformation&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record TransactionResult : IEquatable&lt;TransactionResult&gt;</code></pre>
   </div>
 
 
@@ -98,14 +98,14 @@ Class TerminalInformation
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">TerminalInformation</span></div>
+      <div><span class="xref">TransactionResult</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nexi.Sdk.TerminalInformation.html">TerminalInformation</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Opi.Sdk.TransactionResult.html">TransactionResult</a>&gt;</div>
     </dd>
   </dl>
 
@@ -142,18 +142,19 @@ Class TerminalInformation
 </h2>
 
 
-  <a id="Nexi_Sdk_TerminalInformation_AppVersion_" data-uid="Nexi.Sdk.TerminalInformation.AppVersion*"></a>
+  <a id="Opi_Sdk_TransactionResult_AcquirerId_" data-uid="Opi.Sdk.TransactionResult.AcquirerId*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_AppVersion" data-uid="Nexi.Sdk.TerminalInformation.AppVersion">
-  AppVersion
+  <h3 id="Opi_Sdk_TransactionResult_AcquirerId" data-uid="Opi.Sdk.TransactionResult.AcquirerId">
+  AcquirerId
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Acquirer identifier returned by the terminal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? AppVersion { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? AcquirerId { get; init; }</code></pre>
   </div>
 
 
@@ -173,18 +174,51 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_ConfigurationName_" data-uid="Nexi.Sdk.TerminalInformation.ConfigurationName*"></a>
+  <a id="Opi_Sdk_TransactionResult_Amount_" data-uid="Opi.Sdk.TransactionResult.Amount*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_ConfigurationName" data-uid="Nexi.Sdk.TerminalInformation.ConfigurationName">
-  ConfigurationName
+  <h3 id="Opi_Sdk_TransactionResult_Amount" data-uid="Opi.Sdk.TransactionResult.Amount">
+  Amount
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminal amount in minor units; includes any positive reported tip.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? ConfigurationName { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long? Amount { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TransactionResult_ApprovalCode_" data-uid="Opi.Sdk.TransactionResult.ApprovalCode*"></a>
+
+  <h3 id="Opi_Sdk_TransactionResult_ApprovalCode" data-uid="Opi.Sdk.TransactionResult.ApprovalCode">
+  ApprovalCode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Approval code returned by the terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ApprovalCode { get; init; }</code></pre>
   </div>
 
 
@@ -204,18 +238,19 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_ConfigurationVersion_" data-uid="Nexi.Sdk.TerminalInformation.ConfigurationVersion*"></a>
+  <a id="Opi_Sdk_TransactionResult_AuthReference_" data-uid="Opi.Sdk.TransactionResult.AuthReference*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_ConfigurationVersion" data-uid="Nexi.Sdk.TerminalInformation.ConfigurationVersion">
-  ConfigurationVersion
+  <h3 id="Opi_Sdk_TransactionResult_AuthReference" data-uid="Opi.Sdk.TransactionResult.AuthReference">
+  AuthReference
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Authorization reference returned by the terminal, distinct from the merchant reference.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? ConfigurationVersion { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? AuthReference { get; init; }</code></pre>
   </div>
 
 
@@ -235,18 +270,19 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_Hardware_" data-uid="Nexi.Sdk.TerminalInformation.Hardware*"></a>
+  <a id="Opi_Sdk_TransactionResult_Currency_" data-uid="Opi.Sdk.TransactionResult.Currency*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_Hardware" data-uid="Nexi.Sdk.TerminalInformation.Hardware">
-  Hardware
+  <h3 id="Opi_Sdk_TransactionResult_Currency" data-uid="Opi.Sdk.TransactionResult.Currency">
+  Currency
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Currency code returned by the terminal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Hardware { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? Currency { get; init; }</code></pre>
   </div>
 
 
@@ -266,10 +302,10 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_InitialisedAcquirers_" data-uid="Nexi.Sdk.TerminalInformation.InitialisedAcquirers*"></a>
+  <a id="Opi_Sdk_TransactionResult_Dcc_" data-uid="Opi.Sdk.TransactionResult.Dcc*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_InitialisedAcquirers" data-uid="Nexi.Sdk.TerminalInformation.InitialisedAcquirers">
-  InitialisedAcquirers
+  <h3 id="Opi_Sdk_TransactionResult_Dcc" data-uid="Opi.Sdk.TransactionResult.Dcc">
+  Dcc
   
   </h3>
 
@@ -277,7 +313,7 @@ Class TerminalInformation
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; InitialisedAcquirers { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DccDetails? Dcc { get; init; }</code></pre>
   </div>
 
 
@@ -286,7 +322,7 @@ Class TerminalInformation
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="Opi.Sdk.DccDetails.html">DccDetails</a></dt>
     <dd></dd>
   </dl>
 
@@ -297,49 +333,19 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_MerchantId_" data-uid="Nexi.Sdk.TerminalInformation.MerchantId*"></a>
+  <a id="Opi_Sdk_TransactionResult_MaskedCardNumber_" data-uid="Opi.Sdk.TransactionResult.MaskedCardNumber*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_MerchantId" data-uid="Nexi.Sdk.TerminalInformation.MerchantId">
-  MerchantId
+  <h3 id="Opi_Sdk_TransactionResult_MaskedCardNumber" data-uid="Opi.Sdk.TransactionResult.MaskedCardNumber">
+  MaskedCardNumber
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Card number field as returned by the terminal; handle according to the configured PAN preference.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? MerchantId { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TerminalInformation_SerialNumber_" data-uid="Nexi.Sdk.TerminalInformation.SerialNumber*"></a>
-
-  <h3 id="Nexi_Sdk_TerminalInformation_SerialNumber" data-uid="Nexi.Sdk.TerminalInformation.SerialNumber">
-  SerialNumber
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SerialNumber { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? MaskedCardNumber { get; init; }</code></pre>
   </div>
 
 
@@ -359,18 +365,19 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_Status_" data-uid="Nexi.Sdk.TerminalInformation.Status*"></a>
+  <a id="Opi_Sdk_TransactionResult_PaymentMethod_" data-uid="Opi.Sdk.TransactionResult.PaymentMethod*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_Status" data-uid="Nexi.Sdk.TerminalInformation.Status">
-  Status
+  <h3 id="Opi_Sdk_TransactionResult_PaymentMethod" data-uid="Opi.Sdk.TransactionResult.PaymentMethod">
+  PaymentMethod
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Optional card brand or payment-method label returned by the terminal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Status { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? PaymentMethod { get; init; }</code></pre>
   </div>
 
 
@@ -390,10 +397,10 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_SubStatus_" data-uid="Nexi.Sdk.TerminalInformation.SubStatus*"></a>
+  <a id="Opi_Sdk_TransactionResult_Receipts_" data-uid="Opi.Sdk.TransactionResult.Receipts*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_SubStatus" data-uid="Nexi.Sdk.TerminalInformation.SubStatus">
-  SubStatus
+  <h3 id="Opi_Sdk_TransactionResult_Receipts" data-uid="Opi.Sdk.TransactionResult.Receipts">
+  Receipts
   
   </h3>
 
@@ -401,7 +408,39 @@ Class TerminalInformation
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SubStatus { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ReceiptDetails? Receipts { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Opi.Sdk.ReceiptDetails.html">ReceiptDetails</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TransactionResult_Reference_" data-uid="Opi.Sdk.TransactionResult.Reference*"></a>
+
+  <h3 id="Opi_Sdk_TransactionResult_Reference" data-uid="Opi.Sdk.TransactionResult.Reference">
+  Reference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Merchant transaction reference returned by the terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Reference { get; init; }</code></pre>
   </div>
 
 
@@ -421,18 +460,19 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_SupportedBrands_" data-uid="Nexi.Sdk.TerminalInformation.SupportedBrands*"></a>
+  <a id="Opi_Sdk_TransactionResult_Tip_" data-uid="Opi.Sdk.TransactionResult.Tip*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_SupportedBrands" data-uid="Nexi.Sdk.TerminalInformation.SupportedBrands">
-  SupportedBrands
+  <h3 id="Opi_Sdk_TransactionResult_Tip" data-uid="Opi.Sdk.TransactionResult.Tip">
+  Tip
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Optional tip in minor units, already included in Amount.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; SupportedBrands { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long? Tip { get; init; }</code></pre>
   </div>
 
 
@@ -441,7 +481,7 @@ Class TerminalInformation
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
     <dd></dd>
   </dl>
 
@@ -452,49 +492,19 @@ Class TerminalInformation
 
 
 
-  <a id="Nexi_Sdk_TerminalInformation_TerminalId_" data-uid="Nexi.Sdk.TerminalInformation.TerminalId*"></a>
+  <a id="Opi_Sdk_TransactionResult_TransactionDate_" data-uid="Opi.Sdk.TransactionResult.TransactionDate*"></a>
 
-  <h3 id="Nexi_Sdk_TerminalInformation_TerminalId" data-uid="Nexi.Sdk.TerminalInformation.TerminalId">
-  TerminalId
+  <h3 id="Opi_Sdk_TransactionResult_TransactionDate" data-uid="Opi.Sdk.TransactionResult.TransactionDate">
+  TransactionDate
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminal transaction date/time string; retain its supplied format and timezone.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TerminalId { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TerminalInformation_TerminalIp_" data-uid="Nexi.Sdk.TerminalInformation.TerminalIp*"></a>
-
-  <h3 id="Nexi_Sdk_TerminalInformation_TerminalIp" data-uid="Nexi.Sdk.TerminalInformation.TerminalIp">
-  TerminalIp
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TerminalIp { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? TransactionDate { get; init; }</code></pre>
   </div>
 
 

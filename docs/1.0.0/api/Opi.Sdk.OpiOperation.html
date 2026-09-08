@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum ResultState | Nexi .NET SDK </title>
+      <title>Enum OpiOperation | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum ResultState | Nexi .NET SDK ">
+      <meta name="title" content="Enum OpiOperation | OPI .NET SDK ">
       
-      <meta name="description" content="Financial or service outcome. Unknown requires reconciliation and must not be treated as a decline.">
+      <meta name="description" content="Payment, refund, reversal, control and terminal service operations supported by the SDK.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,26 +70,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.ResultState">
+        <article data-uid="Opi.Sdk.OpiOperation">
 
 
 
 
-  <h1 id="Nexi_Sdk_ResultState" data-uid="Nexi.Sdk.ResultState" class="text-break">
-Enum ResultState  
+  <h1 id="Opi_Sdk_OpiOperation" data-uid="Opi.Sdk.OpiOperation" class="text-break">
+Enum OpiOperation  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Financial or service outcome. Unknown requires reconciliation and must not be treated as a decline.</p>
+  <div class="markdown summary"><p>Payment, refund, reversal, control and terminal service operations supported by the SDK.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum ResultState</code></pre>
+    <pre><code class="lang-csharp hljs">public enum OpiOperation</code></pre>
   </div>
 
 
@@ -103,28 +103,55 @@ Enum ResultState
   <h2 id="fields">Fields
 </h2>
   <dl class="parameters">
-    <dt id="Nexi_Sdk_ResultState_Aborted"><code>Aborted = 2</code></dt>
+    <dt id="Opi_Sdk_OpiOperation_Abort"><code>Abort = 3</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ResultState_CommunicationError"><code>CommunicationError = 3</code></dt>
+    <dt id="Opi_Sdk_OpiOperation_Activate"><code>Activate = 4</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ResultState_Declined"><code>Declined = 1</code></dt>
+    <dt id="Opi_Sdk_OpiOperation_Close"><code>Close = 10</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ResultState_InProgress"><code>InProgress = 6</code></dt>
+    <dt id="Opi_Sdk_OpiOperation_Config"><code>Config = 11</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ResultState_InvalidRequest"><code>InvalidRequest = 5</code></dt>
+    <dt id="Opi_Sdk_OpiOperation_Deactivate"><code>Deactivate = 5</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ResultState_Success"><code>Success = 0</code></dt>
+    <dt id="Opi_Sdk_OpiOperation_Info"><code>Info = 6</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ResultState_TerminalError"><code>TerminalError = 4</code></dt>
+    <dt id="Opi_Sdk_OpiOperation_Init"><code>Init = 12</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ResultState_Unknown"><code>Unknown = 7</code></dt>
+    <dt id="Opi_Sdk_OpiOperation_Login"><code>Login = 14</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_Logoff"><code>Logoff = 15</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_Payment"><code>Payment = 0</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_Refund"><code>Refund = 1</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_RepeatLastMessage"><code>RepeatLastMessage = 16</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_Reprint"><code>Reprint = 8</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_Reset"><code>Reset = 13</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_Reversal"><code>Reversal = 2</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_Status"><code>Status = 7</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiOperation_Submit"><code>Submit = 9</code></dt>
   
   <dd></dd>
   </dl>

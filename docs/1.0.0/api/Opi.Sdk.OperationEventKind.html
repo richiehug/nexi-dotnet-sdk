@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>OPI .NET SDK 1.0.0 | OPI .NET SDK </title>
+      <title>Enum OperationEventKind | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="OPI .NET SDK 1.0.0 | OPI .NET SDK ">
+      <meta name="title" content="Enum OperationEventKind | OPI .NET SDK ">
       
+      <meta name="description" content="Ordered operation lifecycle, callback capture and recovery notifications.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
-      <link rel="icon" href="favicon.ico">
-      <link rel="stylesheet" href="public/docfx.min.css">
-      <link rel="stylesheet" href="public/main.css">
-      <meta name="docfx:navrel" content="toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="">
+      <meta name="docfx:rel" content="../">
       
       
       
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./public/docfx.min.js"></script>
+      <script type="module" src="./../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -39,12 +39,12 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="index.html">
-            <img id="logo" class="svg" src="logo.svg" alt="">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,22 +70,73 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
-<h1 id="opi-net-sdk-100">OPI .NET SDK 1.0.0</h1>
+        <article data-uid="Opi.Sdk.OperationEventKind">
 
-<p>Independent project by <a href="https://richiehug.com">Richard Hug</a>. Best-effort support; no SLA. See <a href="SUPPORT.html">support</a> and <a href="SECURITY.html">security</a>.</p>
-<p>Integrate OPI-compatible network terminals with your C# cashier application.</p>
-<ul>
-<li><a href="integration.html">Integration guide</a>: installation, configuration, receipts and recovery.</li>
-<li><a href="api/Opi.Sdk.html">Core API</a>: methods, overloads, typed results, events and options.</li>
-<li><a href="api/Opi.Sdk.Windows.html">Windows UI API</a>: Full-only embedded and window overlays.</li>
-</ul>
-<p>This reference is generated from the SDK public API and XML documentation on every build.</p>
+
+
+
+  <h1 id="Opi_Sdk_OperationEventKind" data-uid="Opi.Sdk.OperationEventKind" class="text-break">
+Enum OperationEventKind  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Ordered operation lifecycle, callback capture and recovery notifications.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum OperationEventKind</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="Opi_Sdk_OperationEventKind_Completed"><code>Completed = 8</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OperationEventKind_Connected"><code>Connected = 1</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OperationEventKind_DccCaptured"><code>DccCaptured = 4</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OperationEventKind_ReceiptCaptured"><code>ReceiptCaptured = 3</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OperationEventKind_RecoveryCompleted"><code>RecoveryCompleted = 6</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OperationEventKind_RecoveryStarted"><code>RecoveryStarted = 5</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OperationEventKind_Started"><code>Started = 0</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OperationEventKind_TerminalMessage"><code>TerminalMessage = 2</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OperationEventKind_TransactionRecovered"><code>TransactionRecovered = 7</code></dt>
+  
+  <dd></dd>
+  </dl>
+
+
 
 </article>
 
 
-        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

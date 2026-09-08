@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class OperationEvent | Nexi .NET SDK </title>
+      <title>Class PaymentRequest | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class OperationEvent | Nexi .NET SDK ">
+      <meta name="title" content="Class PaymentRequest | OPI .NET SDK ">
       
-      <meta name="description" content="Background notification tied to an operation and correlation ID. Dispatch UI changes to the application UI thread.">
+      <meta name="description" content="Payment amount in positive minor units, currency code, and optional merchant reference.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,25 +70,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.OperationEvent">
+        <article data-uid="Opi.Sdk.PaymentRequest">
 
 
 
-  <h1 id="Nexi_Sdk_OperationEvent" data-uid="Nexi.Sdk.OperationEvent" class="text-break">
-Class OperationEvent  
+  <h1 id="Opi_Sdk_PaymentRequest" data-uid="Opi.Sdk.PaymentRequest" class="text-break">
+Class PaymentRequest  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Background notification tied to an operation and correlation ID. Dispatch UI changes to the application UI thread.</p>
+  <div class="markdown summary"><p>Payment amount in positive minor units, currency code, and optional merchant reference.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record OperationEvent : IEquatable&lt;OperationEvent&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record PaymentRequest : IEquatable&lt;PaymentRequest&gt;</code></pre>
   </div>
 
 
@@ -98,14 +98,14 @@ Class OperationEvent
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">OperationEvent</span></div>
+      <div><span class="xref">PaymentRequest</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nexi.Sdk.OperationEvent.html">OperationEvent</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Opi.Sdk.PaymentRequest.html">PaymentRequest</a>&gt;</div>
     </dd>
   </dl>
 
@@ -142,28 +142,28 @@ Class OperationEvent
 </h2>
 
 
-  <a id="Nexi_Sdk_OperationEvent__ctor_" data-uid="Nexi.Sdk.OperationEvent.#ctor*"></a>
+  <a id="Opi_Sdk_PaymentRequest__ctor_" data-uid="Opi.Sdk.PaymentRequest.#ctor*"></a>
 
-  <h3 id="Nexi_Sdk_OperationEvent__ctor_Nexi_Sdk_NexiOperation_System_String_Nexi_Sdk_OperationEventKind_" data-uid="Nexi.Sdk.OperationEvent.#ctor(Nexi.Sdk.NexiOperation,System.String,Nexi.Sdk.OperationEventKind)">
-  OperationEvent(NexiOperation, string, OperationEventKind)
+  <h3 id="Opi_Sdk_PaymentRequest__ctor_System_Int64_System_String_System_String_" data-uid="Opi.Sdk.PaymentRequest.#ctor(System.Int64,System.String,System.String)">
+  PaymentRequest(long, string, string?)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Background notification tied to an operation and correlation ID. Dispatch UI changes to the application UI thread.</p>
+  <div class="markdown level1 summary"><p>Payment amount in positive minor units, currency code, and optional merchant reference.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OperationEvent(NexiOperation Operation, string CorrelationId, OperationEventKind Kind)</code></pre>
+    <pre><code class="lang-csharp hljs">public PaymentRequest(long Amount, string Currency, string? Reference = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Operation</code> <a class="xref" href="Nexi.Sdk.NexiOperation.html">NexiOperation</a></dt>
+    <dt><code>Amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
-    <dt><code>CorrelationId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>Currency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>Kind</code> <a class="xref" href="Nexi.Sdk.OperationEventKind.html">OperationEventKind</a></dt>
+    <dt><code>Reference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -182,10 +182,10 @@ Class OperationEvent
 </h2>
 
 
-  <a id="Nexi_Sdk_OperationEvent_CorrelationId_" data-uid="Nexi.Sdk.OperationEvent.CorrelationId*"></a>
+  <a id="Opi_Sdk_PaymentRequest_Amount_" data-uid="Opi.Sdk.PaymentRequest.Amount*"></a>
 
-  <h3 id="Nexi_Sdk_OperationEvent_CorrelationId" data-uid="Nexi.Sdk.OperationEvent.CorrelationId">
-  CorrelationId
+  <h3 id="Opi_Sdk_PaymentRequest_Amount" data-uid="Opi.Sdk.PaymentRequest.Amount">
+  Amount
   
   </h3>
 
@@ -193,7 +193,38 @@ Class OperationEvent
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CorrelationId { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long Amount { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_PaymentRequest_Currency_" data-uid="Opi.Sdk.PaymentRequest.Currency*"></a>
+
+  <h3 id="Opi_Sdk_PaymentRequest_Currency" data-uid="Opi.Sdk.PaymentRequest.Currency">
+  Currency
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Currency { get; init; }</code></pre>
   </div>
 
 
@@ -213,10 +244,10 @@ Class OperationEvent
 
 
 
-  <a id="Nexi_Sdk_OperationEvent_Kind_" data-uid="Nexi.Sdk.OperationEvent.Kind*"></a>
+  <a id="Opi_Sdk_PaymentRequest_Reference_" data-uid="Opi.Sdk.PaymentRequest.Reference*"></a>
 
-  <h3 id="Nexi_Sdk_OperationEvent_Kind" data-uid="Nexi.Sdk.OperationEvent.Kind">
-  Kind
+  <h3 id="Opi_Sdk_PaymentRequest_Reference" data-uid="Opi.Sdk.PaymentRequest.Reference">
+  Reference
   
   </h3>
 
@@ -224,38 +255,7 @@ Class OperationEvent
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OperationEventKind Kind { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.OperationEventKind.html">OperationEventKind</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_OperationEvent_Message_" data-uid="Nexi.Sdk.OperationEvent.Message*"></a>
-
-  <h3 id="Nexi_Sdk_OperationEvent_Message" data-uid="Nexi.Sdk.OperationEvent.Message">
-  Message
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Message { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? Reference { get; init; }</code></pre>
   </div>
 
 
@@ -265,132 +265,6 @@ Class OperationEvent
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_OperationEvent_Operation_" data-uid="Nexi.Sdk.OperationEvent.Operation*"></a>
-
-  <h3 id="Nexi_Sdk_OperationEvent_Operation" data-uid="Nexi.Sdk.OperationEvent.Operation">
-  Operation
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NexiOperation Operation { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.NexiOperation.html">NexiOperation</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_OperationEvent_Receipt_" data-uid="Nexi.Sdk.OperationEvent.Receipt*"></a>
-
-  <h3 id="Nexi_Sdk_OperationEvent_Receipt" data-uid="Nexi.Sdk.OperationEvent.Receipt">
-  Receipt
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Receipt text with its content type. Preserve whitespace and line breaks when displaying or storing.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Receipt? Receipt { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.Receipt.html">Receipt</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_OperationEvent_ReceiptType_" data-uid="Nexi.Sdk.OperationEvent.ReceiptType*"></a>
-
-  <h3 id="Nexi_Sdk_OperationEvent_ReceiptType" data-uid="Nexi.Sdk.OperationEvent.ReceiptType">
-  ReceiptType
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Identifies the merchant or customer copy.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ReceiptType? ReceiptType { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.ReceiptType.html">ReceiptType</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_OperationEvent_Result_" data-uid="Nexi.Sdk.OperationEvent.Result*"></a>
-
-  <h3 id="Nexi_Sdk_OperationEvent_Result" data-uid="Nexi.Sdk.OperationEvent.Result">
-  Result
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NexiResult? Result { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a></dt>
     <dd></dd>
   </dl>
 

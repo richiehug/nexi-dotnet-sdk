@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface ITransactionOverlay | Nexi .NET SDK </title>
+      <title>Interface ITransactionOverlay | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface ITransactionOverlay | Nexi .NET SDK ">
+      <meta name="title" content="Interface ITransactionOverlay | OPI .NET SDK ">
       
       <meta name="description" content="An optional presentation adapter; the core library has no UI dependency.">
       <link rel="icon" href="../favicon.ico">
@@ -70,17 +70,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.ITransactionOverlay">
+        <article data-uid="Opi.Sdk.ITransactionOverlay">
 
 
 
-  <h1 id="Nexi_Sdk_ITransactionOverlay" data-uid="Nexi.Sdk.ITransactionOverlay" class="text-break">
+  <h1 id="Opi_Sdk_ITransactionOverlay" data-uid="Opi.Sdk.ITransactionOverlay" class="text-break">
 Interface ITransactionOverlay  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>An optional presentation adapter; the core library has no UI dependency.</p>
@@ -107,9 +107,9 @@ Interface ITransactionOverlay
 </h2>
 
 
-  <a id="Nexi_Sdk_ITransactionOverlay_CloseAsync_" data-uid="Nexi.Sdk.ITransactionOverlay.CloseAsync*"></a>
+  <a id="Opi_Sdk_ITransactionOverlay_CloseAsync_" data-uid="Opi.Sdk.ITransactionOverlay.CloseAsync*"></a>
 
-  <h3 id="Nexi_Sdk_ITransactionOverlay_CloseAsync" data-uid="Nexi.Sdk.ITransactionOverlay.CloseAsync">
+  <h3 id="Opi_Sdk_ITransactionOverlay_CloseAsync" data-uid="Opi.Sdk.ITransactionOverlay.CloseAsync">
   CloseAsync()
   
   </h3>
@@ -138,9 +138,9 @@ Interface ITransactionOverlay
 
 
 
-  <a id="Nexi_Sdk_ITransactionOverlay_OnEvent_" data-uid="Nexi.Sdk.ITransactionOverlay.OnEvent*"></a>
+  <a id="Opi_Sdk_ITransactionOverlay_OnEvent_" data-uid="Opi.Sdk.ITransactionOverlay.OnEvent*"></a>
 
-  <h3 id="Nexi_Sdk_ITransactionOverlay_OnEvent_Nexi_Sdk_OperationEvent_" data-uid="Nexi.Sdk.ITransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)">
+  <h3 id="Opi_Sdk_ITransactionOverlay_OnEvent_Opi_Sdk_OperationEvent_" data-uid="Opi.Sdk.ITransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)">
   OnEvent(OperationEvent)
   
   </h3>
@@ -154,7 +154,7 @@ Interface ITransactionOverlay
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>operationEvent</code> <a class="xref" href="Nexi.Sdk.OperationEvent.html">OperationEvent</a></dt>
+    <dt><code>operationEvent</code> <a class="xref" href="Opi.Sdk.OperationEvent.html">OperationEvent</a></dt>
     <dd></dd>
   </dl>
 
@@ -169,10 +169,10 @@ Interface ITransactionOverlay
 
 
 
-  <a id="Nexi_Sdk_ITransactionOverlay_ShowAsync_" data-uid="Nexi.Sdk.ITransactionOverlay.ShowAsync*"></a>
+  <a id="Opi_Sdk_ITransactionOverlay_ShowAsync_" data-uid="Opi.Sdk.ITransactionOverlay.ShowAsync*"></a>
 
-  <h3 id="Nexi_Sdk_ITransactionOverlay_ShowAsync_Nexi_Sdk_NexiOperation_System_String_System_Func_System_Threading_Tasks_Task_Nexi_Sdk_NexiResult___" data-uid="Nexi.Sdk.ITransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})">
-  ShowAsync(NexiOperation, string, Func&lt;Task&lt;NexiResult&gt;&gt;?)
+  <h3 id="Opi_Sdk_ITransactionOverlay_ShowAsync_Opi_Sdk_OpiOperation_System_String_System_Func_System_Threading_Tasks_Task_Opi_Sdk_OpiResult___" data-uid="Opi.Sdk.ITransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation,System.String,System.Func{System.Threading.Tasks.Task{Opi.Sdk.OpiResult}})">
+  ShowAsync(OpiOperation, string, Func&lt;Task&lt;OpiResult&gt;&gt;?)
   
   </h3>
 
@@ -180,16 +180,16 @@ Interface ITransactionOverlay
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task ShowAsync(NexiOperation operation, string language, Func&lt;Task&lt;NexiResult&gt;&gt;? abort)</code></pre>
+    <pre><code class="lang-csharp hljs">Task ShowAsync(OpiOperation operation, string language, Func&lt;Task&lt;OpiResult&gt;&gt;? abort)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>operation</code> <a class="xref" href="Nexi.Sdk.NexiOperation.html">NexiOperation</a></dt>
+    <dt><code>operation</code> <a class="xref" href="Opi.Sdk.OpiOperation.html">OpiOperation</a></dt>
     <dd></dd>
     <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>abort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;&gt;</dt>
+    <dt><code>abort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;&gt;</dt>
     <dd></dd>
   </dl>
 

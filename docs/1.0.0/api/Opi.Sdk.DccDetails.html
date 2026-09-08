@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class PaymentRequest | Nexi .NET SDK </title>
+      <title>Class DccDetails | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class PaymentRequest | Nexi .NET SDK ">
+      <meta name="title" content="Class DccDetails | OPI .NET SDK ">
       
-      <meta name="description" content="Payment amount in positive minor units, currency code, and optional merchant reference.">
+      <meta name="description" content="Dynamic currency conversion details as returned by the terminal. Amount and rate values remain terminal strings.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,25 +70,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.PaymentRequest">
+        <article data-uid="Opi.Sdk.DccDetails">
 
 
 
-  <h1 id="Nexi_Sdk_PaymentRequest" data-uid="Nexi.Sdk.PaymentRequest" class="text-break">
-Class PaymentRequest  
+  <h1 id="Opi_Sdk_DccDetails" data-uid="Opi.Sdk.DccDetails" class="text-break">
+Class DccDetails  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Payment amount in positive minor units, currency code, and optional merchant reference.</p>
+  <div class="markdown summary"><p>Dynamic currency conversion details as returned by the terminal. Amount and rate values remain terminal strings.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record PaymentRequest : IEquatable&lt;PaymentRequest&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record DccDetails : IEquatable&lt;DccDetails&gt;</code></pre>
   </div>
 
 
@@ -98,14 +98,14 @@ Class PaymentRequest
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">PaymentRequest</span></div>
+      <div><span class="xref">DccDetails</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nexi.Sdk.PaymentRequest.html">PaymentRequest</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Opi.Sdk.DccDetails.html">DccDetails</a>&gt;</div>
     </dd>
   </dl>
 
@@ -142,28 +142,36 @@ Class PaymentRequest
 </h2>
 
 
-  <a id="Nexi_Sdk_PaymentRequest__ctor_" data-uid="Nexi.Sdk.PaymentRequest.#ctor*"></a>
+  <a id="Opi_Sdk_DccDetails__ctor_" data-uid="Opi.Sdk.DccDetails.#ctor*"></a>
 
-  <h3 id="Nexi_Sdk_PaymentRequest__ctor_System_Int64_System_String_System_String_" data-uid="Nexi.Sdk.PaymentRequest.#ctor(System.Int64,System.String,System.String)">
-  PaymentRequest(long, string, string?)
+  <h3 id="Opi_Sdk_DccDetails__ctor_System_Boolean_System_Boolean_System_String_System_String_System_String_System_String_System_String_" data-uid="Opi.Sdk.DccDetails.#ctor(System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String)">
+  DccDetails(bool, bool, string, string?, string?, string?, string?)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Payment amount in positive minor units, currency code, and optional merchant reference.</p>
+  <div class="markdown level1 summary"><p>Dynamic currency conversion details as returned by the terminal. Amount and rate values remain terminal strings.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PaymentRequest(long Amount, string Currency, string? Reference = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public DccDetails(bool Offered, bool Accepted, string Amount, string? Currency = null, string? CurrencyCode = null, string? ExchangeRate = null, string? MarkupPercentage = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dt><code>Offered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>Accepted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>Amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>Currency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>Reference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>CurrencyCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ExchangeRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>MarkupPercentage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -182,9 +190,40 @@ Class PaymentRequest
 </h2>
 
 
-  <a id="Nexi_Sdk_PaymentRequest_Amount_" data-uid="Nexi.Sdk.PaymentRequest.Amount*"></a>
+  <a id="Opi_Sdk_DccDetails_Accepted_" data-uid="Opi.Sdk.DccDetails.Accepted*"></a>
 
-  <h3 id="Nexi_Sdk_PaymentRequest_Amount" data-uid="Nexi.Sdk.PaymentRequest.Amount">
+  <h3 id="Opi_Sdk_DccDetails_Accepted" data-uid="Opi.Sdk.DccDetails.Accepted">
+  Accepted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Accepted { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_DccDetails_Amount_" data-uid="Opi.Sdk.DccDetails.Amount*"></a>
+
+  <h3 id="Opi_Sdk_DccDetails_Amount" data-uid="Opi.Sdk.DccDetails.Amount">
   Amount
   
   </h3>
@@ -193,7 +232,7 @@ Class PaymentRequest
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long Amount { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Amount { get; init; }</code></pre>
   </div>
 
 
@@ -202,7 +241,7 @@ Class PaymentRequest
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -213,9 +252,9 @@ Class PaymentRequest
 
 
 
-  <a id="Nexi_Sdk_PaymentRequest_Currency_" data-uid="Nexi.Sdk.PaymentRequest.Currency*"></a>
+  <a id="Opi_Sdk_DccDetails_Currency_" data-uid="Opi.Sdk.DccDetails.Currency*"></a>
 
-  <h3 id="Nexi_Sdk_PaymentRequest_Currency" data-uid="Nexi.Sdk.PaymentRequest.Currency">
+  <h3 id="Opi_Sdk_DccDetails_Currency" data-uid="Opi.Sdk.DccDetails.Currency">
   Currency
   
   </h3>
@@ -224,7 +263,7 @@ Class PaymentRequest
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Currency { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? Currency { get; init; }</code></pre>
   </div>
 
 
@@ -244,10 +283,10 @@ Class PaymentRequest
 
 
 
-  <a id="Nexi_Sdk_PaymentRequest_Reference_" data-uid="Nexi.Sdk.PaymentRequest.Reference*"></a>
+  <a id="Opi_Sdk_DccDetails_CurrencyCode_" data-uid="Opi.Sdk.DccDetails.CurrencyCode*"></a>
 
-  <h3 id="Nexi_Sdk_PaymentRequest_Reference" data-uid="Nexi.Sdk.PaymentRequest.Reference">
-  Reference
+  <h3 id="Opi_Sdk_DccDetails_CurrencyCode" data-uid="Opi.Sdk.DccDetails.CurrencyCode">
+  CurrencyCode
   
   </h3>
 
@@ -255,7 +294,7 @@ Class PaymentRequest
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Reference { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? CurrencyCode { get; init; }</code></pre>
   </div>
 
 
@@ -265,6 +304,99 @@ Class PaymentRequest
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_DccDetails_ExchangeRate_" data-uid="Opi.Sdk.DccDetails.ExchangeRate*"></a>
+
+  <h3 id="Opi_Sdk_DccDetails_ExchangeRate" data-uid="Opi.Sdk.DccDetails.ExchangeRate">
+  ExchangeRate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ExchangeRate { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_DccDetails_MarkupPercentage_" data-uid="Opi.Sdk.DccDetails.MarkupPercentage*"></a>
+
+  <h3 id="Opi_Sdk_DccDetails_MarkupPercentage" data-uid="Opi.Sdk.DccDetails.MarkupPercentage">
+  MarkupPercentage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? MarkupPercentage { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_DccDetails_Offered_" data-uid="Opi.Sdk.DccDetails.Offered*"></a>
+
+  <h3 id="Opi_Sdk_DccDetails_Offered" data-uid="Opi.Sdk.DccDetails.Offered">
+  Offered
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Offered { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DccDetails | Nexi .NET SDK </title>
+      <title>Class OperationEvent | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DccDetails | Nexi .NET SDK ">
+      <meta name="title" content="Class OperationEvent | OPI .NET SDK ">
       
-      <meta name="description" content="Dynamic currency conversion details as returned by the terminal. Amount and rate values remain terminal strings.">
+      <meta name="description" content="Background notification tied to an operation and correlation ID. Dispatch UI changes to the application UI thread.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,25 +70,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.DccDetails">
+        <article data-uid="Opi.Sdk.OperationEvent">
 
 
 
-  <h1 id="Nexi_Sdk_DccDetails" data-uid="Nexi.Sdk.DccDetails" class="text-break">
-Class DccDetails  
+  <h1 id="Opi_Sdk_OperationEvent" data-uid="Opi.Sdk.OperationEvent" class="text-break">
+Class OperationEvent  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Dynamic currency conversion details as returned by the terminal. Amount and rate values remain terminal strings.</p>
+  <div class="markdown summary"><p>Background notification tied to an operation and correlation ID. Dispatch UI changes to the application UI thread.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record DccDetails : IEquatable&lt;DccDetails&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record OperationEvent : IEquatable&lt;OperationEvent&gt;</code></pre>
   </div>
 
 
@@ -98,14 +98,14 @@ Class DccDetails
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DccDetails</span></div>
+      <div><span class="xref">OperationEvent</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nexi.Sdk.DccDetails.html">DccDetails</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Opi.Sdk.OperationEvent.html">OperationEvent</a>&gt;</div>
     </dd>
   </dl>
 
@@ -142,36 +142,28 @@ Class DccDetails
 </h2>
 
 
-  <a id="Nexi_Sdk_DccDetails__ctor_" data-uid="Nexi.Sdk.DccDetails.#ctor*"></a>
+  <a id="Opi_Sdk_OperationEvent__ctor_" data-uid="Opi.Sdk.OperationEvent.#ctor*"></a>
 
-  <h3 id="Nexi_Sdk_DccDetails__ctor_System_Boolean_System_Boolean_System_String_System_String_System_String_System_String_System_String_" data-uid="Nexi.Sdk.DccDetails.#ctor(System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String)">
-  DccDetails(bool, bool, string, string?, string?, string?, string?)
+  <h3 id="Opi_Sdk_OperationEvent__ctor_Opi_Sdk_OpiOperation_System_String_Opi_Sdk_OperationEventKind_" data-uid="Opi.Sdk.OperationEvent.#ctor(Opi.Sdk.OpiOperation,System.String,Opi.Sdk.OperationEventKind)">
+  OperationEvent(OpiOperation, string, OperationEventKind)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Dynamic currency conversion details as returned by the terminal. Amount and rate values remain terminal strings.</p>
+  <div class="markdown level1 summary"><p>Background notification tied to an operation and correlation ID. Dispatch UI changes to the application UI thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DccDetails(bool Offered, bool Accepted, string Amount, string? Currency = null, string? CurrencyCode = null, string? ExchangeRate = null, string? MarkupPercentage = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public OperationEvent(OpiOperation Operation, string CorrelationId, OperationEventKind Kind)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Offered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>Operation</code> <a class="xref" href="Opi.Sdk.OpiOperation.html">OpiOperation</a></dt>
     <dd></dd>
-    <dt><code>Accepted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>CorrelationId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>Amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>Currency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>CurrencyCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>ExchangeRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>MarkupPercentage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>Kind</code> <a class="xref" href="Opi.Sdk.OperationEventKind.html">OperationEventKind</a></dt>
     <dd></dd>
   </dl>
 
@@ -190,10 +182,10 @@ Class DccDetails
 </h2>
 
 
-  <a id="Nexi_Sdk_DccDetails_Accepted_" data-uid="Nexi.Sdk.DccDetails.Accepted*"></a>
+  <a id="Opi_Sdk_OperationEvent_CorrelationId_" data-uid="Opi.Sdk.OperationEvent.CorrelationId*"></a>
 
-  <h3 id="Nexi_Sdk_DccDetails_Accepted" data-uid="Nexi.Sdk.DccDetails.Accepted">
-  Accepted
+  <h3 id="Opi_Sdk_OperationEvent_CorrelationId" data-uid="Opi.Sdk.OperationEvent.CorrelationId">
+  CorrelationId
   
   </h3>
 
@@ -201,38 +193,7 @@ Class DccDetails
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Accepted { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_DccDetails_Amount_" data-uid="Nexi.Sdk.DccDetails.Amount*"></a>
-
-  <h3 id="Nexi_Sdk_DccDetails_Amount" data-uid="Nexi.Sdk.DccDetails.Amount">
-  Amount
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Amount { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string CorrelationId { get; init; }</code></pre>
   </div>
 
 
@@ -252,10 +213,10 @@ Class DccDetails
 
 
 
-  <a id="Nexi_Sdk_DccDetails_Currency_" data-uid="Nexi.Sdk.DccDetails.Currency*"></a>
+  <a id="Opi_Sdk_OperationEvent_Kind_" data-uid="Opi.Sdk.OperationEvent.Kind*"></a>
 
-  <h3 id="Nexi_Sdk_DccDetails_Currency" data-uid="Nexi.Sdk.DccDetails.Currency">
-  Currency
+  <h3 id="Opi_Sdk_OperationEvent_Kind" data-uid="Opi.Sdk.OperationEvent.Kind">
+  Kind
   
   </h3>
 
@@ -263,7 +224,38 @@ Class DccDetails
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Currency { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public OperationEventKind Kind { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Opi.Sdk.OperationEventKind.html">OperationEventKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_OperationEvent_Message_" data-uid="Opi.Sdk.OperationEvent.Message*"></a>
+
+  <h3 id="Opi_Sdk_OperationEvent_Message" data-uid="Opi.Sdk.OperationEvent.Message">
+  Message
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Message { get; init; }</code></pre>
   </div>
 
 
@@ -283,10 +275,10 @@ Class DccDetails
 
 
 
-  <a id="Nexi_Sdk_DccDetails_CurrencyCode_" data-uid="Nexi.Sdk.DccDetails.CurrencyCode*"></a>
+  <a id="Opi_Sdk_OperationEvent_Operation_" data-uid="Opi.Sdk.OperationEvent.Operation*"></a>
 
-  <h3 id="Nexi_Sdk_DccDetails_CurrencyCode" data-uid="Nexi.Sdk.DccDetails.CurrencyCode">
-  CurrencyCode
+  <h3 id="Opi_Sdk_OperationEvent_Operation" data-uid="Opi.Sdk.OperationEvent.Operation">
+  Operation
   
   </h3>
 
@@ -294,7 +286,7 @@ Class DccDetails
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? CurrencyCode { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public OpiOperation Operation { get; init; }</code></pre>
   </div>
 
 
@@ -303,7 +295,7 @@ Class DccDetails
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="Opi.Sdk.OpiOperation.html">OpiOperation</a></dt>
     <dd></dd>
   </dl>
 
@@ -314,18 +306,19 @@ Class DccDetails
 
 
 
-  <a id="Nexi_Sdk_DccDetails_ExchangeRate_" data-uid="Nexi.Sdk.DccDetails.ExchangeRate*"></a>
+  <a id="Opi_Sdk_OperationEvent_Receipt_" data-uid="Opi.Sdk.OperationEvent.Receipt*"></a>
 
-  <h3 id="Nexi_Sdk_DccDetails_ExchangeRate" data-uid="Nexi.Sdk.DccDetails.ExchangeRate">
-  ExchangeRate
+  <h3 id="Opi_Sdk_OperationEvent_Receipt" data-uid="Opi.Sdk.OperationEvent.Receipt">
+  Receipt
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Receipt text with its content type. Preserve whitespace and line breaks when displaying or storing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? ExchangeRate { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Receipt? Receipt { get; init; }</code></pre>
   </div>
 
 
@@ -334,7 +327,7 @@ Class DccDetails
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="Opi.Sdk.Receipt.html">Receipt</a></dt>
     <dd></dd>
   </dl>
 
@@ -345,18 +338,19 @@ Class DccDetails
 
 
 
-  <a id="Nexi_Sdk_DccDetails_MarkupPercentage_" data-uid="Nexi.Sdk.DccDetails.MarkupPercentage*"></a>
+  <a id="Opi_Sdk_OperationEvent_ReceiptType_" data-uid="Opi.Sdk.OperationEvent.ReceiptType*"></a>
 
-  <h3 id="Nexi_Sdk_DccDetails_MarkupPercentage" data-uid="Nexi.Sdk.DccDetails.MarkupPercentage">
-  MarkupPercentage
+  <h3 id="Opi_Sdk_OperationEvent_ReceiptType" data-uid="Opi.Sdk.OperationEvent.ReceiptType">
+  ReceiptType
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Identifies the merchant or customer copy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? MarkupPercentage { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ReceiptType? ReceiptType { get; init; }</code></pre>
   </div>
 
 
@@ -365,7 +359,7 @@ Class DccDetails
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="Opi.Sdk.ReceiptType.html">ReceiptType</a>?</dt>
     <dd></dd>
   </dl>
 
@@ -376,10 +370,10 @@ Class DccDetails
 
 
 
-  <a id="Nexi_Sdk_DccDetails_Offered_" data-uid="Nexi.Sdk.DccDetails.Offered*"></a>
+  <a id="Opi_Sdk_OperationEvent_Result_" data-uid="Opi.Sdk.OperationEvent.Result*"></a>
 
-  <h3 id="Nexi_Sdk_DccDetails_Offered" data-uid="Nexi.Sdk.DccDetails.Offered">
-  Offered
+  <h3 id="Opi_Sdk_OperationEvent_Result" data-uid="Opi.Sdk.OperationEvent.Result">
+  Result
   
   </h3>
 
@@ -387,7 +381,7 @@ Class DccDetails
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Offered { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public OpiResult? Result { get; init; }</code></pre>
   </div>
 
 
@@ -396,7 +390,7 @@ Class DccDetails
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a></dt>
     <dd></dd>
   </dl>
 

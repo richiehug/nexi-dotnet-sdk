@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum ReceiptHandlingMode | Nexi .NET SDK </title>
+      <title>Enum OpiError | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum ReceiptHandlingMode | Nexi .NET SDK ">
+      <meta name="title" content="Enum OpiError | OPI .NET SDK ">
       
-      <meta name="description" content="PrintLocal prints at the terminal; Available returns text to the application; Unavailable suppresses the requested copy.">
+      <meta name="description" content="Stable error categories; OpiResult.ErrorCode retains a more specific terminal or SDK reason.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,26 +70,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.ReceiptHandlingMode">
+        <article data-uid="Opi.Sdk.OpiError">
 
 
 
 
-  <h1 id="Nexi_Sdk_ReceiptHandlingMode" data-uid="Nexi.Sdk.ReceiptHandlingMode" class="text-break">
-Enum ReceiptHandlingMode  
+  <h1 id="Opi_Sdk_OpiError" data-uid="Opi.Sdk.OpiError" class="text-break">
+Enum OpiError  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>PrintLocal prints at the terminal; Available returns text to the application; Unavailable suppresses the requested copy.</p>
+  <div class="markdown summary"><p>Stable error categories; OpiResult.ErrorCode retains a more specific terminal or SDK reason.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum ReceiptHandlingMode</code></pre>
+    <pre><code class="lang-csharp hljs">public enum OpiError</code></pre>
   </div>
 
 
@@ -103,13 +103,46 @@ Enum ReceiptHandlingMode
   <h2 id="fields">Fields
 </h2>
   <dl class="parameters">
-    <dt id="Nexi_Sdk_ReceiptHandlingMode_Available"><code>Available = 1</code></dt>
+    <dt id="Opi_Sdk_OpiError_Aborted"><code>Aborted = 1</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ReceiptHandlingMode_PrintLocal"><code>PrintLocal = 0</code></dt>
+    <dt id="Opi_Sdk_OpiError_ConnectionError"><code>ConnectionError = 8</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_ReceiptHandlingMode_Unavailable"><code>Unavailable = 2</code></dt>
+    <dt id="Opi_Sdk_OpiError_DeviceUnavailable"><code>DeviceUnavailable = 3</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_Failure"><code>Failure = 0</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_InvalidOpiResponse"><code>InvalidOpiResponse = 11</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_InvalidRequest"><code>InvalidRequest = 10</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_LoginRequired"><code>LoginRequired = 5</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_OperationTimeout"><code>OperationTimeout = 9</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_Other"><code>Other = 13</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_RecoveryMismatch"><code>RecoveryMismatch = 7</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_ReprintRequired"><code>ReprintRequired = 2</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_ResultUnknown"><code>ResultUnknown = 6</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_StorageError"><code>StorageError = 12</code></dt>
+  
+  <dd></dd>
+    <dt id="Opi_Sdk_OpiError_TerminalBusy"><code>TerminalBusy = 4</code></dt>
   
   <dd></dd>
   </dl>

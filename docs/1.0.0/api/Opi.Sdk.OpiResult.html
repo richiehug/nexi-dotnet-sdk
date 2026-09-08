@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class WindowsTransactionOverlay | Nexi .NET SDK </title>
+      <title>Class OpiResult | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class WindowsTransactionOverlay | Nexi .NET SDK ">
+      <meta name="title" content="Class OpiResult | OPI .NET SDK ">
       
-      <meta name="description" content="Full edition only (.NET 10 Windows). Optional Windows payment dialog on a dedicated UI thread. Works with WPF and WinForms hosts. Pass the cashier window handle to disable that window during operations. Dispose after the SDK.">
+      <meta name="description" content="Final operation outcome with SDK correlation identity, optional financial details, terminal information and error evidence.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,27 +70,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay">
+        <article data-uid="Opi.Sdk.OpiResult">
 
 
 
-  <h1 id="Nexi_Sdk_Windows_WindowsTransactionOverlay" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay" class="text-break">
-Class WindowsTransactionOverlay  
+  <h1 id="Opi_Sdk_OpiResult" data-uid="Opi.Sdk.OpiResult" class="text-break">
+Class OpiResult  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a>.<a class="xref" href="Nexi.Sdk.Windows.html">Windows</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Full edition only (.NET 10 Windows).
-Optional Windows payment dialog on a dedicated UI thread. Works with WPF and WinForms hosts.
-Pass the cashier window handle to disable that window during operations. Dispose after the SDK.</p>
+  <div class="markdown summary"><p>Final operation outcome with SDK correlation identity, optional financial details, terminal information and error evidence.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class WindowsTransactionOverlay : ITransactionOverlay, IAsyncDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record OpiResult : IEquatable&lt;OpiResult&gt;</code></pre>
   </div>
 
 
@@ -100,15 +98,14 @@ Pass the cashier window handle to disable that window during operations. Dispose
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">WindowsTransactionOverlay</span></div>
+      <div><span class="xref">OpiResult</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="Nexi.Sdk.ITransactionOverlay.html">ITransactionOverlay</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</div>
     </dd>
   </dl>
 
@@ -145,94 +142,27 @@ Pass the cashier window handle to disable that window during operations. Dispose
 </h2>
 
 
-  <a id="Nexi_Sdk_Windows_WindowsTransactionOverlay__ctor_" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.#ctor*"></a>
+  <a id="Opi_Sdk_OpiResult__ctor_" data-uid="Opi.Sdk.OpiResult.#ctor*"></a>
 
-  <h3 id="Nexi_Sdk_Windows_WindowsTransactionOverlay__ctor_System_IntPtr_" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.#ctor(System.IntPtr)">
-  WindowsTransactionOverlay(nint)
+  <h3 id="Opi_Sdk_OpiResult__ctor_Opi_Sdk_ResultState_System_String_" data-uid="Opi.Sdk.OpiResult.#ctor(Opi.Sdk.ResultState,System.String)">
+  OpiResult(ResultState, string)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WindowsTransactionOverlay(nint ownerHandle = 0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>ownerHandle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Nexi_Sdk_Windows_WindowsTransactionOverlay_CloseAsync_" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync*"></a>
-
-  <h3 id="Nexi_Sdk_Windows_WindowsTransactionOverlay_CloseAsync" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync">
-  CloseAsync()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task CloseAsync()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_Windows_WindowsTransactionOverlay_DisposeAsync_" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync*"></a>
-
-  <h3 id="Nexi_Sdk_Windows_WindowsTransactionOverlay_DisposeAsync" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync">
-  DisposeAsync()
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or
-resetting unmanaged resources asynchronously.</p>
+  <div class="markdown level1 summary"><p>Final operation outcome with SDK correlation identity, optional financial details, terminal information and error evidence.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public OpiResult(ResultState Status, string CorrelationId)</code></pre>
   </div>
 
-
-  <h4 class="section">Returns</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
-    <dd><p>A task that represents the asynchronous dispose operation.</p>
-</dd>
+    <dt><code>Status</code> <a class="xref" href="Opi.Sdk.ResultState.html">ResultState</a></dt>
+    <dd></dd>
+    <dt><code>CorrelationId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -245,10 +175,15 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_Windows_WindowsTransactionOverlay_OnEvent_" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.OnEvent*"></a>
 
-  <h3 id="Nexi_Sdk_Windows_WindowsTransactionOverlay_OnEvent_Nexi_Sdk_OperationEvent_" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)">
-  OnEvent(OperationEvent)
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Opi_Sdk_OpiResult_CorrelationId_" data-uid="Opi.Sdk.OpiResult.CorrelationId*"></a>
+
+  <h3 id="Opi_Sdk_OpiResult_CorrelationId" data-uid="Opi.Sdk.OpiResult.CorrelationId">
+  CorrelationId
   
   </h3>
 
@@ -256,12 +191,16 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnEvent(OperationEvent operationEvent)</code></pre>
+    <pre><code class="lang-csharp hljs">public string CorrelationId { get; init; }</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><code>operationEvent</code> <a class="xref" href="Nexi.Sdk.OperationEvent.html">OperationEvent</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -272,14 +211,10 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
+  <a id="Opi_Sdk_OpiResult_Error_" data-uid="Opi.Sdk.OpiResult.Error*"></a>
 
-
-
-
-  <a id="Nexi_Sdk_Windows_WindowsTransactionOverlay_ShowAsync_" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync*"></a>
-
-  <h3 id="Nexi_Sdk_Windows_WindowsTransactionOverlay_ShowAsync_Nexi_Sdk_NexiOperation_System_String_System_Func_System_Threading_Tasks_Task_Nexi_Sdk_NexiResult___" data-uid="Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})">
-  ShowAsync(NexiOperation, string, Func&lt;Task&lt;NexiResult&gt;&gt;?)
+  <h3 id="Opi_Sdk_OpiResult_Error" data-uid="Opi.Sdk.OpiResult.Error">
+  Error
   
   </h3>
 
@@ -287,27 +222,174 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ShowAsync(NexiOperation operation, string language, Func&lt;Task&lt;NexiResult&gt;&gt;? abort)</code></pre>
+    <pre><code class="lang-csharp hljs">public OpiError? Error { get; init; }</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>operation</code> <a class="xref" href="Nexi.Sdk.NexiOperation.html">NexiOperation</a></dt>
-    <dd></dd>
-    <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>abort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;&gt;</dt>
-    <dd></dd>
-  </dl>
 
-  <h4 class="section">Returns</h4>
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dt><a class="xref" href="Opi.Sdk.OpiError.html">OpiError</a>?</dt>
     <dd></dd>
   </dl>
 
 
 
+
+
+
+
+
+  <a id="Opi_Sdk_OpiResult_ErrorCode_" data-uid="Opi.Sdk.OpiResult.ErrorCode*"></a>
+
+  <h3 id="Opi_Sdk_OpiResult_ErrorCode" data-uid="Opi.Sdk.OpiResult.ErrorCode">
+  ErrorCode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specific terminal or SDK error code; inspect Status and Error alongside it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ErrorCode { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_OpiResult_IsSuccessful_" data-uid="Opi.Sdk.OpiResult.IsSuccessful*"></a>
+
+  <h3 id="Opi_Sdk_OpiResult_IsSuccessful" data-uid="Opi.Sdk.OpiResult.IsSuccessful">
+  IsSuccessful
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSuccessful { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_OpiResult_Status_" data-uid="Opi.Sdk.OpiResult.Status*"></a>
+
+  <h3 id="Opi_Sdk_OpiResult_Status" data-uid="Opi.Sdk.OpiResult.Status">
+  Status
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultState Status { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Opi.Sdk.ResultState.html">ResultState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_OpiResult_Terminal_" data-uid="Opi.Sdk.OpiResult.Terminal*"></a>
+
+  <h3 id="Opi_Sdk_OpiResult_Terminal" data-uid="Opi.Sdk.OpiResult.Terminal">
+  Terminal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TerminalInformation? Terminal { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Opi.Sdk.TerminalInformation.html">TerminalInformation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_OpiResult_Transaction_" data-uid="Opi.Sdk.OpiResult.Transaction*"></a>
+
+  <h3 id="Opi_Sdk_OpiResult_Transaction" data-uid="Opi.Sdk.OpiResult.Transaction">
+  Transaction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransactionResult? Transaction { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Opi.Sdk.TransactionResult.html">TransactionResult</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

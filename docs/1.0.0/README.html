@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Nexi .NET SDK | Nexi .NET SDK </title>
+      <title>OPI .NET SDK | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Nexi .NET SDK | Nexi .NET SDK ">
+      <meta name="title" content="OPI .NET SDK | OPI .NET SDK ">
       
       
       <link rel="icon" href="favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="">
       
       
-      <meta name="docfx:docurl" content="https://github.com/richiehug/nexi-dotnet-sdk-dev/blob/main/artifacts/docs-build/README.md/#L1">
+      
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -71,10 +71,14 @@
         </div>
 
         <article data-uid="">
-<h1 id="nexi-net-sdk">Nexi .NET SDK</h1>
+<h1 id="opi-net-sdk">OPI .NET SDK</h1>
 
-<p>Bring Nexi payments straight into your cashier app. 🎉✨</p>
-<p>The Nexi .NET SDK brings your cashier app and the Nexi EP2 payment terminal together in one seamless payment experience. Its modern C# API makes it easy to start transactions, work with receipts, and manage the terminal without leaving your app. It simplifies integrating your ECR app with Nexi Switzerland.</p>
+<p>A .NET SDK for integrating OPI-compatible payment terminals into Windows POS and ECR applications.</p>
+<blockquote>
+<p><strong>Independent project</strong></p>
+<p>OPI .NET SDK is an independent software project created and maintained by <a href="https://richiehug.com">Richard Hug</a>. It is not an official Nexi product and is not owned, maintained, supported, warranted or endorsed by Nexi.</p>
+<p>Company references describe compatibility and tested environments only. This lightweight integration library is maintained on a best-effort basis, allowing fixes and compatibility improvements to be released quickly. There is no SLA, guaranteed response or resolution time, release schedule, or commitment to resolve individual issues.</p>
+</blockquote>
 <h2 id="full-and-lite">Full and Lite</h2>
 <table>
 <thead>
@@ -86,24 +90,24 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Full</strong> — <code>nexi-dotnet-sdk-&lt;version&gt;.zip</code></td>
+<td><strong>Full</strong> — <code>opi-dotnet-sdk-&lt;version&gt;.zip</code></td>
 <td>Windows, .NET 10 (<code>net10.0-windows</code>) with WPF support</td>
-<td>Optional SDK overlay included in <code>Nexi.Sdk.dll</code></td>
+<td>Optional SDK overlay included in <code>Opi.Sdk.dll</code></td>
 </tr>
 <tr>
-<td><strong>Lite</strong> — <code>nexi-dotnet-sdk-lite-&lt;version&gt;.zip</code></td>
+<td><strong>Lite</strong> — <code>opi-dotnet-sdk-lite-&lt;version&gt;.zip</code></td>
 <td>Windows, .NET Framework 4.8 / 4.8.1 (<code>net48</code>)</td>
 <td>No SDK overlay; use your application's UI</td>
 </tr>
 </tbody>
 </table>
 <p>Use Full for modern Windows integrations. Lite provides backward compatibility for existing .NET Framework 4.8 cashier applications. Both editions expose the same payment, receipt, terminal-operation and recovery API. Choose one distribution; do not combine their DLLs. Lite includes the Microsoft dependency DLLs required by Framework 4.8.</p>
-<p>Full and Lite use version <strong>1.0.0</strong> and are available from the <a href="https://github.com/richiehug/nexi-dotnet-sdk/releases/tag/1.0.0">GitHub release</a>.</p>
+<p>Full and Lite use version <strong>1.0.0</strong> and are available from the <a href="https://github.com/richiehug/opi-dotnet-sdk/releases/tag/1.0.0">GitHub release</a>.</p>
 <h2 id="quick-start">Quick start</h2>
 <p>First, <a href="integration.html#add-the-sdk-to-an-application">add the local SDK DLL to your application</a>. Then create an instance for your network terminal and take your first payment:</p>
-<pre><code class="lang-csharp">using Nexi.Sdk;
+<pre><code class="lang-csharp">using Opi.Sdk;
 
-await using var nexiSdk = new NexiClient(new NexiOptions
+await using var opiSdk = new OpiClient(new OpiOptions
 {
     TerminalHost = &quot;192.168.0.69&quot;,
     WorkstationId = &quot;CASHIER-01&quot;
@@ -111,7 +115,7 @@ await using var nexiSdk = new NexiClient(new NexiOptions
 
 async Task TakePaymentAsync()
 {
-    var result = await nexiSdk.PaymentAsync(
+    var result = await opiSdk.PaymentAsync(
         amount: 1250,
         currency: &quot;CHF&quot;
     );
@@ -144,10 +148,12 @@ async Task TakePaymentAsync()
 <li>Recover uncertain transaction results without automatically resending the payment.</li>
 <li>Diagnose integration issues with optional file logging that excludes raw card and receipt data.</li>
 </ul>
+<h2 id="compatibility">Compatibility</h2>
+<p>Development and real-world validation have primarily been performed with OPI-compatible payment terminals used with Nexi Switzerland. Validate the specific terminal model, payment application, firmware and provider before production rollout. Compatibility with other OPI environments has not been established by this refactor.</p>
 <h2 id="documentation">Documentation</h2>
 <ul>
 <li><a href="integration.html">Integration guide and API overview</a></li>
-<li><a href="https://richiehug.github.io/nexi-dotnet-sdk/">Detailed C# API reference</a></li>
+<li><a href="https://richiehug.github.io/opi-dotnet-sdk/">Detailed C# API reference</a></li>
 </ul>
 <p>The integration guide covers installation, configuration, all public terminal methods, request and response models, result states, errors, receipts, recovery, and operation events. XML IntelliSense documentation is included with the DLLs.</p>
 <h2 id="requirements">Requirements</h2>
@@ -155,10 +161,18 @@ async Task TakePaymentAsync()
 <li>Full: a Windows .NET 10 application with WPF support</li>
 <li>Lite: a Windows .NET Framework 4.8 or 4.8.1 application; no WPF dependency in the SDK</li>
 <li>Asynchronous C# support; see the integration guide for older C# syntax</li>
-<li>A provisioned Nexi EP2 payment application reachable through the terminal's network address</li>
+<li>A provisioned OPI-compatible payment application reachable through the terminal's network address</li>
 </ul>
 <h2 id="support">Support</h2>
-<p>For help, questions, or bug reports, please <a href="https://github.com/richiehug/nexi-dotnet-sdk/issues">open an issue in this repository</a>.</p>
+<p>Use <a href="https://github.com/richiehug/opi-dotnet-sdk/issues">GitHub Issues</a> for bugs and feature requests. Support is best effort, with no SLA or guaranteed resolution. See <a href="SUPPORT.html">SUPPORT.md</a>.</p>
+<h2 id="security">Security</h2>
+<p>Report vulnerabilities privately; do not post payment data, credentials or sensitive logs in public issues. See <a href="SECURITY.html">SECURITY.md</a>.</p>
+<h2 id="license">License</h2>
+<p>The compiled SDK is distributed under the <a href="LICENSE">OPI .NET SDK Binary License</a>. Commercial application integration and bundling of the unmodified SDK are permitted. Source code is not included or licensed for redistribution. This is not an open-source license.</p>
+<h2 id="maintainer">Maintainer</h2>
+<p>Richard Hug — <a href="https://richiehug.com">richiehug.com</a>.</p>
+<h2 id="overlay-branding">Overlay branding</h2>
+<p>Full's window and embedded overlays accept an inline SVG logo, header/button color and white or black text through <code>OverlayBrandingOptions</code>. Omit branding for the generic OPI design. Invalid or unsupported SVG falls back safely. See <a href="integration.html#custom-overlay-branding-full-only">custom branding and example code</a>.</p>
 
 </article>
 

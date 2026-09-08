@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Nexi.Sdk | Nexi .NET SDK </title>
+      <title>Opi.Sdk | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Nexi.Sdk | Nexi .NET SDK ">
+      <meta name="title" content="Opi.Sdk | OPI .NET SDK ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/richiehug/nexi-dotnet-sdk-dev/blob/main/artifacts/docs-build/api/Nexi.Sdk.md/#L1">
+      
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -70,10 +70,10 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk">
-<h1 id="nexisdk">Nexi.Sdk</h1>
+        <article data-uid="Opi.Sdk">
+<h1 id="opisdk">Opi.Sdk</h1>
 
-<p>Start with <code>NexiClient</code> and <code>NexiOptions</code>, then explore the result and receipt types you need. For an end-to-end example, see the <a href="../integration.html">integration guide</a>.</p>
+<p>Start with <code>OpiClient</code> and <code>OpiOptions</code>, then explore the result and receipt types you need. For an end-to-end example, see the <a href="../integration.html">integration guide</a>.</p>
 <h2 id="start-here">Start here</h2>
 <table>
 <thead>
@@ -84,15 +84,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="Nexi.Sdk.NexiClient.html">NexiClient</a></td>
+<td><a href="Opi.Sdk.OpiClient.html">OpiClient</a></td>
 <td>Create the terminal client and call payments, recovery and terminal operations.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.NexiOptions.html">NexiOptions</a></td>
+<td><a href="Opi.Sdk.OpiOptions.html">OpiOptions</a></td>
 <td>Configure the connection, timeouts, receipts, logging and optional UI.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.PaymentRequest.html">PaymentRequest</a></td>
+<td><a href="Opi.Sdk.PaymentRequest.html">PaymentRequest</a></td>
 <td>Supply the amount, currency and merchant reference.</td>
 </tr>
 </tbody>
@@ -107,27 +107,27 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="Nexi.Sdk.NexiResult.html">NexiResult</a></td>
+<td><a href="Opi.Sdk.OpiResult.html">OpiResult</a></td>
 <td>Read the outcome and correlation ID.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.ResultState.html">ResultState</a></td>
+<td><a href="Opi.Sdk.ResultState.html">ResultState</a></td>
 <td>Interpret success, rejection, cancellation and uncertainty.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.NexiError.html">NexiError</a></td>
+<td><a href="Opi.Sdk.OpiError.html">OpiError</a></td>
 <td>Handle stable error categories.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.TransactionResult.html">TransactionResult</a></td>
+<td><a href="Opi.Sdk.TransactionResult.html">TransactionResult</a></td>
 <td>Access financial details for the transaction.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.TerminalInformation.html">TerminalInformation</a></td>
+<td><a href="Opi.Sdk.TerminalInformation.html">TerminalInformation</a></td>
 <td>Read terminal identity, status and capabilities.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.DccDetails.html">DccDetails</a></td>
+<td><a href="Opi.Sdk.DccDetails.html">DccDetails</a></td>
 <td>Read dynamic currency conversion details.</td>
 </tr>
 </tbody>
@@ -142,23 +142,23 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="Nexi.Sdk.ReceiptHandling.html">ReceiptHandling</a></td>
+<td><a href="Opi.Sdk.ReceiptHandling.html">ReceiptHandling</a></td>
 <td>Choose routing for merchant and customer copies.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.ReceiptHandlingMode.html">ReceiptHandlingMode</a></td>
+<td><a href="Opi.Sdk.ReceiptHandlingMode.html">ReceiptHandlingMode</a></td>
 <td>Print at the terminal, return to the app or suppress a copy.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.ReceiptDetails.html">ReceiptDetails</a></td>
+<td><a href="Opi.Sdk.ReceiptDetails.html">ReceiptDetails</a></td>
 <td>Access the two receipt copies in a result.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.Receipt.html">Receipt</a></td>
+<td><a href="Opi.Sdk.Receipt.html">Receipt</a></td>
 <td>Read receipt text and its content type.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.ReceiptType.html">ReceiptType</a></td>
+<td><a href="Opi.Sdk.ReceiptType.html">ReceiptType</a></td>
 <td>Identify the merchant or customer copy.</td>
 </tr>
 </tbody>
@@ -173,15 +173,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="Nexi.Sdk.OperationEvent.html">OperationEvent</a></td>
+<td><a href="Opi.Sdk.OperationEvent.html">OperationEvent</a></td>
 <td>Follow lifecycle, receipt and recovery notifications.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.OperationEventKind.html">OperationEventKind</a></td>
+<td><a href="Opi.Sdk.OperationEventKind.html">OperationEventKind</a></td>
 <td>Identify what an event represents.</td>
 </tr>
 <tr>
-<td><a href="Nexi.Sdk.NexiOperation.html">NexiOperation</a></td>
+<td><a href="Opi.Sdk.OpiOperation.html">OpiOperation</a></td>
 <td>Identify the financial or terminal operation.</td>
 </tr>
 </tbody>
@@ -196,13 +196,13 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="Nexi.Sdk.ITransactionOverlay.html">ITransactionOverlay</a></td>
+<td><a href="Opi.Sdk.ITransactionOverlay.html">ITransactionOverlay</a></td>
 <td>Implement a custom transaction presentation adapter.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="windows-overlay-adapters">Windows overlay adapters</h2>
-<p><strong>Full only (.NET 10 Windows):</strong> <a href="Nexi.Sdk.Windows.html">Nexi.Sdk.Windows</a> provides embedded and separate-window adapters inside the Full Nexi.Sdk.dll. Lite targets .NET Framework 4.8 and uses app-owned UI.</p>
+<p><strong>Full only (.NET 10 Windows):</strong> <a href="Opi.Sdk.Windows.html">Opi.Sdk.Windows</a> provides embedded and separate-window adapters inside the Full Opi.Sdk.dll. Lite targets .NET Framework 4.8 and uses app-owned UI.</p>
 
 </article>
 

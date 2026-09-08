@@ -1,2087 +1,2150 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: Nexi.Sdk
-  name: Nexi.Sdk
-  href: api/Nexi.Sdk.html
-- uid: Nexi.Sdk.DccDetails
+- uid: Opi.Sdk
+  name: Opi.Sdk
+  href: api/Opi.Sdk.html
+- uid: Opi.Sdk.DccDetails
   name: DccDetails
-  href: api/Nexi.Sdk.DccDetails.html
-  commentId: T:Nexi.Sdk.DccDetails
-  fullName: Nexi.Sdk.DccDetails
+  href: api/Opi.Sdk.DccDetails.html
+  commentId: T:Opi.Sdk.DccDetails
+  fullName: Opi.Sdk.DccDetails
   nameWithType: DccDetails
-- uid: Nexi.Sdk.DccDetails.#ctor(System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String)
+- uid: Opi.Sdk.DccDetails.#ctor(System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String)
   name: DccDetails(bool, bool, string, string?, string?, string?, string?)
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails__ctor_System_Boolean_System_Boolean_System_String_System_String_System_String_System_String_System_String_
-  commentId: M:Nexi.Sdk.DccDetails.#ctor(System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String)
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails__ctor_System_Boolean_System_Boolean_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:Opi.Sdk.DccDetails.#ctor(System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String)
   name.vb: New(Boolean, Boolean, String, String, String, String, String)
-  fullName: Nexi.Sdk.DccDetails.DccDetails(bool, bool, string, string?, string?, string?, string?)
-  fullName.vb: Nexi.Sdk.DccDetails.New(Boolean, Boolean, String, String, String, String, String)
+  fullName: Opi.Sdk.DccDetails.DccDetails(bool, bool, string, string?, string?, string?, string?)
+  fullName.vb: Opi.Sdk.DccDetails.New(Boolean, Boolean, String, String, String, String, String)
   nameWithType: DccDetails.DccDetails(bool, bool, string, string?, string?, string?, string?)
   nameWithType.vb: DccDetails.New(Boolean, Boolean, String, String, String, String, String)
-- uid: Nexi.Sdk.DccDetails.#ctor*
+- uid: Opi.Sdk.DccDetails.#ctor*
   name: DccDetails
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails__ctor_
-  commentId: Overload:Nexi.Sdk.DccDetails.#ctor
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails__ctor_
+  commentId: Overload:Opi.Sdk.DccDetails.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Nexi.Sdk.DccDetails.DccDetails
-  fullName.vb: Nexi.Sdk.DccDetails.New
+  fullName: Opi.Sdk.DccDetails.DccDetails
+  fullName.vb: Opi.Sdk.DccDetails.New
   nameWithType: DccDetails.DccDetails
   nameWithType.vb: DccDetails.New
-- uid: Nexi.Sdk.DccDetails.Accepted
+- uid: Opi.Sdk.DccDetails.Accepted
   name: Accepted
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_Accepted
-  commentId: P:Nexi.Sdk.DccDetails.Accepted
-  fullName: Nexi.Sdk.DccDetails.Accepted
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_Accepted
+  commentId: P:Opi.Sdk.DccDetails.Accepted
+  fullName: Opi.Sdk.DccDetails.Accepted
   nameWithType: DccDetails.Accepted
-- uid: Nexi.Sdk.DccDetails.Accepted*
+- uid: Opi.Sdk.DccDetails.Accepted*
   name: Accepted
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_Accepted_
-  commentId: Overload:Nexi.Sdk.DccDetails.Accepted
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_Accepted_
+  commentId: Overload:Opi.Sdk.DccDetails.Accepted
   isSpec: "True"
-  fullName: Nexi.Sdk.DccDetails.Accepted
+  fullName: Opi.Sdk.DccDetails.Accepted
   nameWithType: DccDetails.Accepted
-- uid: Nexi.Sdk.DccDetails.Amount
+- uid: Opi.Sdk.DccDetails.Amount
   name: Amount
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_Amount
-  commentId: P:Nexi.Sdk.DccDetails.Amount
-  fullName: Nexi.Sdk.DccDetails.Amount
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_Amount
+  commentId: P:Opi.Sdk.DccDetails.Amount
+  fullName: Opi.Sdk.DccDetails.Amount
   nameWithType: DccDetails.Amount
-- uid: Nexi.Sdk.DccDetails.Amount*
+- uid: Opi.Sdk.DccDetails.Amount*
   name: Amount
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_Amount_
-  commentId: Overload:Nexi.Sdk.DccDetails.Amount
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_Amount_
+  commentId: Overload:Opi.Sdk.DccDetails.Amount
   isSpec: "True"
-  fullName: Nexi.Sdk.DccDetails.Amount
+  fullName: Opi.Sdk.DccDetails.Amount
   nameWithType: DccDetails.Amount
-- uid: Nexi.Sdk.DccDetails.Currency
+- uid: Opi.Sdk.DccDetails.Currency
   name: Currency
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_Currency
-  commentId: P:Nexi.Sdk.DccDetails.Currency
-  fullName: Nexi.Sdk.DccDetails.Currency
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_Currency
+  commentId: P:Opi.Sdk.DccDetails.Currency
+  fullName: Opi.Sdk.DccDetails.Currency
   nameWithType: DccDetails.Currency
-- uid: Nexi.Sdk.DccDetails.Currency*
+- uid: Opi.Sdk.DccDetails.Currency*
   name: Currency
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_Currency_
-  commentId: Overload:Nexi.Sdk.DccDetails.Currency
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_Currency_
+  commentId: Overload:Opi.Sdk.DccDetails.Currency
   isSpec: "True"
-  fullName: Nexi.Sdk.DccDetails.Currency
+  fullName: Opi.Sdk.DccDetails.Currency
   nameWithType: DccDetails.Currency
-- uid: Nexi.Sdk.DccDetails.CurrencyCode
+- uid: Opi.Sdk.DccDetails.CurrencyCode
   name: CurrencyCode
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_CurrencyCode
-  commentId: P:Nexi.Sdk.DccDetails.CurrencyCode
-  fullName: Nexi.Sdk.DccDetails.CurrencyCode
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_CurrencyCode
+  commentId: P:Opi.Sdk.DccDetails.CurrencyCode
+  fullName: Opi.Sdk.DccDetails.CurrencyCode
   nameWithType: DccDetails.CurrencyCode
-- uid: Nexi.Sdk.DccDetails.CurrencyCode*
+- uid: Opi.Sdk.DccDetails.CurrencyCode*
   name: CurrencyCode
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_CurrencyCode_
-  commentId: Overload:Nexi.Sdk.DccDetails.CurrencyCode
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_CurrencyCode_
+  commentId: Overload:Opi.Sdk.DccDetails.CurrencyCode
   isSpec: "True"
-  fullName: Nexi.Sdk.DccDetails.CurrencyCode
+  fullName: Opi.Sdk.DccDetails.CurrencyCode
   nameWithType: DccDetails.CurrencyCode
-- uid: Nexi.Sdk.DccDetails.ExchangeRate
+- uid: Opi.Sdk.DccDetails.ExchangeRate
   name: ExchangeRate
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_ExchangeRate
-  commentId: P:Nexi.Sdk.DccDetails.ExchangeRate
-  fullName: Nexi.Sdk.DccDetails.ExchangeRate
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_ExchangeRate
+  commentId: P:Opi.Sdk.DccDetails.ExchangeRate
+  fullName: Opi.Sdk.DccDetails.ExchangeRate
   nameWithType: DccDetails.ExchangeRate
-- uid: Nexi.Sdk.DccDetails.ExchangeRate*
+- uid: Opi.Sdk.DccDetails.ExchangeRate*
   name: ExchangeRate
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_ExchangeRate_
-  commentId: Overload:Nexi.Sdk.DccDetails.ExchangeRate
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_ExchangeRate_
+  commentId: Overload:Opi.Sdk.DccDetails.ExchangeRate
   isSpec: "True"
-  fullName: Nexi.Sdk.DccDetails.ExchangeRate
+  fullName: Opi.Sdk.DccDetails.ExchangeRate
   nameWithType: DccDetails.ExchangeRate
-- uid: Nexi.Sdk.DccDetails.MarkupPercentage
+- uid: Opi.Sdk.DccDetails.MarkupPercentage
   name: MarkupPercentage
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_MarkupPercentage
-  commentId: P:Nexi.Sdk.DccDetails.MarkupPercentage
-  fullName: Nexi.Sdk.DccDetails.MarkupPercentage
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_MarkupPercentage
+  commentId: P:Opi.Sdk.DccDetails.MarkupPercentage
+  fullName: Opi.Sdk.DccDetails.MarkupPercentage
   nameWithType: DccDetails.MarkupPercentage
-- uid: Nexi.Sdk.DccDetails.MarkupPercentage*
+- uid: Opi.Sdk.DccDetails.MarkupPercentage*
   name: MarkupPercentage
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_MarkupPercentage_
-  commentId: Overload:Nexi.Sdk.DccDetails.MarkupPercentage
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_MarkupPercentage_
+  commentId: Overload:Opi.Sdk.DccDetails.MarkupPercentage
   isSpec: "True"
-  fullName: Nexi.Sdk.DccDetails.MarkupPercentage
+  fullName: Opi.Sdk.DccDetails.MarkupPercentage
   nameWithType: DccDetails.MarkupPercentage
-- uid: Nexi.Sdk.DccDetails.Offered
+- uid: Opi.Sdk.DccDetails.Offered
   name: Offered
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_Offered
-  commentId: P:Nexi.Sdk.DccDetails.Offered
-  fullName: Nexi.Sdk.DccDetails.Offered
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_Offered
+  commentId: P:Opi.Sdk.DccDetails.Offered
+  fullName: Opi.Sdk.DccDetails.Offered
   nameWithType: DccDetails.Offered
-- uid: Nexi.Sdk.DccDetails.Offered*
+- uid: Opi.Sdk.DccDetails.Offered*
   name: Offered
-  href: api/Nexi.Sdk.DccDetails.html#Nexi_Sdk_DccDetails_Offered_
-  commentId: Overload:Nexi.Sdk.DccDetails.Offered
+  href: api/Opi.Sdk.DccDetails.html#Opi_Sdk_DccDetails_Offered_
+  commentId: Overload:Opi.Sdk.DccDetails.Offered
   isSpec: "True"
-  fullName: Nexi.Sdk.DccDetails.Offered
+  fullName: Opi.Sdk.DccDetails.Offered
   nameWithType: DccDetails.Offered
-- uid: Nexi.Sdk.ITransactionOverlay
+- uid: Opi.Sdk.ITransactionOverlay
   name: ITransactionOverlay
-  href: api/Nexi.Sdk.ITransactionOverlay.html
-  commentId: T:Nexi.Sdk.ITransactionOverlay
-  fullName: Nexi.Sdk.ITransactionOverlay
+  href: api/Opi.Sdk.ITransactionOverlay.html
+  commentId: T:Opi.Sdk.ITransactionOverlay
+  fullName: Opi.Sdk.ITransactionOverlay
   nameWithType: ITransactionOverlay
-- uid: Nexi.Sdk.ITransactionOverlay.CloseAsync
+- uid: Opi.Sdk.ITransactionOverlay.CloseAsync
   name: CloseAsync()
-  href: api/Nexi.Sdk.ITransactionOverlay.html#Nexi_Sdk_ITransactionOverlay_CloseAsync
-  commentId: M:Nexi.Sdk.ITransactionOverlay.CloseAsync
-  fullName: Nexi.Sdk.ITransactionOverlay.CloseAsync()
+  href: api/Opi.Sdk.ITransactionOverlay.html#Opi_Sdk_ITransactionOverlay_CloseAsync
+  commentId: M:Opi.Sdk.ITransactionOverlay.CloseAsync
+  fullName: Opi.Sdk.ITransactionOverlay.CloseAsync()
   nameWithType: ITransactionOverlay.CloseAsync()
-- uid: Nexi.Sdk.ITransactionOverlay.CloseAsync*
+- uid: Opi.Sdk.ITransactionOverlay.CloseAsync*
   name: CloseAsync
-  href: api/Nexi.Sdk.ITransactionOverlay.html#Nexi_Sdk_ITransactionOverlay_CloseAsync_
-  commentId: Overload:Nexi.Sdk.ITransactionOverlay.CloseAsync
+  href: api/Opi.Sdk.ITransactionOverlay.html#Opi_Sdk_ITransactionOverlay_CloseAsync_
+  commentId: Overload:Opi.Sdk.ITransactionOverlay.CloseAsync
   isSpec: "True"
-  fullName: Nexi.Sdk.ITransactionOverlay.CloseAsync
+  fullName: Opi.Sdk.ITransactionOverlay.CloseAsync
   nameWithType: ITransactionOverlay.CloseAsync
-- uid: Nexi.Sdk.ITransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
+- uid: Opi.Sdk.ITransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
   name: OnEvent(OperationEvent)
-  href: api/Nexi.Sdk.ITransactionOverlay.html#Nexi_Sdk_ITransactionOverlay_OnEvent_Nexi_Sdk_OperationEvent_
-  commentId: M:Nexi.Sdk.ITransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
-  fullName: Nexi.Sdk.ITransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
+  href: api/Opi.Sdk.ITransactionOverlay.html#Opi_Sdk_ITransactionOverlay_OnEvent_Opi_Sdk_OperationEvent_
+  commentId: M:Opi.Sdk.ITransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
+  fullName: Opi.Sdk.ITransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
   nameWithType: ITransactionOverlay.OnEvent(OperationEvent)
-- uid: Nexi.Sdk.ITransactionOverlay.OnEvent*
+- uid: Opi.Sdk.ITransactionOverlay.OnEvent*
   name: OnEvent
-  href: api/Nexi.Sdk.ITransactionOverlay.html#Nexi_Sdk_ITransactionOverlay_OnEvent_
-  commentId: Overload:Nexi.Sdk.ITransactionOverlay.OnEvent
+  href: api/Opi.Sdk.ITransactionOverlay.html#Opi_Sdk_ITransactionOverlay_OnEvent_
+  commentId: Overload:Opi.Sdk.ITransactionOverlay.OnEvent
   isSpec: "True"
-  fullName: Nexi.Sdk.ITransactionOverlay.OnEvent
+  fullName: Opi.Sdk.ITransactionOverlay.OnEvent
   nameWithType: ITransactionOverlay.OnEvent
-- uid: Nexi.Sdk.ITransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})
-  name: ShowAsync(NexiOperation, string, Func<Task<NexiResult>>?)
-  href: api/Nexi.Sdk.ITransactionOverlay.html#Nexi_Sdk_ITransactionOverlay_ShowAsync_Nexi_Sdk_NexiOperation_System_String_System_Func_System_Threading_Tasks_Task_Nexi_Sdk_NexiResult___
-  commentId: M:Nexi.Sdk.ITransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})
-  name.vb: ShowAsync(NexiOperation, String, Func(Of Task(Of NexiResult)))
-  fullName: Nexi.Sdk.ITransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation, string, System.Func<System.Threading.Tasks.Task<Nexi.Sdk.NexiResult>>?)
-  fullName.vb: Nexi.Sdk.ITransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation, String, System.Func(Of System.Threading.Tasks.Task(Of Nexi.Sdk.NexiResult)))
-  nameWithType: ITransactionOverlay.ShowAsync(NexiOperation, string, Func<Task<NexiResult>>?)
-  nameWithType.vb: ITransactionOverlay.ShowAsync(NexiOperation, String, Func(Of Task(Of NexiResult)))
-- uid: Nexi.Sdk.ITransactionOverlay.ShowAsync*
+- uid: Opi.Sdk.ITransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation,System.String,System.Func{System.Threading.Tasks.Task{Opi.Sdk.OpiResult}})
+  name: ShowAsync(OpiOperation, string, Func<Task<OpiResult>>?)
+  href: api/Opi.Sdk.ITransactionOverlay.html#Opi_Sdk_ITransactionOverlay_ShowAsync_Opi_Sdk_OpiOperation_System_String_System_Func_System_Threading_Tasks_Task_Opi_Sdk_OpiResult___
+  commentId: M:Opi.Sdk.ITransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation,System.String,System.Func{System.Threading.Tasks.Task{Opi.Sdk.OpiResult}})
+  name.vb: ShowAsync(OpiOperation, String, Func(Of Task(Of OpiResult)))
+  fullName: Opi.Sdk.ITransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation, string, System.Func<System.Threading.Tasks.Task<Opi.Sdk.OpiResult>>?)
+  fullName.vb: Opi.Sdk.ITransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation, String, System.Func(Of System.Threading.Tasks.Task(Of Opi.Sdk.OpiResult)))
+  nameWithType: ITransactionOverlay.ShowAsync(OpiOperation, string, Func<Task<OpiResult>>?)
+  nameWithType.vb: ITransactionOverlay.ShowAsync(OpiOperation, String, Func(Of Task(Of OpiResult)))
+- uid: Opi.Sdk.ITransactionOverlay.ShowAsync*
   name: ShowAsync
-  href: api/Nexi.Sdk.ITransactionOverlay.html#Nexi_Sdk_ITransactionOverlay_ShowAsync_
-  commentId: Overload:Nexi.Sdk.ITransactionOverlay.ShowAsync
+  href: api/Opi.Sdk.ITransactionOverlay.html#Opi_Sdk_ITransactionOverlay_ShowAsync_
+  commentId: Overload:Opi.Sdk.ITransactionOverlay.ShowAsync
   isSpec: "True"
-  fullName: Nexi.Sdk.ITransactionOverlay.ShowAsync
+  fullName: Opi.Sdk.ITransactionOverlay.ShowAsync
   nameWithType: ITransactionOverlay.ShowAsync
-- uid: Nexi.Sdk.NexiClient
-  name: NexiClient
-  href: api/Nexi.Sdk.NexiClient.html
-  commentId: T:Nexi.Sdk.NexiClient
-  fullName: Nexi.Sdk.NexiClient
-  nameWithType: NexiClient
-- uid: Nexi.Sdk.NexiClient.#ctor(Nexi.Sdk.NexiOptions)
-  name: NexiClient(NexiOptions)
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient__ctor_Nexi_Sdk_NexiOptions_
-  commentId: M:Nexi.Sdk.NexiClient.#ctor(Nexi.Sdk.NexiOptions)
-  name.vb: New(NexiOptions)
-  fullName: Nexi.Sdk.NexiClient.NexiClient(Nexi.Sdk.NexiOptions)
-  fullName.vb: Nexi.Sdk.NexiClient.New(Nexi.Sdk.NexiOptions)
-  nameWithType: NexiClient.NexiClient(NexiOptions)
-  nameWithType.vb: NexiClient.New(NexiOptions)
-- uid: Nexi.Sdk.NexiClient.#ctor*
-  name: NexiClient
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient__ctor_
-  commentId: Overload:Nexi.Sdk.NexiClient.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Nexi.Sdk.NexiClient.NexiClient
-  fullName.vb: Nexi.Sdk.NexiClient.New
-  nameWithType: NexiClient.NexiClient
-  nameWithType.vb: NexiClient.New
-- uid: Nexi.Sdk.NexiClient.AbortAsync
-  name: AbortAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_AbortAsync
-  commentId: M:Nexi.Sdk.NexiClient.AbortAsync
-  fullName: Nexi.Sdk.NexiClient.AbortAsync()
-  nameWithType: NexiClient.AbortAsync()
-- uid: Nexi.Sdk.NexiClient.AbortAsync*
-  name: AbortAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_AbortAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.AbortAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.AbortAsync
-  nameWithType: NexiClient.AbortAsync
-- uid: Nexi.Sdk.NexiClient.ActivateAsync
-  name: ActivateAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ActivateAsync
-  commentId: M:Nexi.Sdk.NexiClient.ActivateAsync
-  fullName: Nexi.Sdk.NexiClient.ActivateAsync()
-  nameWithType: NexiClient.ActivateAsync()
-- uid: Nexi.Sdk.NexiClient.ActivateAsync*
-  name: ActivateAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ActivateAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.ActivateAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.ActivateAsync
-  nameWithType: NexiClient.ActivateAsync
-- uid: Nexi.Sdk.NexiClient.CloseAsync
-  name: CloseAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_CloseAsync
-  commentId: M:Nexi.Sdk.NexiClient.CloseAsync
-  fullName: Nexi.Sdk.NexiClient.CloseAsync()
-  nameWithType: NexiClient.CloseAsync()
-- uid: Nexi.Sdk.NexiClient.CloseAsync*
-  name: CloseAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_CloseAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.CloseAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.CloseAsync
-  nameWithType: NexiClient.CloseAsync
-- uid: Nexi.Sdk.NexiClient.ConfigAsync
-  name: ConfigAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ConfigAsync
-  commentId: M:Nexi.Sdk.NexiClient.ConfigAsync
-  fullName: Nexi.Sdk.NexiClient.ConfigAsync()
-  nameWithType: NexiClient.ConfigAsync()
-- uid: Nexi.Sdk.NexiClient.ConfigAsync*
-  name: ConfigAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ConfigAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.ConfigAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.ConfigAsync
-  nameWithType: NexiClient.ConfigAsync
-- uid: Nexi.Sdk.NexiClient.DeactivateAsync
-  name: DeactivateAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_DeactivateAsync
-  commentId: M:Nexi.Sdk.NexiClient.DeactivateAsync
-  fullName: Nexi.Sdk.NexiClient.DeactivateAsync()
-  nameWithType: NexiClient.DeactivateAsync()
-- uid: Nexi.Sdk.NexiClient.DeactivateAsync*
-  name: DeactivateAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_DeactivateAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.DeactivateAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.DeactivateAsync
-  nameWithType: NexiClient.DeactivateAsync
-- uid: Nexi.Sdk.NexiClient.DisposeAsync
-  name: DisposeAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_DisposeAsync
-  commentId: M:Nexi.Sdk.NexiClient.DisposeAsync
-  fullName: Nexi.Sdk.NexiClient.DisposeAsync()
-  nameWithType: NexiClient.DisposeAsync()
-- uid: Nexi.Sdk.NexiClient.DisposeAsync*
-  name: DisposeAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_DisposeAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.DisposeAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.DisposeAsync
-  nameWithType: NexiClient.DisposeAsync
-- uid: Nexi.Sdk.NexiClient.InfoAsync
-  name: InfoAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_InfoAsync
-  commentId: M:Nexi.Sdk.NexiClient.InfoAsync
-  fullName: Nexi.Sdk.NexiClient.InfoAsync()
-  nameWithType: NexiClient.InfoAsync()
-- uid: Nexi.Sdk.NexiClient.InfoAsync*
-  name: InfoAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_InfoAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.InfoAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.InfoAsync
-  nameWithType: NexiClient.InfoAsync
-- uid: Nexi.Sdk.NexiClient.InitAsync
-  name: InitAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_InitAsync
-  commentId: M:Nexi.Sdk.NexiClient.InitAsync
-  fullName: Nexi.Sdk.NexiClient.InitAsync()
-  nameWithType: NexiClient.InitAsync()
-- uid: Nexi.Sdk.NexiClient.InitAsync*
-  name: InitAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_InitAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.InitAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.InitAsync
-  nameWithType: NexiClient.InitAsync
-- uid: Nexi.Sdk.NexiClient.LoginAsync
-  name: LoginAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_LoginAsync
-  commentId: M:Nexi.Sdk.NexiClient.LoginAsync
-  fullName: Nexi.Sdk.NexiClient.LoginAsync()
-  nameWithType: NexiClient.LoginAsync()
-- uid: Nexi.Sdk.NexiClient.LoginAsync*
-  name: LoginAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_LoginAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.LoginAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.LoginAsync
-  nameWithType: NexiClient.LoginAsync
-- uid: Nexi.Sdk.NexiClient.LogoffAsync
-  name: LogoffAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_LogoffAsync
-  commentId: M:Nexi.Sdk.NexiClient.LogoffAsync
-  fullName: Nexi.Sdk.NexiClient.LogoffAsync()
-  nameWithType: NexiClient.LogoffAsync()
-- uid: Nexi.Sdk.NexiClient.LogoffAsync*
-  name: LogoffAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_LogoffAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.LogoffAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.LogoffAsync
-  nameWithType: NexiClient.LogoffAsync
-- uid: Nexi.Sdk.NexiClient.OperationEvent
+- uid: Opi.Sdk.OperationEvent
   name: OperationEvent
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_OperationEvent
-  commentId: E:Nexi.Sdk.NexiClient.OperationEvent
-  fullName: Nexi.Sdk.NexiClient.OperationEvent
-  nameWithType: NexiClient.OperationEvent
-- uid: Nexi.Sdk.NexiClient.PaymentAsync(Nexi.Sdk.PaymentRequest)
-  name: PaymentAsync(PaymentRequest)
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_PaymentAsync_Nexi_Sdk_PaymentRequest_
-  commentId: M:Nexi.Sdk.NexiClient.PaymentAsync(Nexi.Sdk.PaymentRequest)
-  fullName: Nexi.Sdk.NexiClient.PaymentAsync(Nexi.Sdk.PaymentRequest)
-  nameWithType: NexiClient.PaymentAsync(PaymentRequest)
-- uid: Nexi.Sdk.NexiClient.PaymentAsync(System.Int64,System.String,System.String)
-  name: PaymentAsync(long, string, string?)
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_PaymentAsync_System_Int64_System_String_System_String_
-  commentId: M:Nexi.Sdk.NexiClient.PaymentAsync(System.Int64,System.String,System.String)
-  name.vb: PaymentAsync(Long, String, String)
-  fullName: Nexi.Sdk.NexiClient.PaymentAsync(long, string, string?)
-  fullName.vb: Nexi.Sdk.NexiClient.PaymentAsync(Long, String, String)
-  nameWithType: NexiClient.PaymentAsync(long, string, string?)
-  nameWithType.vb: NexiClient.PaymentAsync(Long, String, String)
-- uid: Nexi.Sdk.NexiClient.PaymentAsync*
-  name: PaymentAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_PaymentAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.PaymentAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.PaymentAsync
-  nameWithType: NexiClient.PaymentAsync
-- uid: Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(Nexi.Sdk.PaymentRequest)
-  name: PaymentWithRecoveryAsync(PaymentRequest)
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_PaymentWithRecoveryAsync_Nexi_Sdk_PaymentRequest_
-  commentId: M:Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(Nexi.Sdk.PaymentRequest)
-  fullName: Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(Nexi.Sdk.PaymentRequest)
-  nameWithType: NexiClient.PaymentWithRecoveryAsync(PaymentRequest)
-- uid: Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(System.Int64,System.String,System.String)
-  name: PaymentWithRecoveryAsync(long, string, string?)
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_PaymentWithRecoveryAsync_System_Int64_System_String_System_String_
-  commentId: M:Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(System.Int64,System.String,System.String)
-  name.vb: PaymentWithRecoveryAsync(Long, String, String)
-  fullName: Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(long, string, string?)
-  fullName.vb: Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(Long, String, String)
-  nameWithType: NexiClient.PaymentWithRecoveryAsync(long, string, string?)
-  nameWithType.vb: NexiClient.PaymentWithRecoveryAsync(Long, String, String)
-- uid: Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync*
-  name: PaymentWithRecoveryAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_PaymentWithRecoveryAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync
-  nameWithType: NexiClient.PaymentWithRecoveryAsync
-- uid: Nexi.Sdk.NexiClient.ReconcilePendingAsync
-  name: ReconcilePendingAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ReconcilePendingAsync
-  commentId: M:Nexi.Sdk.NexiClient.ReconcilePendingAsync
-  fullName: Nexi.Sdk.NexiClient.ReconcilePendingAsync()
-  nameWithType: NexiClient.ReconcilePendingAsync()
-- uid: Nexi.Sdk.NexiClient.ReconcilePendingAsync*
-  name: ReconcilePendingAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ReconcilePendingAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.ReconcilePendingAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.ReconcilePendingAsync
-  nameWithType: NexiClient.ReconcilePendingAsync
-- uid: Nexi.Sdk.NexiClient.RefundAsync(System.Int64,System.String,System.String)
-  name: RefundAsync(long, string, string?)
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_RefundAsync_System_Int64_System_String_System_String_
-  commentId: M:Nexi.Sdk.NexiClient.RefundAsync(System.Int64,System.String,System.String)
-  name.vb: RefundAsync(Long, String, String)
-  fullName: Nexi.Sdk.NexiClient.RefundAsync(long, string, string?)
-  fullName.vb: Nexi.Sdk.NexiClient.RefundAsync(Long, String, String)
-  nameWithType: NexiClient.RefundAsync(long, string, string?)
-  nameWithType.vb: NexiClient.RefundAsync(Long, String, String)
-- uid: Nexi.Sdk.NexiClient.RefundAsync*
-  name: RefundAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_RefundAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.RefundAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.RefundAsync
-  nameWithType: NexiClient.RefundAsync
-- uid: Nexi.Sdk.NexiClient.RepeatLastMessageAsync
-  name: RepeatLastMessageAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_RepeatLastMessageAsync
-  commentId: M:Nexi.Sdk.NexiClient.RepeatLastMessageAsync
-  fullName: Nexi.Sdk.NexiClient.RepeatLastMessageAsync()
-  nameWithType: NexiClient.RepeatLastMessageAsync()
-- uid: Nexi.Sdk.NexiClient.RepeatLastMessageAsync*
-  name: RepeatLastMessageAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_RepeatLastMessageAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.RepeatLastMessageAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.RepeatLastMessageAsync
-  nameWithType: NexiClient.RepeatLastMessageAsync
-- uid: Nexi.Sdk.NexiClient.ReprintAsync
-  name: ReprintAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ReprintAsync
-  commentId: M:Nexi.Sdk.NexiClient.ReprintAsync
-  fullName: Nexi.Sdk.NexiClient.ReprintAsync()
-  nameWithType: NexiClient.ReprintAsync()
-- uid: Nexi.Sdk.NexiClient.ReprintAsync*
-  name: ReprintAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ReprintAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.ReprintAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.ReprintAsync
-  nameWithType: NexiClient.ReprintAsync
-- uid: Nexi.Sdk.NexiClient.ResetAsync
-  name: ResetAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ResetAsync
-  commentId: M:Nexi.Sdk.NexiClient.ResetAsync
-  fullName: Nexi.Sdk.NexiClient.ResetAsync()
-  nameWithType: NexiClient.ResetAsync()
-- uid: Nexi.Sdk.NexiClient.ResetAsync*
-  name: ResetAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ResetAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.ResetAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.ResetAsync
-  nameWithType: NexiClient.ResetAsync
-- uid: Nexi.Sdk.NexiClient.ReversalAsync
-  name: ReversalAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ReversalAsync
-  commentId: M:Nexi.Sdk.NexiClient.ReversalAsync
-  fullName: Nexi.Sdk.NexiClient.ReversalAsync()
-  nameWithType: NexiClient.ReversalAsync()
-- uid: Nexi.Sdk.NexiClient.ReversalAsync*
-  name: ReversalAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_ReversalAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.ReversalAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.ReversalAsync
-  nameWithType: NexiClient.ReversalAsync
-- uid: Nexi.Sdk.NexiClient.StatusAsync
-  name: StatusAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_StatusAsync
-  commentId: M:Nexi.Sdk.NexiClient.StatusAsync
-  fullName: Nexi.Sdk.NexiClient.StatusAsync()
-  nameWithType: NexiClient.StatusAsync()
-- uid: Nexi.Sdk.NexiClient.StatusAsync*
-  name: StatusAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_StatusAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.StatusAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.StatusAsync
-  nameWithType: NexiClient.StatusAsync
-- uid: Nexi.Sdk.NexiClient.SubmitAsync
-  name: SubmitAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_SubmitAsync
-  commentId: M:Nexi.Sdk.NexiClient.SubmitAsync
-  fullName: Nexi.Sdk.NexiClient.SubmitAsync()
-  nameWithType: NexiClient.SubmitAsync()
-- uid: Nexi.Sdk.NexiClient.SubmitAsync*
-  name: SubmitAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_SubmitAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.SubmitAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.SubmitAsync
-  nameWithType: NexiClient.SubmitAsync
-- uid: Nexi.Sdk.NexiClient.TerminalInfoAsync
-  name: TerminalInfoAsync()
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_TerminalInfoAsync
-  commentId: M:Nexi.Sdk.NexiClient.TerminalInfoAsync
-  fullName: Nexi.Sdk.NexiClient.TerminalInfoAsync()
-  nameWithType: NexiClient.TerminalInfoAsync()
-- uid: Nexi.Sdk.NexiClient.TerminalInfoAsync*
-  name: TerminalInfoAsync
-  href: api/Nexi.Sdk.NexiClient.html#Nexi_Sdk_NexiClient_TerminalInfoAsync_
-  commentId: Overload:Nexi.Sdk.NexiClient.TerminalInfoAsync
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiClient.TerminalInfoAsync
-  nameWithType: NexiClient.TerminalInfoAsync
-- uid: Nexi.Sdk.NexiError
-  name: NexiError
-  href: api/Nexi.Sdk.NexiError.html
-  commentId: T:Nexi.Sdk.NexiError
-  fullName: Nexi.Sdk.NexiError
-  nameWithType: NexiError
-- uid: Nexi.Sdk.NexiError.Aborted
-  name: Aborted
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_Aborted
-  commentId: F:Nexi.Sdk.NexiError.Aborted
-  fullName: Nexi.Sdk.NexiError.Aborted
-  nameWithType: NexiError.Aborted
-- uid: Nexi.Sdk.NexiError.ConnectionError
-  name: ConnectionError
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_ConnectionError
-  commentId: F:Nexi.Sdk.NexiError.ConnectionError
-  fullName: Nexi.Sdk.NexiError.ConnectionError
-  nameWithType: NexiError.ConnectionError
-- uid: Nexi.Sdk.NexiError.DeviceUnavailable
-  name: DeviceUnavailable
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_DeviceUnavailable
-  commentId: F:Nexi.Sdk.NexiError.DeviceUnavailable
-  fullName: Nexi.Sdk.NexiError.DeviceUnavailable
-  nameWithType: NexiError.DeviceUnavailable
-- uid: Nexi.Sdk.NexiError.Failure
-  name: Failure
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_Failure
-  commentId: F:Nexi.Sdk.NexiError.Failure
-  fullName: Nexi.Sdk.NexiError.Failure
-  nameWithType: NexiError.Failure
-- uid: Nexi.Sdk.NexiError.InvalidOpiResponse
-  name: InvalidOpiResponse
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_InvalidOpiResponse
-  commentId: F:Nexi.Sdk.NexiError.InvalidOpiResponse
-  fullName: Nexi.Sdk.NexiError.InvalidOpiResponse
-  nameWithType: NexiError.InvalidOpiResponse
-- uid: Nexi.Sdk.NexiError.InvalidRequest
-  name: InvalidRequest
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_InvalidRequest
-  commentId: F:Nexi.Sdk.NexiError.InvalidRequest
-  fullName: Nexi.Sdk.NexiError.InvalidRequest
-  nameWithType: NexiError.InvalidRequest
-- uid: Nexi.Sdk.NexiError.LoginRequired
-  name: LoginRequired
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_LoginRequired
-  commentId: F:Nexi.Sdk.NexiError.LoginRequired
-  fullName: Nexi.Sdk.NexiError.LoginRequired
-  nameWithType: NexiError.LoginRequired
-- uid: Nexi.Sdk.NexiError.OperationTimeout
-  name: OperationTimeout
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_OperationTimeout
-  commentId: F:Nexi.Sdk.NexiError.OperationTimeout
-  fullName: Nexi.Sdk.NexiError.OperationTimeout
-  nameWithType: NexiError.OperationTimeout
-- uid: Nexi.Sdk.NexiError.Other
-  name: Other
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_Other
-  commentId: F:Nexi.Sdk.NexiError.Other
-  fullName: Nexi.Sdk.NexiError.Other
-  nameWithType: NexiError.Other
-- uid: Nexi.Sdk.NexiError.RecoveryMismatch
-  name: RecoveryMismatch
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_RecoveryMismatch
-  commentId: F:Nexi.Sdk.NexiError.RecoveryMismatch
-  fullName: Nexi.Sdk.NexiError.RecoveryMismatch
-  nameWithType: NexiError.RecoveryMismatch
-- uid: Nexi.Sdk.NexiError.ReprintRequired
-  name: ReprintRequired
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_ReprintRequired
-  commentId: F:Nexi.Sdk.NexiError.ReprintRequired
-  fullName: Nexi.Sdk.NexiError.ReprintRequired
-  nameWithType: NexiError.ReprintRequired
-- uid: Nexi.Sdk.NexiError.ResultUnknown
-  name: ResultUnknown
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_ResultUnknown
-  commentId: F:Nexi.Sdk.NexiError.ResultUnknown
-  fullName: Nexi.Sdk.NexiError.ResultUnknown
-  nameWithType: NexiError.ResultUnknown
-- uid: Nexi.Sdk.NexiError.StorageError
-  name: StorageError
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_StorageError
-  commentId: F:Nexi.Sdk.NexiError.StorageError
-  fullName: Nexi.Sdk.NexiError.StorageError
-  nameWithType: NexiError.StorageError
-- uid: Nexi.Sdk.NexiError.TerminalBusy
-  name: TerminalBusy
-  href: api/Nexi.Sdk.NexiError.html#Nexi_Sdk_NexiError_TerminalBusy
-  commentId: F:Nexi.Sdk.NexiError.TerminalBusy
-  fullName: Nexi.Sdk.NexiError.TerminalBusy
-  nameWithType: NexiError.TerminalBusy
-- uid: Nexi.Sdk.NexiOperation
-  name: NexiOperation
-  href: api/Nexi.Sdk.NexiOperation.html
-  commentId: T:Nexi.Sdk.NexiOperation
-  fullName: Nexi.Sdk.NexiOperation
-  nameWithType: NexiOperation
-- uid: Nexi.Sdk.NexiOperation.Abort
-  name: Abort
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Abort
-  commentId: F:Nexi.Sdk.NexiOperation.Abort
-  fullName: Nexi.Sdk.NexiOperation.Abort
-  nameWithType: NexiOperation.Abort
-- uid: Nexi.Sdk.NexiOperation.Activate
-  name: Activate
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Activate
-  commentId: F:Nexi.Sdk.NexiOperation.Activate
-  fullName: Nexi.Sdk.NexiOperation.Activate
-  nameWithType: NexiOperation.Activate
-- uid: Nexi.Sdk.NexiOperation.Close
-  name: Close
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Close
-  commentId: F:Nexi.Sdk.NexiOperation.Close
-  fullName: Nexi.Sdk.NexiOperation.Close
-  nameWithType: NexiOperation.Close
-- uid: Nexi.Sdk.NexiOperation.Config
-  name: Config
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Config
-  commentId: F:Nexi.Sdk.NexiOperation.Config
-  fullName: Nexi.Sdk.NexiOperation.Config
-  nameWithType: NexiOperation.Config
-- uid: Nexi.Sdk.NexiOperation.Deactivate
-  name: Deactivate
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Deactivate
-  commentId: F:Nexi.Sdk.NexiOperation.Deactivate
-  fullName: Nexi.Sdk.NexiOperation.Deactivate
-  nameWithType: NexiOperation.Deactivate
-- uid: Nexi.Sdk.NexiOperation.Info
-  name: Info
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Info
-  commentId: F:Nexi.Sdk.NexiOperation.Info
-  fullName: Nexi.Sdk.NexiOperation.Info
-  nameWithType: NexiOperation.Info
-- uid: Nexi.Sdk.NexiOperation.Init
-  name: Init
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Init
-  commentId: F:Nexi.Sdk.NexiOperation.Init
-  fullName: Nexi.Sdk.NexiOperation.Init
-  nameWithType: NexiOperation.Init
-- uid: Nexi.Sdk.NexiOperation.Login
-  name: Login
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Login
-  commentId: F:Nexi.Sdk.NexiOperation.Login
-  fullName: Nexi.Sdk.NexiOperation.Login
-  nameWithType: NexiOperation.Login
-- uid: Nexi.Sdk.NexiOperation.Logoff
-  name: Logoff
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Logoff
-  commentId: F:Nexi.Sdk.NexiOperation.Logoff
-  fullName: Nexi.Sdk.NexiOperation.Logoff
-  nameWithType: NexiOperation.Logoff
-- uid: Nexi.Sdk.NexiOperation.Payment
-  name: Payment
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Payment
-  commentId: F:Nexi.Sdk.NexiOperation.Payment
-  fullName: Nexi.Sdk.NexiOperation.Payment
-  nameWithType: NexiOperation.Payment
-- uid: Nexi.Sdk.NexiOperation.Refund
-  name: Refund
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Refund
-  commentId: F:Nexi.Sdk.NexiOperation.Refund
-  fullName: Nexi.Sdk.NexiOperation.Refund
-  nameWithType: NexiOperation.Refund
-- uid: Nexi.Sdk.NexiOperation.RepeatLastMessage
-  name: RepeatLastMessage
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_RepeatLastMessage
-  commentId: F:Nexi.Sdk.NexiOperation.RepeatLastMessage
-  fullName: Nexi.Sdk.NexiOperation.RepeatLastMessage
-  nameWithType: NexiOperation.RepeatLastMessage
-- uid: Nexi.Sdk.NexiOperation.Reprint
-  name: Reprint
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Reprint
-  commentId: F:Nexi.Sdk.NexiOperation.Reprint
-  fullName: Nexi.Sdk.NexiOperation.Reprint
-  nameWithType: NexiOperation.Reprint
-- uid: Nexi.Sdk.NexiOperation.Reset
-  name: Reset
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Reset
-  commentId: F:Nexi.Sdk.NexiOperation.Reset
-  fullName: Nexi.Sdk.NexiOperation.Reset
-  nameWithType: NexiOperation.Reset
-- uid: Nexi.Sdk.NexiOperation.Reversal
-  name: Reversal
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Reversal
-  commentId: F:Nexi.Sdk.NexiOperation.Reversal
-  fullName: Nexi.Sdk.NexiOperation.Reversal
-  nameWithType: NexiOperation.Reversal
-- uid: Nexi.Sdk.NexiOperation.Status
-  name: Status
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Status
-  commentId: F:Nexi.Sdk.NexiOperation.Status
-  fullName: Nexi.Sdk.NexiOperation.Status
-  nameWithType: NexiOperation.Status
-- uid: Nexi.Sdk.NexiOperation.Submit
-  name: Submit
-  href: api/Nexi.Sdk.NexiOperation.html#Nexi_Sdk_NexiOperation_Submit
-  commentId: F:Nexi.Sdk.NexiOperation.Submit
-  fullName: Nexi.Sdk.NexiOperation.Submit
-  nameWithType: NexiOperation.Submit
-- uid: Nexi.Sdk.NexiOptions
-  name: NexiOptions
-  href: api/Nexi.Sdk.NexiOptions.html
-  commentId: T:Nexi.Sdk.NexiOptions
-  fullName: Nexi.Sdk.NexiOptions
-  nameWithType: NexiOptions
-- uid: Nexi.Sdk.NexiOptions.AbortRecoveryAttempts
-  name: AbortRecoveryAttempts
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_AbortRecoveryAttempts
-  commentId: P:Nexi.Sdk.NexiOptions.AbortRecoveryAttempts
-  fullName: Nexi.Sdk.NexiOptions.AbortRecoveryAttempts
-  nameWithType: NexiOptions.AbortRecoveryAttempts
-- uid: Nexi.Sdk.NexiOptions.AbortRecoveryAttempts*
-  name: AbortRecoveryAttempts
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_AbortRecoveryAttempts_
-  commentId: Overload:Nexi.Sdk.NexiOptions.AbortRecoveryAttempts
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.AbortRecoveryAttempts
-  nameWithType: NexiOptions.AbortRecoveryAttempts
-- uid: Nexi.Sdk.NexiOptions.AbortRecoveryDelay
-  name: AbortRecoveryDelay
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_AbortRecoveryDelay
-  commentId: P:Nexi.Sdk.NexiOptions.AbortRecoveryDelay
-  fullName: Nexi.Sdk.NexiOptions.AbortRecoveryDelay
-  nameWithType: NexiOptions.AbortRecoveryDelay
-- uid: Nexi.Sdk.NexiOptions.AbortRecoveryDelay*
-  name: AbortRecoveryDelay
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_AbortRecoveryDelay_
-  commentId: Overload:Nexi.Sdk.NexiOptions.AbortRecoveryDelay
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.AbortRecoveryDelay
-  nameWithType: NexiOptions.AbortRecoveryDelay
-- uid: Nexi.Sdk.NexiOptions.AbortRetryDelay
-  name: AbortRetryDelay
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_AbortRetryDelay
-  commentId: P:Nexi.Sdk.NexiOptions.AbortRetryDelay
-  fullName: Nexi.Sdk.NexiOptions.AbortRetryDelay
-  nameWithType: NexiOptions.AbortRetryDelay
-- uid: Nexi.Sdk.NexiOptions.AbortRetryDelay*
-  name: AbortRetryDelay
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_AbortRetryDelay_
-  commentId: Overload:Nexi.Sdk.NexiOptions.AbortRetryDelay
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.AbortRetryDelay
-  nameWithType: NexiOptions.AbortRetryDelay
-- uid: Nexi.Sdk.NexiOptions.ConnectTimeout
-  name: ConnectTimeout
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ConnectTimeout
-  commentId: P:Nexi.Sdk.NexiOptions.ConnectTimeout
-  fullName: Nexi.Sdk.NexiOptions.ConnectTimeout
-  nameWithType: NexiOptions.ConnectTimeout
-- uid: Nexi.Sdk.NexiOptions.ConnectTimeout*
-  name: ConnectTimeout
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ConnectTimeout_
-  commentId: Overload:Nexi.Sdk.NexiOptions.ConnectTimeout
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.ConnectTimeout
-  nameWithType: NexiOptions.ConnectTimeout
-- uid: Nexi.Sdk.NexiOptions.ConnectivityLossGracePeriod
-  name: ConnectivityLossGracePeriod
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ConnectivityLossGracePeriod
-  commentId: P:Nexi.Sdk.NexiOptions.ConnectivityLossGracePeriod
-  fullName: Nexi.Sdk.NexiOptions.ConnectivityLossGracePeriod
-  nameWithType: NexiOptions.ConnectivityLossGracePeriod
-- uid: Nexi.Sdk.NexiOptions.ConnectivityLossGracePeriod*
-  name: ConnectivityLossGracePeriod
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ConnectivityLossGracePeriod_
-  commentId: Overload:Nexi.Sdk.NexiOptions.ConnectivityLossGracePeriod
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.ConnectivityLossGracePeriod
-  nameWithType: NexiOptions.ConnectivityLossGracePeriod
-- uid: Nexi.Sdk.NexiOptions.DataDirectory
-  name: DataDirectory
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_DataDirectory
-  commentId: P:Nexi.Sdk.NexiOptions.DataDirectory
-  fullName: Nexi.Sdk.NexiOptions.DataDirectory
-  nameWithType: NexiOptions.DataDirectory
-- uid: Nexi.Sdk.NexiOptions.DataDirectory*
-  name: DataDirectory
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_DataDirectory_
-  commentId: Overload:Nexi.Sdk.NexiOptions.DataDirectory
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.DataDirectory
-  nameWithType: NexiOptions.DataDirectory
-- uid: Nexi.Sdk.NexiOptions.DeviceChannelPort
-  name: DeviceChannelPort
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_DeviceChannelPort
-  commentId: P:Nexi.Sdk.NexiOptions.DeviceChannelPort
-  fullName: Nexi.Sdk.NexiOptions.DeviceChannelPort
-  nameWithType: NexiOptions.DeviceChannelPort
-- uid: Nexi.Sdk.NexiOptions.DeviceChannelPort*
-  name: DeviceChannelPort
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_DeviceChannelPort_
-  commentId: Overload:Nexi.Sdk.NexiOptions.DeviceChannelPort
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.DeviceChannelPort
-  nameWithType: NexiOptions.DeviceChannelPort
-- uid: Nexi.Sdk.NexiOptions.ForceAcceptance
-  name: ForceAcceptance
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ForceAcceptance
-  commentId: P:Nexi.Sdk.NexiOptions.ForceAcceptance
-  fullName: Nexi.Sdk.NexiOptions.ForceAcceptance
-  nameWithType: NexiOptions.ForceAcceptance
-- uid: Nexi.Sdk.NexiOptions.ForceAcceptance*
-  name: ForceAcceptance
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ForceAcceptance_
-  commentId: Overload:Nexi.Sdk.NexiOptions.ForceAcceptance
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.ForceAcceptance
-  nameWithType: NexiOptions.ForceAcceptance
-- uid: Nexi.Sdk.NexiOptions.Language
-  name: Language
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_Language
-  commentId: P:Nexi.Sdk.NexiOptions.Language
-  fullName: Nexi.Sdk.NexiOptions.Language
-  nameWithType: NexiOptions.Language
-- uid: Nexi.Sdk.NexiOptions.Language*
-  name: Language
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_Language_
-  commentId: Overload:Nexi.Sdk.NexiOptions.Language
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.Language
-  nameWithType: NexiOptions.Language
-- uid: Nexi.Sdk.NexiOptions.Logger
-  name: Logger
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_Logger
-  commentId: P:Nexi.Sdk.NexiOptions.Logger
-  fullName: Nexi.Sdk.NexiOptions.Logger
-  nameWithType: NexiOptions.Logger
-- uid: Nexi.Sdk.NexiOptions.Logger*
-  name: Logger
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_Logger_
-  commentId: Overload:Nexi.Sdk.NexiOptions.Logger
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.Logger
-  nameWithType: NexiOptions.Logger
-- uid: Nexi.Sdk.NexiOptions.LoggingEnabled
-  name: LoggingEnabled
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_LoggingEnabled
-  commentId: P:Nexi.Sdk.NexiOptions.LoggingEnabled
-  fullName: Nexi.Sdk.NexiOptions.LoggingEnabled
-  nameWithType: NexiOptions.LoggingEnabled
-- uid: Nexi.Sdk.NexiOptions.LoggingEnabled*
-  name: LoggingEnabled
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_LoggingEnabled_
-  commentId: Overload:Nexi.Sdk.NexiOptions.LoggingEnabled
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.LoggingEnabled
-  nameWithType: NexiOptions.LoggingEnabled
-- uid: Nexi.Sdk.NexiOptions.MaxAbortAttempts
-  name: MaxAbortAttempts
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_MaxAbortAttempts
-  commentId: P:Nexi.Sdk.NexiOptions.MaxAbortAttempts
-  fullName: Nexi.Sdk.NexiOptions.MaxAbortAttempts
-  nameWithType: NexiOptions.MaxAbortAttempts
-- uid: Nexi.Sdk.NexiOptions.MaxAbortAttempts*
-  name: MaxAbortAttempts
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_MaxAbortAttempts_
-  commentId: Overload:Nexi.Sdk.NexiOptions.MaxAbortAttempts
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.MaxAbortAttempts
-  nameWithType: NexiOptions.MaxAbortAttempts
-- uid: Nexi.Sdk.NexiOptions.MaxLogStorageBytes
-  name: MaxLogStorageBytes
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_MaxLogStorageBytes
-  commentId: P:Nexi.Sdk.NexiOptions.MaxLogStorageBytes
-  fullName: Nexi.Sdk.NexiOptions.MaxLogStorageBytes
-  nameWithType: NexiOptions.MaxLogStorageBytes
-- uid: Nexi.Sdk.NexiOptions.MaxLogStorageBytes*
-  name: MaxLogStorageBytes
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_MaxLogStorageBytes_
-  commentId: Overload:Nexi.Sdk.NexiOptions.MaxLogStorageBytes
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.MaxLogStorageBytes
-  nameWithType: NexiOptions.MaxLogStorageBytes
-- uid: Nexi.Sdk.NexiOptions.OperationTimeout
-  name: OperationTimeout
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_OperationTimeout
-  commentId: P:Nexi.Sdk.NexiOptions.OperationTimeout
-  fullName: Nexi.Sdk.NexiOptions.OperationTimeout
-  nameWithType: NexiOptions.OperationTimeout
-- uid: Nexi.Sdk.NexiOptions.OperationTimeout*
-  name: OperationTimeout
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_OperationTimeout_
-  commentId: Overload:Nexi.Sdk.NexiOptions.OperationTimeout
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.OperationTimeout
-  nameWithType: NexiOptions.OperationTimeout
-- uid: Nexi.Sdk.NexiOptions.Overlay
-  name: Overlay
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_Overlay
-  commentId: P:Nexi.Sdk.NexiOptions.Overlay
-  fullName: Nexi.Sdk.NexiOptions.Overlay
-  nameWithType: NexiOptions.Overlay
-- uid: Nexi.Sdk.NexiOptions.Overlay*
-  name: Overlay
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_Overlay_
-  commentId: Overload:Nexi.Sdk.NexiOptions.Overlay
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.Overlay
-  nameWithType: NexiOptions.Overlay
-- uid: Nexi.Sdk.NexiOptions.PayChannelPort
-  name: PayChannelPort
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_PayChannelPort
-  commentId: P:Nexi.Sdk.NexiOptions.PayChannelPort
-  fullName: Nexi.Sdk.NexiOptions.PayChannelPort
-  nameWithType: NexiOptions.PayChannelPort
-- uid: Nexi.Sdk.NexiOptions.PayChannelPort*
-  name: PayChannelPort
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_PayChannelPort_
-  commentId: Overload:Nexi.Sdk.NexiOptions.PayChannelPort
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.PayChannelPort
-  nameWithType: NexiOptions.PayChannelPort
-- uid: Nexi.Sdk.NexiOptions.ReceiptRecoveryDelay
-  name: ReceiptRecoveryDelay
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ReceiptRecoveryDelay
-  commentId: P:Nexi.Sdk.NexiOptions.ReceiptRecoveryDelay
-  fullName: Nexi.Sdk.NexiOptions.ReceiptRecoveryDelay
-  nameWithType: NexiOptions.ReceiptRecoveryDelay
-- uid: Nexi.Sdk.NexiOptions.ReceiptRecoveryDelay*
-  name: ReceiptRecoveryDelay
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ReceiptRecoveryDelay_
-  commentId: Overload:Nexi.Sdk.NexiOptions.ReceiptRecoveryDelay
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.ReceiptRecoveryDelay
-  nameWithType: NexiOptions.ReceiptRecoveryDelay
-- uid: Nexi.Sdk.NexiOptions.Receipts
-  name: Receipts
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_Receipts
-  commentId: P:Nexi.Sdk.NexiOptions.Receipts
-  fullName: Nexi.Sdk.NexiOptions.Receipts
-  nameWithType: NexiOptions.Receipts
-- uid: Nexi.Sdk.NexiOptions.Receipts*
-  name: Receipts
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_Receipts_
-  commentId: Overload:Nexi.Sdk.NexiOptions.Receipts
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.Receipts
-  nameWithType: NexiOptions.Receipts
-- uid: Nexi.Sdk.NexiOptions.RecoveryDelays
-  name: RecoveryDelays
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_RecoveryDelays
-  commentId: P:Nexi.Sdk.NexiOptions.RecoveryDelays
-  fullName: Nexi.Sdk.NexiOptions.RecoveryDelays
-  nameWithType: NexiOptions.RecoveryDelays
-- uid: Nexi.Sdk.NexiOptions.RecoveryDelays*
-  name: RecoveryDelays
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_RecoveryDelays_
-  commentId: Overload:Nexi.Sdk.NexiOptions.RecoveryDelays
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.RecoveryDelays
-  nameWithType: NexiOptions.RecoveryDelays
-- uid: Nexi.Sdk.NexiOptions.ReprintAfterAbort
-  name: ReprintAfterAbort
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ReprintAfterAbort
-  commentId: P:Nexi.Sdk.NexiOptions.ReprintAfterAbort
-  fullName: Nexi.Sdk.NexiOptions.ReprintAfterAbort
-  nameWithType: NexiOptions.ReprintAfterAbort
-- uid: Nexi.Sdk.NexiOptions.ReprintAfterAbort*
-  name: ReprintAfterAbort
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ReprintAfterAbort_
-  commentId: Overload:Nexi.Sdk.NexiOptions.ReprintAfterAbort
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.ReprintAfterAbort
-  nameWithType: NexiOptions.ReprintAfterAbort
-- uid: Nexi.Sdk.NexiOptions.RequestFullPan
-  name: RequestFullPan
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_RequestFullPan
-  commentId: P:Nexi.Sdk.NexiOptions.RequestFullPan
-  fullName: Nexi.Sdk.NexiOptions.RequestFullPan
-  nameWithType: NexiOptions.RequestFullPan
-- uid: Nexi.Sdk.NexiOptions.RequestFullPan*
-  name: RequestFullPan
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_RequestFullPan_
-  commentId: Overload:Nexi.Sdk.NexiOptions.RequestFullPan
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.RequestFullPan
-  nameWithType: NexiOptions.RequestFullPan
-- uid: Nexi.Sdk.NexiOptions.ShowAbortButton
-  name: ShowAbortButton
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ShowAbortButton
-  commentId: P:Nexi.Sdk.NexiOptions.ShowAbortButton
-  fullName: Nexi.Sdk.NexiOptions.ShowAbortButton
-  nameWithType: NexiOptions.ShowAbortButton
-- uid: Nexi.Sdk.NexiOptions.ShowAbortButton*
-  name: ShowAbortButton
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_ShowAbortButton_
-  commentId: Overload:Nexi.Sdk.NexiOptions.ShowAbortButton
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.ShowAbortButton
-  nameWithType: NexiOptions.ShowAbortButton
-- uid: Nexi.Sdk.NexiOptions.TerminalHost
-  name: TerminalHost
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_TerminalHost
-  commentId: P:Nexi.Sdk.NexiOptions.TerminalHost
-  fullName: Nexi.Sdk.NexiOptions.TerminalHost
-  nameWithType: NexiOptions.TerminalHost
-- uid: Nexi.Sdk.NexiOptions.TerminalHost*
-  name: TerminalHost
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_TerminalHost_
-  commentId: Overload:Nexi.Sdk.NexiOptions.TerminalHost
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.TerminalHost
-  nameWithType: NexiOptions.TerminalHost
-- uid: Nexi.Sdk.NexiOptions.WorkstationId
-  name: WorkstationId
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_WorkstationId
-  commentId: P:Nexi.Sdk.NexiOptions.WorkstationId
-  fullName: Nexi.Sdk.NexiOptions.WorkstationId
-  nameWithType: NexiOptions.WorkstationId
-- uid: Nexi.Sdk.NexiOptions.WorkstationId*
-  name: WorkstationId
-  href: api/Nexi.Sdk.NexiOptions.html#Nexi_Sdk_NexiOptions_WorkstationId_
-  commentId: Overload:Nexi.Sdk.NexiOptions.WorkstationId
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiOptions.WorkstationId
-  nameWithType: NexiOptions.WorkstationId
-- uid: Nexi.Sdk.NexiResult
-  name: NexiResult
-  href: api/Nexi.Sdk.NexiResult.html
-  commentId: T:Nexi.Sdk.NexiResult
-  fullName: Nexi.Sdk.NexiResult
-  nameWithType: NexiResult
-- uid: Nexi.Sdk.NexiResult.#ctor(Nexi.Sdk.ResultState,System.String)
-  name: NexiResult(ResultState, string)
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult__ctor_Nexi_Sdk_ResultState_System_String_
-  commentId: M:Nexi.Sdk.NexiResult.#ctor(Nexi.Sdk.ResultState,System.String)
-  name.vb: New(ResultState, String)
-  fullName: Nexi.Sdk.NexiResult.NexiResult(Nexi.Sdk.ResultState, string)
-  fullName.vb: Nexi.Sdk.NexiResult.New(Nexi.Sdk.ResultState, String)
-  nameWithType: NexiResult.NexiResult(ResultState, string)
-  nameWithType.vb: NexiResult.New(ResultState, String)
-- uid: Nexi.Sdk.NexiResult.#ctor*
-  name: NexiResult
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult__ctor_
-  commentId: Overload:Nexi.Sdk.NexiResult.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Nexi.Sdk.NexiResult.NexiResult
-  fullName.vb: Nexi.Sdk.NexiResult.New
-  nameWithType: NexiResult.NexiResult
-  nameWithType.vb: NexiResult.New
-- uid: Nexi.Sdk.NexiResult.CorrelationId
-  name: CorrelationId
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_CorrelationId
-  commentId: P:Nexi.Sdk.NexiResult.CorrelationId
-  fullName: Nexi.Sdk.NexiResult.CorrelationId
-  nameWithType: NexiResult.CorrelationId
-- uid: Nexi.Sdk.NexiResult.CorrelationId*
-  name: CorrelationId
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_CorrelationId_
-  commentId: Overload:Nexi.Sdk.NexiResult.CorrelationId
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiResult.CorrelationId
-  nameWithType: NexiResult.CorrelationId
-- uid: Nexi.Sdk.NexiResult.Error
-  name: Error
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_Error
-  commentId: P:Nexi.Sdk.NexiResult.Error
-  fullName: Nexi.Sdk.NexiResult.Error
-  nameWithType: NexiResult.Error
-- uid: Nexi.Sdk.NexiResult.Error*
-  name: Error
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_Error_
-  commentId: Overload:Nexi.Sdk.NexiResult.Error
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiResult.Error
-  nameWithType: NexiResult.Error
-- uid: Nexi.Sdk.NexiResult.ErrorCode
-  name: ErrorCode
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_ErrorCode
-  commentId: P:Nexi.Sdk.NexiResult.ErrorCode
-  fullName: Nexi.Sdk.NexiResult.ErrorCode
-  nameWithType: NexiResult.ErrorCode
-- uid: Nexi.Sdk.NexiResult.ErrorCode*
-  name: ErrorCode
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_ErrorCode_
-  commentId: Overload:Nexi.Sdk.NexiResult.ErrorCode
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiResult.ErrorCode
-  nameWithType: NexiResult.ErrorCode
-- uid: Nexi.Sdk.NexiResult.IsSuccessful
-  name: IsSuccessful
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_IsSuccessful
-  commentId: P:Nexi.Sdk.NexiResult.IsSuccessful
-  fullName: Nexi.Sdk.NexiResult.IsSuccessful
-  nameWithType: NexiResult.IsSuccessful
-- uid: Nexi.Sdk.NexiResult.IsSuccessful*
-  name: IsSuccessful
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_IsSuccessful_
-  commentId: Overload:Nexi.Sdk.NexiResult.IsSuccessful
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiResult.IsSuccessful
-  nameWithType: NexiResult.IsSuccessful
-- uid: Nexi.Sdk.NexiResult.Status
-  name: Status
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_Status
-  commentId: P:Nexi.Sdk.NexiResult.Status
-  fullName: Nexi.Sdk.NexiResult.Status
-  nameWithType: NexiResult.Status
-- uid: Nexi.Sdk.NexiResult.Status*
-  name: Status
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_Status_
-  commentId: Overload:Nexi.Sdk.NexiResult.Status
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiResult.Status
-  nameWithType: NexiResult.Status
-- uid: Nexi.Sdk.NexiResult.Terminal
-  name: Terminal
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_Terminal
-  commentId: P:Nexi.Sdk.NexiResult.Terminal
-  fullName: Nexi.Sdk.NexiResult.Terminal
-  nameWithType: NexiResult.Terminal
-- uid: Nexi.Sdk.NexiResult.Terminal*
-  name: Terminal
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_Terminal_
-  commentId: Overload:Nexi.Sdk.NexiResult.Terminal
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiResult.Terminal
-  nameWithType: NexiResult.Terminal
-- uid: Nexi.Sdk.NexiResult.Transaction
-  name: Transaction
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_Transaction
-  commentId: P:Nexi.Sdk.NexiResult.Transaction
-  fullName: Nexi.Sdk.NexiResult.Transaction
-  nameWithType: NexiResult.Transaction
-- uid: Nexi.Sdk.NexiResult.Transaction*
-  name: Transaction
-  href: api/Nexi.Sdk.NexiResult.html#Nexi_Sdk_NexiResult_Transaction_
-  commentId: Overload:Nexi.Sdk.NexiResult.Transaction
-  isSpec: "True"
-  fullName: Nexi.Sdk.NexiResult.Transaction
-  nameWithType: NexiResult.Transaction
-- uid: Nexi.Sdk.OperationEvent
-  name: OperationEvent
-  href: api/Nexi.Sdk.OperationEvent.html
-  commentId: T:Nexi.Sdk.OperationEvent
-  fullName: Nexi.Sdk.OperationEvent
+  href: api/Opi.Sdk.OperationEvent.html
+  commentId: T:Opi.Sdk.OperationEvent
+  fullName: Opi.Sdk.OperationEvent
   nameWithType: OperationEvent
-- uid: Nexi.Sdk.OperationEvent.#ctor(Nexi.Sdk.NexiOperation,System.String,Nexi.Sdk.OperationEventKind)
-  name: OperationEvent(NexiOperation, string, OperationEventKind)
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent__ctor_Nexi_Sdk_NexiOperation_System_String_Nexi_Sdk_OperationEventKind_
-  commentId: M:Nexi.Sdk.OperationEvent.#ctor(Nexi.Sdk.NexiOperation,System.String,Nexi.Sdk.OperationEventKind)
-  name.vb: New(NexiOperation, String, OperationEventKind)
-  fullName: Nexi.Sdk.OperationEvent.OperationEvent(Nexi.Sdk.NexiOperation, string, Nexi.Sdk.OperationEventKind)
-  fullName.vb: Nexi.Sdk.OperationEvent.New(Nexi.Sdk.NexiOperation, String, Nexi.Sdk.OperationEventKind)
-  nameWithType: OperationEvent.OperationEvent(NexiOperation, string, OperationEventKind)
-  nameWithType.vb: OperationEvent.New(NexiOperation, String, OperationEventKind)
-- uid: Nexi.Sdk.OperationEvent.#ctor*
+- uid: Opi.Sdk.OperationEvent.#ctor(Opi.Sdk.OpiOperation,System.String,Opi.Sdk.OperationEventKind)
+  name: OperationEvent(OpiOperation, string, OperationEventKind)
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent__ctor_Opi_Sdk_OpiOperation_System_String_Opi_Sdk_OperationEventKind_
+  commentId: M:Opi.Sdk.OperationEvent.#ctor(Opi.Sdk.OpiOperation,System.String,Opi.Sdk.OperationEventKind)
+  name.vb: New(OpiOperation, String, OperationEventKind)
+  fullName: Opi.Sdk.OperationEvent.OperationEvent(Opi.Sdk.OpiOperation, string, Opi.Sdk.OperationEventKind)
+  fullName.vb: Opi.Sdk.OperationEvent.New(Opi.Sdk.OpiOperation, String, Opi.Sdk.OperationEventKind)
+  nameWithType: OperationEvent.OperationEvent(OpiOperation, string, OperationEventKind)
+  nameWithType.vb: OperationEvent.New(OpiOperation, String, OperationEventKind)
+- uid: Opi.Sdk.OperationEvent.#ctor*
   name: OperationEvent
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent__ctor_
-  commentId: Overload:Nexi.Sdk.OperationEvent.#ctor
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent__ctor_
+  commentId: Overload:Opi.Sdk.OperationEvent.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Nexi.Sdk.OperationEvent.OperationEvent
-  fullName.vb: Nexi.Sdk.OperationEvent.New
+  fullName: Opi.Sdk.OperationEvent.OperationEvent
+  fullName.vb: Opi.Sdk.OperationEvent.New
   nameWithType: OperationEvent.OperationEvent
   nameWithType.vb: OperationEvent.New
-- uid: Nexi.Sdk.OperationEvent.CorrelationId
+- uid: Opi.Sdk.OperationEvent.CorrelationId
   name: CorrelationId
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_CorrelationId
-  commentId: P:Nexi.Sdk.OperationEvent.CorrelationId
-  fullName: Nexi.Sdk.OperationEvent.CorrelationId
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_CorrelationId
+  commentId: P:Opi.Sdk.OperationEvent.CorrelationId
+  fullName: Opi.Sdk.OperationEvent.CorrelationId
   nameWithType: OperationEvent.CorrelationId
-- uid: Nexi.Sdk.OperationEvent.CorrelationId*
+- uid: Opi.Sdk.OperationEvent.CorrelationId*
   name: CorrelationId
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_CorrelationId_
-  commentId: Overload:Nexi.Sdk.OperationEvent.CorrelationId
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_CorrelationId_
+  commentId: Overload:Opi.Sdk.OperationEvent.CorrelationId
   isSpec: "True"
-  fullName: Nexi.Sdk.OperationEvent.CorrelationId
+  fullName: Opi.Sdk.OperationEvent.CorrelationId
   nameWithType: OperationEvent.CorrelationId
-- uid: Nexi.Sdk.OperationEvent.Kind
+- uid: Opi.Sdk.OperationEvent.Kind
   name: Kind
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Kind
-  commentId: P:Nexi.Sdk.OperationEvent.Kind
-  fullName: Nexi.Sdk.OperationEvent.Kind
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Kind
+  commentId: P:Opi.Sdk.OperationEvent.Kind
+  fullName: Opi.Sdk.OperationEvent.Kind
   nameWithType: OperationEvent.Kind
-- uid: Nexi.Sdk.OperationEvent.Kind*
+- uid: Opi.Sdk.OperationEvent.Kind*
   name: Kind
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Kind_
-  commentId: Overload:Nexi.Sdk.OperationEvent.Kind
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Kind_
+  commentId: Overload:Opi.Sdk.OperationEvent.Kind
   isSpec: "True"
-  fullName: Nexi.Sdk.OperationEvent.Kind
+  fullName: Opi.Sdk.OperationEvent.Kind
   nameWithType: OperationEvent.Kind
-- uid: Nexi.Sdk.OperationEvent.Message
+- uid: Opi.Sdk.OperationEvent.Message
   name: Message
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Message
-  commentId: P:Nexi.Sdk.OperationEvent.Message
-  fullName: Nexi.Sdk.OperationEvent.Message
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Message
+  commentId: P:Opi.Sdk.OperationEvent.Message
+  fullName: Opi.Sdk.OperationEvent.Message
   nameWithType: OperationEvent.Message
-- uid: Nexi.Sdk.OperationEvent.Message*
+- uid: Opi.Sdk.OperationEvent.Message*
   name: Message
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Message_
-  commentId: Overload:Nexi.Sdk.OperationEvent.Message
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Message_
+  commentId: Overload:Opi.Sdk.OperationEvent.Message
   isSpec: "True"
-  fullName: Nexi.Sdk.OperationEvent.Message
+  fullName: Opi.Sdk.OperationEvent.Message
   nameWithType: OperationEvent.Message
-- uid: Nexi.Sdk.OperationEvent.Operation
+- uid: Opi.Sdk.OperationEvent.Operation
   name: Operation
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Operation
-  commentId: P:Nexi.Sdk.OperationEvent.Operation
-  fullName: Nexi.Sdk.OperationEvent.Operation
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Operation
+  commentId: P:Opi.Sdk.OperationEvent.Operation
+  fullName: Opi.Sdk.OperationEvent.Operation
   nameWithType: OperationEvent.Operation
-- uid: Nexi.Sdk.OperationEvent.Operation*
+- uid: Opi.Sdk.OperationEvent.Operation*
   name: Operation
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Operation_
-  commentId: Overload:Nexi.Sdk.OperationEvent.Operation
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Operation_
+  commentId: Overload:Opi.Sdk.OperationEvent.Operation
   isSpec: "True"
-  fullName: Nexi.Sdk.OperationEvent.Operation
+  fullName: Opi.Sdk.OperationEvent.Operation
   nameWithType: OperationEvent.Operation
-- uid: Nexi.Sdk.OperationEvent.Receipt
+- uid: Opi.Sdk.OperationEvent.Receipt
   name: Receipt
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Receipt
-  commentId: P:Nexi.Sdk.OperationEvent.Receipt
-  fullName: Nexi.Sdk.OperationEvent.Receipt
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Receipt
+  commentId: P:Opi.Sdk.OperationEvent.Receipt
+  fullName: Opi.Sdk.OperationEvent.Receipt
   nameWithType: OperationEvent.Receipt
-- uid: Nexi.Sdk.OperationEvent.Receipt*
+- uid: Opi.Sdk.OperationEvent.Receipt*
   name: Receipt
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Receipt_
-  commentId: Overload:Nexi.Sdk.OperationEvent.Receipt
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Receipt_
+  commentId: Overload:Opi.Sdk.OperationEvent.Receipt
   isSpec: "True"
-  fullName: Nexi.Sdk.OperationEvent.Receipt
+  fullName: Opi.Sdk.OperationEvent.Receipt
   nameWithType: OperationEvent.Receipt
-- uid: Nexi.Sdk.OperationEvent.ReceiptType
+- uid: Opi.Sdk.OperationEvent.ReceiptType
   name: ReceiptType
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_ReceiptType
-  commentId: P:Nexi.Sdk.OperationEvent.ReceiptType
-  fullName: Nexi.Sdk.OperationEvent.ReceiptType
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_ReceiptType
+  commentId: P:Opi.Sdk.OperationEvent.ReceiptType
+  fullName: Opi.Sdk.OperationEvent.ReceiptType
   nameWithType: OperationEvent.ReceiptType
-- uid: Nexi.Sdk.OperationEvent.ReceiptType*
+- uid: Opi.Sdk.OperationEvent.ReceiptType*
   name: ReceiptType
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_ReceiptType_
-  commentId: Overload:Nexi.Sdk.OperationEvent.ReceiptType
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_ReceiptType_
+  commentId: Overload:Opi.Sdk.OperationEvent.ReceiptType
   isSpec: "True"
-  fullName: Nexi.Sdk.OperationEvent.ReceiptType
+  fullName: Opi.Sdk.OperationEvent.ReceiptType
   nameWithType: OperationEvent.ReceiptType
-- uid: Nexi.Sdk.OperationEvent.Result
+- uid: Opi.Sdk.OperationEvent.Result
   name: Result
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Result
-  commentId: P:Nexi.Sdk.OperationEvent.Result
-  fullName: Nexi.Sdk.OperationEvent.Result
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Result
+  commentId: P:Opi.Sdk.OperationEvent.Result
+  fullName: Opi.Sdk.OperationEvent.Result
   nameWithType: OperationEvent.Result
-- uid: Nexi.Sdk.OperationEvent.Result*
+- uid: Opi.Sdk.OperationEvent.Result*
   name: Result
-  href: api/Nexi.Sdk.OperationEvent.html#Nexi_Sdk_OperationEvent_Result_
-  commentId: Overload:Nexi.Sdk.OperationEvent.Result
+  href: api/Opi.Sdk.OperationEvent.html#Opi_Sdk_OperationEvent_Result_
+  commentId: Overload:Opi.Sdk.OperationEvent.Result
   isSpec: "True"
-  fullName: Nexi.Sdk.OperationEvent.Result
+  fullName: Opi.Sdk.OperationEvent.Result
   nameWithType: OperationEvent.Result
-- uid: Nexi.Sdk.OperationEventKind
+- uid: Opi.Sdk.OperationEventKind
   name: OperationEventKind
-  href: api/Nexi.Sdk.OperationEventKind.html
-  commentId: T:Nexi.Sdk.OperationEventKind
-  fullName: Nexi.Sdk.OperationEventKind
+  href: api/Opi.Sdk.OperationEventKind.html
+  commentId: T:Opi.Sdk.OperationEventKind
+  fullName: Opi.Sdk.OperationEventKind
   nameWithType: OperationEventKind
-- uid: Nexi.Sdk.OperationEventKind.Completed
+- uid: Opi.Sdk.OperationEventKind.Completed
   name: Completed
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_Completed
-  commentId: F:Nexi.Sdk.OperationEventKind.Completed
-  fullName: Nexi.Sdk.OperationEventKind.Completed
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_Completed
+  commentId: F:Opi.Sdk.OperationEventKind.Completed
+  fullName: Opi.Sdk.OperationEventKind.Completed
   nameWithType: OperationEventKind.Completed
-- uid: Nexi.Sdk.OperationEventKind.Connected
+- uid: Opi.Sdk.OperationEventKind.Connected
   name: Connected
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_Connected
-  commentId: F:Nexi.Sdk.OperationEventKind.Connected
-  fullName: Nexi.Sdk.OperationEventKind.Connected
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_Connected
+  commentId: F:Opi.Sdk.OperationEventKind.Connected
+  fullName: Opi.Sdk.OperationEventKind.Connected
   nameWithType: OperationEventKind.Connected
-- uid: Nexi.Sdk.OperationEventKind.DccCaptured
+- uid: Opi.Sdk.OperationEventKind.DccCaptured
   name: DccCaptured
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_DccCaptured
-  commentId: F:Nexi.Sdk.OperationEventKind.DccCaptured
-  fullName: Nexi.Sdk.OperationEventKind.DccCaptured
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_DccCaptured
+  commentId: F:Opi.Sdk.OperationEventKind.DccCaptured
+  fullName: Opi.Sdk.OperationEventKind.DccCaptured
   nameWithType: OperationEventKind.DccCaptured
-- uid: Nexi.Sdk.OperationEventKind.ReceiptCaptured
+- uid: Opi.Sdk.OperationEventKind.ReceiptCaptured
   name: ReceiptCaptured
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_ReceiptCaptured
-  commentId: F:Nexi.Sdk.OperationEventKind.ReceiptCaptured
-  fullName: Nexi.Sdk.OperationEventKind.ReceiptCaptured
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_ReceiptCaptured
+  commentId: F:Opi.Sdk.OperationEventKind.ReceiptCaptured
+  fullName: Opi.Sdk.OperationEventKind.ReceiptCaptured
   nameWithType: OperationEventKind.ReceiptCaptured
-- uid: Nexi.Sdk.OperationEventKind.RecoveryCompleted
+- uid: Opi.Sdk.OperationEventKind.RecoveryCompleted
   name: RecoveryCompleted
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_RecoveryCompleted
-  commentId: F:Nexi.Sdk.OperationEventKind.RecoveryCompleted
-  fullName: Nexi.Sdk.OperationEventKind.RecoveryCompleted
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_RecoveryCompleted
+  commentId: F:Opi.Sdk.OperationEventKind.RecoveryCompleted
+  fullName: Opi.Sdk.OperationEventKind.RecoveryCompleted
   nameWithType: OperationEventKind.RecoveryCompleted
-- uid: Nexi.Sdk.OperationEventKind.RecoveryStarted
+- uid: Opi.Sdk.OperationEventKind.RecoveryStarted
   name: RecoveryStarted
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_RecoveryStarted
-  commentId: F:Nexi.Sdk.OperationEventKind.RecoveryStarted
-  fullName: Nexi.Sdk.OperationEventKind.RecoveryStarted
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_RecoveryStarted
+  commentId: F:Opi.Sdk.OperationEventKind.RecoveryStarted
+  fullName: Opi.Sdk.OperationEventKind.RecoveryStarted
   nameWithType: OperationEventKind.RecoveryStarted
-- uid: Nexi.Sdk.OperationEventKind.Started
+- uid: Opi.Sdk.OperationEventKind.Started
   name: Started
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_Started
-  commentId: F:Nexi.Sdk.OperationEventKind.Started
-  fullName: Nexi.Sdk.OperationEventKind.Started
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_Started
+  commentId: F:Opi.Sdk.OperationEventKind.Started
+  fullName: Opi.Sdk.OperationEventKind.Started
   nameWithType: OperationEventKind.Started
-- uid: Nexi.Sdk.OperationEventKind.TerminalMessage
+- uid: Opi.Sdk.OperationEventKind.TerminalMessage
   name: TerminalMessage
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_TerminalMessage
-  commentId: F:Nexi.Sdk.OperationEventKind.TerminalMessage
-  fullName: Nexi.Sdk.OperationEventKind.TerminalMessage
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_TerminalMessage
+  commentId: F:Opi.Sdk.OperationEventKind.TerminalMessage
+  fullName: Opi.Sdk.OperationEventKind.TerminalMessage
   nameWithType: OperationEventKind.TerminalMessage
-- uid: Nexi.Sdk.OperationEventKind.TransactionRecovered
+- uid: Opi.Sdk.OperationEventKind.TransactionRecovered
   name: TransactionRecovered
-  href: api/Nexi.Sdk.OperationEventKind.html#Nexi_Sdk_OperationEventKind_TransactionRecovered
-  commentId: F:Nexi.Sdk.OperationEventKind.TransactionRecovered
-  fullName: Nexi.Sdk.OperationEventKind.TransactionRecovered
+  href: api/Opi.Sdk.OperationEventKind.html#Opi_Sdk_OperationEventKind_TransactionRecovered
+  commentId: F:Opi.Sdk.OperationEventKind.TransactionRecovered
+  fullName: Opi.Sdk.OperationEventKind.TransactionRecovered
   nameWithType: OperationEventKind.TransactionRecovered
-- uid: Nexi.Sdk.PaymentRequest
+- uid: Opi.Sdk.OpiClient
+  name: OpiClient
+  href: api/Opi.Sdk.OpiClient.html
+  commentId: T:Opi.Sdk.OpiClient
+  fullName: Opi.Sdk.OpiClient
+  nameWithType: OpiClient
+- uid: Opi.Sdk.OpiClient.#ctor(Opi.Sdk.OpiOptions)
+  name: OpiClient(OpiOptions)
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient__ctor_Opi_Sdk_OpiOptions_
+  commentId: M:Opi.Sdk.OpiClient.#ctor(Opi.Sdk.OpiOptions)
+  name.vb: New(OpiOptions)
+  fullName: Opi.Sdk.OpiClient.OpiClient(Opi.Sdk.OpiOptions)
+  fullName.vb: Opi.Sdk.OpiClient.New(Opi.Sdk.OpiOptions)
+  nameWithType: OpiClient.OpiClient(OpiOptions)
+  nameWithType.vb: OpiClient.New(OpiOptions)
+- uid: Opi.Sdk.OpiClient.#ctor*
+  name: OpiClient
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient__ctor_
+  commentId: Overload:Opi.Sdk.OpiClient.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Opi.Sdk.OpiClient.OpiClient
+  fullName.vb: Opi.Sdk.OpiClient.New
+  nameWithType: OpiClient.OpiClient
+  nameWithType.vb: OpiClient.New
+- uid: Opi.Sdk.OpiClient.AbortAsync
+  name: AbortAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_AbortAsync
+  commentId: M:Opi.Sdk.OpiClient.AbortAsync
+  fullName: Opi.Sdk.OpiClient.AbortAsync()
+  nameWithType: OpiClient.AbortAsync()
+- uid: Opi.Sdk.OpiClient.AbortAsync*
+  name: AbortAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_AbortAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.AbortAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.AbortAsync
+  nameWithType: OpiClient.AbortAsync
+- uid: Opi.Sdk.OpiClient.ActivateAsync
+  name: ActivateAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ActivateAsync
+  commentId: M:Opi.Sdk.OpiClient.ActivateAsync
+  fullName: Opi.Sdk.OpiClient.ActivateAsync()
+  nameWithType: OpiClient.ActivateAsync()
+- uid: Opi.Sdk.OpiClient.ActivateAsync*
+  name: ActivateAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ActivateAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.ActivateAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.ActivateAsync
+  nameWithType: OpiClient.ActivateAsync
+- uid: Opi.Sdk.OpiClient.CloseAsync
+  name: CloseAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_CloseAsync
+  commentId: M:Opi.Sdk.OpiClient.CloseAsync
+  fullName: Opi.Sdk.OpiClient.CloseAsync()
+  nameWithType: OpiClient.CloseAsync()
+- uid: Opi.Sdk.OpiClient.CloseAsync*
+  name: CloseAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_CloseAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.CloseAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.CloseAsync
+  nameWithType: OpiClient.CloseAsync
+- uid: Opi.Sdk.OpiClient.ConfigAsync
+  name: ConfigAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ConfigAsync
+  commentId: M:Opi.Sdk.OpiClient.ConfigAsync
+  fullName: Opi.Sdk.OpiClient.ConfigAsync()
+  nameWithType: OpiClient.ConfigAsync()
+- uid: Opi.Sdk.OpiClient.ConfigAsync*
+  name: ConfigAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ConfigAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.ConfigAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.ConfigAsync
+  nameWithType: OpiClient.ConfigAsync
+- uid: Opi.Sdk.OpiClient.DeactivateAsync
+  name: DeactivateAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_DeactivateAsync
+  commentId: M:Opi.Sdk.OpiClient.DeactivateAsync
+  fullName: Opi.Sdk.OpiClient.DeactivateAsync()
+  nameWithType: OpiClient.DeactivateAsync()
+- uid: Opi.Sdk.OpiClient.DeactivateAsync*
+  name: DeactivateAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_DeactivateAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.DeactivateAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.DeactivateAsync
+  nameWithType: OpiClient.DeactivateAsync
+- uid: Opi.Sdk.OpiClient.DisposeAsync
+  name: DisposeAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_DisposeAsync
+  commentId: M:Opi.Sdk.OpiClient.DisposeAsync
+  fullName: Opi.Sdk.OpiClient.DisposeAsync()
+  nameWithType: OpiClient.DisposeAsync()
+- uid: Opi.Sdk.OpiClient.DisposeAsync*
+  name: DisposeAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_DisposeAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.DisposeAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.DisposeAsync
+  nameWithType: OpiClient.DisposeAsync
+- uid: Opi.Sdk.OpiClient.InfoAsync
+  name: InfoAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_InfoAsync
+  commentId: M:Opi.Sdk.OpiClient.InfoAsync
+  fullName: Opi.Sdk.OpiClient.InfoAsync()
+  nameWithType: OpiClient.InfoAsync()
+- uid: Opi.Sdk.OpiClient.InfoAsync*
+  name: InfoAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_InfoAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.InfoAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.InfoAsync
+  nameWithType: OpiClient.InfoAsync
+- uid: Opi.Sdk.OpiClient.InitAsync
+  name: InitAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_InitAsync
+  commentId: M:Opi.Sdk.OpiClient.InitAsync
+  fullName: Opi.Sdk.OpiClient.InitAsync()
+  nameWithType: OpiClient.InitAsync()
+- uid: Opi.Sdk.OpiClient.InitAsync*
+  name: InitAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_InitAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.InitAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.InitAsync
+  nameWithType: OpiClient.InitAsync
+- uid: Opi.Sdk.OpiClient.LoginAsync
+  name: LoginAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_LoginAsync
+  commentId: M:Opi.Sdk.OpiClient.LoginAsync
+  fullName: Opi.Sdk.OpiClient.LoginAsync()
+  nameWithType: OpiClient.LoginAsync()
+- uid: Opi.Sdk.OpiClient.LoginAsync*
+  name: LoginAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_LoginAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.LoginAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.LoginAsync
+  nameWithType: OpiClient.LoginAsync
+- uid: Opi.Sdk.OpiClient.LogoffAsync
+  name: LogoffAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_LogoffAsync
+  commentId: M:Opi.Sdk.OpiClient.LogoffAsync
+  fullName: Opi.Sdk.OpiClient.LogoffAsync()
+  nameWithType: OpiClient.LogoffAsync()
+- uid: Opi.Sdk.OpiClient.LogoffAsync*
+  name: LogoffAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_LogoffAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.LogoffAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.LogoffAsync
+  nameWithType: OpiClient.LogoffAsync
+- uid: Opi.Sdk.OpiClient.OperationEvent
+  name: OperationEvent
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_OperationEvent
+  commentId: E:Opi.Sdk.OpiClient.OperationEvent
+  fullName: Opi.Sdk.OpiClient.OperationEvent
+  nameWithType: OpiClient.OperationEvent
+- uid: Opi.Sdk.OpiClient.PaymentAsync(Opi.Sdk.PaymentRequest)
+  name: PaymentAsync(PaymentRequest)
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_PaymentAsync_Opi_Sdk_PaymentRequest_
+  commentId: M:Opi.Sdk.OpiClient.PaymentAsync(Opi.Sdk.PaymentRequest)
+  fullName: Opi.Sdk.OpiClient.PaymentAsync(Opi.Sdk.PaymentRequest)
+  nameWithType: OpiClient.PaymentAsync(PaymentRequest)
+- uid: Opi.Sdk.OpiClient.PaymentAsync(System.Int64,System.String,System.String)
+  name: PaymentAsync(long, string, string?)
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_PaymentAsync_System_Int64_System_String_System_String_
+  commentId: M:Opi.Sdk.OpiClient.PaymentAsync(System.Int64,System.String,System.String)
+  name.vb: PaymentAsync(Long, String, String)
+  fullName: Opi.Sdk.OpiClient.PaymentAsync(long, string, string?)
+  fullName.vb: Opi.Sdk.OpiClient.PaymentAsync(Long, String, String)
+  nameWithType: OpiClient.PaymentAsync(long, string, string?)
+  nameWithType.vb: OpiClient.PaymentAsync(Long, String, String)
+- uid: Opi.Sdk.OpiClient.PaymentAsync*
+  name: PaymentAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_PaymentAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.PaymentAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.PaymentAsync
+  nameWithType: OpiClient.PaymentAsync
+- uid: Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(Opi.Sdk.PaymentRequest)
+  name: PaymentWithRecoveryAsync(PaymentRequest)
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_PaymentWithRecoveryAsync_Opi_Sdk_PaymentRequest_
+  commentId: M:Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(Opi.Sdk.PaymentRequest)
+  fullName: Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(Opi.Sdk.PaymentRequest)
+  nameWithType: OpiClient.PaymentWithRecoveryAsync(PaymentRequest)
+- uid: Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(System.Int64,System.String,System.String)
+  name: PaymentWithRecoveryAsync(long, string, string?)
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_PaymentWithRecoveryAsync_System_Int64_System_String_System_String_
+  commentId: M:Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(System.Int64,System.String,System.String)
+  name.vb: PaymentWithRecoveryAsync(Long, String, String)
+  fullName: Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(long, string, string?)
+  fullName.vb: Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(Long, String, String)
+  nameWithType: OpiClient.PaymentWithRecoveryAsync(long, string, string?)
+  nameWithType.vb: OpiClient.PaymentWithRecoveryAsync(Long, String, String)
+- uid: Opi.Sdk.OpiClient.PaymentWithRecoveryAsync*
+  name: PaymentWithRecoveryAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_PaymentWithRecoveryAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.PaymentWithRecoveryAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.PaymentWithRecoveryAsync
+  nameWithType: OpiClient.PaymentWithRecoveryAsync
+- uid: Opi.Sdk.OpiClient.ReconcilePendingAsync
+  name: ReconcilePendingAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ReconcilePendingAsync
+  commentId: M:Opi.Sdk.OpiClient.ReconcilePendingAsync
+  fullName: Opi.Sdk.OpiClient.ReconcilePendingAsync()
+  nameWithType: OpiClient.ReconcilePendingAsync()
+- uid: Opi.Sdk.OpiClient.ReconcilePendingAsync*
+  name: ReconcilePendingAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ReconcilePendingAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.ReconcilePendingAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.ReconcilePendingAsync
+  nameWithType: OpiClient.ReconcilePendingAsync
+- uid: Opi.Sdk.OpiClient.RefundAsync(System.Int64,System.String,System.String)
+  name: RefundAsync(long, string, string?)
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_RefundAsync_System_Int64_System_String_System_String_
+  commentId: M:Opi.Sdk.OpiClient.RefundAsync(System.Int64,System.String,System.String)
+  name.vb: RefundAsync(Long, String, String)
+  fullName: Opi.Sdk.OpiClient.RefundAsync(long, string, string?)
+  fullName.vb: Opi.Sdk.OpiClient.RefundAsync(Long, String, String)
+  nameWithType: OpiClient.RefundAsync(long, string, string?)
+  nameWithType.vb: OpiClient.RefundAsync(Long, String, String)
+- uid: Opi.Sdk.OpiClient.RefundAsync*
+  name: RefundAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_RefundAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.RefundAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.RefundAsync
+  nameWithType: OpiClient.RefundAsync
+- uid: Opi.Sdk.OpiClient.RepeatLastMessageAsync
+  name: RepeatLastMessageAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_RepeatLastMessageAsync
+  commentId: M:Opi.Sdk.OpiClient.RepeatLastMessageAsync
+  fullName: Opi.Sdk.OpiClient.RepeatLastMessageAsync()
+  nameWithType: OpiClient.RepeatLastMessageAsync()
+- uid: Opi.Sdk.OpiClient.RepeatLastMessageAsync*
+  name: RepeatLastMessageAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_RepeatLastMessageAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.RepeatLastMessageAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.RepeatLastMessageAsync
+  nameWithType: OpiClient.RepeatLastMessageAsync
+- uid: Opi.Sdk.OpiClient.ReprintAsync
+  name: ReprintAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ReprintAsync
+  commentId: M:Opi.Sdk.OpiClient.ReprintAsync
+  fullName: Opi.Sdk.OpiClient.ReprintAsync()
+  nameWithType: OpiClient.ReprintAsync()
+- uid: Opi.Sdk.OpiClient.ReprintAsync*
+  name: ReprintAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ReprintAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.ReprintAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.ReprintAsync
+  nameWithType: OpiClient.ReprintAsync
+- uid: Opi.Sdk.OpiClient.ResetAsync
+  name: ResetAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ResetAsync
+  commentId: M:Opi.Sdk.OpiClient.ResetAsync
+  fullName: Opi.Sdk.OpiClient.ResetAsync()
+  nameWithType: OpiClient.ResetAsync()
+- uid: Opi.Sdk.OpiClient.ResetAsync*
+  name: ResetAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ResetAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.ResetAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.ResetAsync
+  nameWithType: OpiClient.ResetAsync
+- uid: Opi.Sdk.OpiClient.ReversalAsync
+  name: ReversalAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ReversalAsync
+  commentId: M:Opi.Sdk.OpiClient.ReversalAsync
+  fullName: Opi.Sdk.OpiClient.ReversalAsync()
+  nameWithType: OpiClient.ReversalAsync()
+- uid: Opi.Sdk.OpiClient.ReversalAsync*
+  name: ReversalAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_ReversalAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.ReversalAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.ReversalAsync
+  nameWithType: OpiClient.ReversalAsync
+- uid: Opi.Sdk.OpiClient.StatusAsync
+  name: StatusAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_StatusAsync
+  commentId: M:Opi.Sdk.OpiClient.StatusAsync
+  fullName: Opi.Sdk.OpiClient.StatusAsync()
+  nameWithType: OpiClient.StatusAsync()
+- uid: Opi.Sdk.OpiClient.StatusAsync*
+  name: StatusAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_StatusAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.StatusAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.StatusAsync
+  nameWithType: OpiClient.StatusAsync
+- uid: Opi.Sdk.OpiClient.SubmitAsync
+  name: SubmitAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_SubmitAsync
+  commentId: M:Opi.Sdk.OpiClient.SubmitAsync
+  fullName: Opi.Sdk.OpiClient.SubmitAsync()
+  nameWithType: OpiClient.SubmitAsync()
+- uid: Opi.Sdk.OpiClient.SubmitAsync*
+  name: SubmitAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_SubmitAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.SubmitAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.SubmitAsync
+  nameWithType: OpiClient.SubmitAsync
+- uid: Opi.Sdk.OpiClient.TerminalInfoAsync
+  name: TerminalInfoAsync()
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_TerminalInfoAsync
+  commentId: M:Opi.Sdk.OpiClient.TerminalInfoAsync
+  fullName: Opi.Sdk.OpiClient.TerminalInfoAsync()
+  nameWithType: OpiClient.TerminalInfoAsync()
+- uid: Opi.Sdk.OpiClient.TerminalInfoAsync*
+  name: TerminalInfoAsync
+  href: api/Opi.Sdk.OpiClient.html#Opi_Sdk_OpiClient_TerminalInfoAsync_
+  commentId: Overload:Opi.Sdk.OpiClient.TerminalInfoAsync
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiClient.TerminalInfoAsync
+  nameWithType: OpiClient.TerminalInfoAsync
+- uid: Opi.Sdk.OpiError
+  name: OpiError
+  href: api/Opi.Sdk.OpiError.html
+  commentId: T:Opi.Sdk.OpiError
+  fullName: Opi.Sdk.OpiError
+  nameWithType: OpiError
+- uid: Opi.Sdk.OpiError.Aborted
+  name: Aborted
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_Aborted
+  commentId: F:Opi.Sdk.OpiError.Aborted
+  fullName: Opi.Sdk.OpiError.Aborted
+  nameWithType: OpiError.Aborted
+- uid: Opi.Sdk.OpiError.ConnectionError
+  name: ConnectionError
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_ConnectionError
+  commentId: F:Opi.Sdk.OpiError.ConnectionError
+  fullName: Opi.Sdk.OpiError.ConnectionError
+  nameWithType: OpiError.ConnectionError
+- uid: Opi.Sdk.OpiError.DeviceUnavailable
+  name: DeviceUnavailable
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_DeviceUnavailable
+  commentId: F:Opi.Sdk.OpiError.DeviceUnavailable
+  fullName: Opi.Sdk.OpiError.DeviceUnavailable
+  nameWithType: OpiError.DeviceUnavailable
+- uid: Opi.Sdk.OpiError.Failure
+  name: Failure
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_Failure
+  commentId: F:Opi.Sdk.OpiError.Failure
+  fullName: Opi.Sdk.OpiError.Failure
+  nameWithType: OpiError.Failure
+- uid: Opi.Sdk.OpiError.InvalidOpiResponse
+  name: InvalidOpiResponse
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_InvalidOpiResponse
+  commentId: F:Opi.Sdk.OpiError.InvalidOpiResponse
+  fullName: Opi.Sdk.OpiError.InvalidOpiResponse
+  nameWithType: OpiError.InvalidOpiResponse
+- uid: Opi.Sdk.OpiError.InvalidRequest
+  name: InvalidRequest
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_InvalidRequest
+  commentId: F:Opi.Sdk.OpiError.InvalidRequest
+  fullName: Opi.Sdk.OpiError.InvalidRequest
+  nameWithType: OpiError.InvalidRequest
+- uid: Opi.Sdk.OpiError.LoginRequired
+  name: LoginRequired
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_LoginRequired
+  commentId: F:Opi.Sdk.OpiError.LoginRequired
+  fullName: Opi.Sdk.OpiError.LoginRequired
+  nameWithType: OpiError.LoginRequired
+- uid: Opi.Sdk.OpiError.OperationTimeout
+  name: OperationTimeout
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_OperationTimeout
+  commentId: F:Opi.Sdk.OpiError.OperationTimeout
+  fullName: Opi.Sdk.OpiError.OperationTimeout
+  nameWithType: OpiError.OperationTimeout
+- uid: Opi.Sdk.OpiError.Other
+  name: Other
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_Other
+  commentId: F:Opi.Sdk.OpiError.Other
+  fullName: Opi.Sdk.OpiError.Other
+  nameWithType: OpiError.Other
+- uid: Opi.Sdk.OpiError.RecoveryMismatch
+  name: RecoveryMismatch
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_RecoveryMismatch
+  commentId: F:Opi.Sdk.OpiError.RecoveryMismatch
+  fullName: Opi.Sdk.OpiError.RecoveryMismatch
+  nameWithType: OpiError.RecoveryMismatch
+- uid: Opi.Sdk.OpiError.ReprintRequired
+  name: ReprintRequired
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_ReprintRequired
+  commentId: F:Opi.Sdk.OpiError.ReprintRequired
+  fullName: Opi.Sdk.OpiError.ReprintRequired
+  nameWithType: OpiError.ReprintRequired
+- uid: Opi.Sdk.OpiError.ResultUnknown
+  name: ResultUnknown
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_ResultUnknown
+  commentId: F:Opi.Sdk.OpiError.ResultUnknown
+  fullName: Opi.Sdk.OpiError.ResultUnknown
+  nameWithType: OpiError.ResultUnknown
+- uid: Opi.Sdk.OpiError.StorageError
+  name: StorageError
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_StorageError
+  commentId: F:Opi.Sdk.OpiError.StorageError
+  fullName: Opi.Sdk.OpiError.StorageError
+  nameWithType: OpiError.StorageError
+- uid: Opi.Sdk.OpiError.TerminalBusy
+  name: TerminalBusy
+  href: api/Opi.Sdk.OpiError.html#Opi_Sdk_OpiError_TerminalBusy
+  commentId: F:Opi.Sdk.OpiError.TerminalBusy
+  fullName: Opi.Sdk.OpiError.TerminalBusy
+  nameWithType: OpiError.TerminalBusy
+- uid: Opi.Sdk.OpiOperation
+  name: OpiOperation
+  href: api/Opi.Sdk.OpiOperation.html
+  commentId: T:Opi.Sdk.OpiOperation
+  fullName: Opi.Sdk.OpiOperation
+  nameWithType: OpiOperation
+- uid: Opi.Sdk.OpiOperation.Abort
+  name: Abort
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Abort
+  commentId: F:Opi.Sdk.OpiOperation.Abort
+  fullName: Opi.Sdk.OpiOperation.Abort
+  nameWithType: OpiOperation.Abort
+- uid: Opi.Sdk.OpiOperation.Activate
+  name: Activate
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Activate
+  commentId: F:Opi.Sdk.OpiOperation.Activate
+  fullName: Opi.Sdk.OpiOperation.Activate
+  nameWithType: OpiOperation.Activate
+- uid: Opi.Sdk.OpiOperation.Close
+  name: Close
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Close
+  commentId: F:Opi.Sdk.OpiOperation.Close
+  fullName: Opi.Sdk.OpiOperation.Close
+  nameWithType: OpiOperation.Close
+- uid: Opi.Sdk.OpiOperation.Config
+  name: Config
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Config
+  commentId: F:Opi.Sdk.OpiOperation.Config
+  fullName: Opi.Sdk.OpiOperation.Config
+  nameWithType: OpiOperation.Config
+- uid: Opi.Sdk.OpiOperation.Deactivate
+  name: Deactivate
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Deactivate
+  commentId: F:Opi.Sdk.OpiOperation.Deactivate
+  fullName: Opi.Sdk.OpiOperation.Deactivate
+  nameWithType: OpiOperation.Deactivate
+- uid: Opi.Sdk.OpiOperation.Info
+  name: Info
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Info
+  commentId: F:Opi.Sdk.OpiOperation.Info
+  fullName: Opi.Sdk.OpiOperation.Info
+  nameWithType: OpiOperation.Info
+- uid: Opi.Sdk.OpiOperation.Init
+  name: Init
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Init
+  commentId: F:Opi.Sdk.OpiOperation.Init
+  fullName: Opi.Sdk.OpiOperation.Init
+  nameWithType: OpiOperation.Init
+- uid: Opi.Sdk.OpiOperation.Login
+  name: Login
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Login
+  commentId: F:Opi.Sdk.OpiOperation.Login
+  fullName: Opi.Sdk.OpiOperation.Login
+  nameWithType: OpiOperation.Login
+- uid: Opi.Sdk.OpiOperation.Logoff
+  name: Logoff
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Logoff
+  commentId: F:Opi.Sdk.OpiOperation.Logoff
+  fullName: Opi.Sdk.OpiOperation.Logoff
+  nameWithType: OpiOperation.Logoff
+- uid: Opi.Sdk.OpiOperation.Payment
+  name: Payment
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Payment
+  commentId: F:Opi.Sdk.OpiOperation.Payment
+  fullName: Opi.Sdk.OpiOperation.Payment
+  nameWithType: OpiOperation.Payment
+- uid: Opi.Sdk.OpiOperation.Refund
+  name: Refund
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Refund
+  commentId: F:Opi.Sdk.OpiOperation.Refund
+  fullName: Opi.Sdk.OpiOperation.Refund
+  nameWithType: OpiOperation.Refund
+- uid: Opi.Sdk.OpiOperation.RepeatLastMessage
+  name: RepeatLastMessage
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_RepeatLastMessage
+  commentId: F:Opi.Sdk.OpiOperation.RepeatLastMessage
+  fullName: Opi.Sdk.OpiOperation.RepeatLastMessage
+  nameWithType: OpiOperation.RepeatLastMessage
+- uid: Opi.Sdk.OpiOperation.Reprint
+  name: Reprint
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Reprint
+  commentId: F:Opi.Sdk.OpiOperation.Reprint
+  fullName: Opi.Sdk.OpiOperation.Reprint
+  nameWithType: OpiOperation.Reprint
+- uid: Opi.Sdk.OpiOperation.Reset
+  name: Reset
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Reset
+  commentId: F:Opi.Sdk.OpiOperation.Reset
+  fullName: Opi.Sdk.OpiOperation.Reset
+  nameWithType: OpiOperation.Reset
+- uid: Opi.Sdk.OpiOperation.Reversal
+  name: Reversal
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Reversal
+  commentId: F:Opi.Sdk.OpiOperation.Reversal
+  fullName: Opi.Sdk.OpiOperation.Reversal
+  nameWithType: OpiOperation.Reversal
+- uid: Opi.Sdk.OpiOperation.Status
+  name: Status
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Status
+  commentId: F:Opi.Sdk.OpiOperation.Status
+  fullName: Opi.Sdk.OpiOperation.Status
+  nameWithType: OpiOperation.Status
+- uid: Opi.Sdk.OpiOperation.Submit
+  name: Submit
+  href: api/Opi.Sdk.OpiOperation.html#Opi_Sdk_OpiOperation_Submit
+  commentId: F:Opi.Sdk.OpiOperation.Submit
+  fullName: Opi.Sdk.OpiOperation.Submit
+  nameWithType: OpiOperation.Submit
+- uid: Opi.Sdk.OpiOptions
+  name: OpiOptions
+  href: api/Opi.Sdk.OpiOptions.html
+  commentId: T:Opi.Sdk.OpiOptions
+  fullName: Opi.Sdk.OpiOptions
+  nameWithType: OpiOptions
+- uid: Opi.Sdk.OpiOptions.AbortRecoveryAttempts
+  name: AbortRecoveryAttempts
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_AbortRecoveryAttempts
+  commentId: P:Opi.Sdk.OpiOptions.AbortRecoveryAttempts
+  fullName: Opi.Sdk.OpiOptions.AbortRecoveryAttempts
+  nameWithType: OpiOptions.AbortRecoveryAttempts
+- uid: Opi.Sdk.OpiOptions.AbortRecoveryAttempts*
+  name: AbortRecoveryAttempts
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_AbortRecoveryAttempts_
+  commentId: Overload:Opi.Sdk.OpiOptions.AbortRecoveryAttempts
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.AbortRecoveryAttempts
+  nameWithType: OpiOptions.AbortRecoveryAttempts
+- uid: Opi.Sdk.OpiOptions.AbortRecoveryDelay
+  name: AbortRecoveryDelay
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_AbortRecoveryDelay
+  commentId: P:Opi.Sdk.OpiOptions.AbortRecoveryDelay
+  fullName: Opi.Sdk.OpiOptions.AbortRecoveryDelay
+  nameWithType: OpiOptions.AbortRecoveryDelay
+- uid: Opi.Sdk.OpiOptions.AbortRecoveryDelay*
+  name: AbortRecoveryDelay
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_AbortRecoveryDelay_
+  commentId: Overload:Opi.Sdk.OpiOptions.AbortRecoveryDelay
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.AbortRecoveryDelay
+  nameWithType: OpiOptions.AbortRecoveryDelay
+- uid: Opi.Sdk.OpiOptions.AbortRetryDelay
+  name: AbortRetryDelay
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_AbortRetryDelay
+  commentId: P:Opi.Sdk.OpiOptions.AbortRetryDelay
+  fullName: Opi.Sdk.OpiOptions.AbortRetryDelay
+  nameWithType: OpiOptions.AbortRetryDelay
+- uid: Opi.Sdk.OpiOptions.AbortRetryDelay*
+  name: AbortRetryDelay
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_AbortRetryDelay_
+  commentId: Overload:Opi.Sdk.OpiOptions.AbortRetryDelay
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.AbortRetryDelay
+  nameWithType: OpiOptions.AbortRetryDelay
+- uid: Opi.Sdk.OpiOptions.ConnectTimeout
+  name: ConnectTimeout
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ConnectTimeout
+  commentId: P:Opi.Sdk.OpiOptions.ConnectTimeout
+  fullName: Opi.Sdk.OpiOptions.ConnectTimeout
+  nameWithType: OpiOptions.ConnectTimeout
+- uid: Opi.Sdk.OpiOptions.ConnectTimeout*
+  name: ConnectTimeout
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ConnectTimeout_
+  commentId: Overload:Opi.Sdk.OpiOptions.ConnectTimeout
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.ConnectTimeout
+  nameWithType: OpiOptions.ConnectTimeout
+- uid: Opi.Sdk.OpiOptions.ConnectivityLossGracePeriod
+  name: ConnectivityLossGracePeriod
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ConnectivityLossGracePeriod
+  commentId: P:Opi.Sdk.OpiOptions.ConnectivityLossGracePeriod
+  fullName: Opi.Sdk.OpiOptions.ConnectivityLossGracePeriod
+  nameWithType: OpiOptions.ConnectivityLossGracePeriod
+- uid: Opi.Sdk.OpiOptions.ConnectivityLossGracePeriod*
+  name: ConnectivityLossGracePeriod
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ConnectivityLossGracePeriod_
+  commentId: Overload:Opi.Sdk.OpiOptions.ConnectivityLossGracePeriod
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.ConnectivityLossGracePeriod
+  nameWithType: OpiOptions.ConnectivityLossGracePeriod
+- uid: Opi.Sdk.OpiOptions.DataDirectory
+  name: DataDirectory
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_DataDirectory
+  commentId: P:Opi.Sdk.OpiOptions.DataDirectory
+  fullName: Opi.Sdk.OpiOptions.DataDirectory
+  nameWithType: OpiOptions.DataDirectory
+- uid: Opi.Sdk.OpiOptions.DataDirectory*
+  name: DataDirectory
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_DataDirectory_
+  commentId: Overload:Opi.Sdk.OpiOptions.DataDirectory
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.DataDirectory
+  nameWithType: OpiOptions.DataDirectory
+- uid: Opi.Sdk.OpiOptions.DeviceChannelPort
+  name: DeviceChannelPort
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_DeviceChannelPort
+  commentId: P:Opi.Sdk.OpiOptions.DeviceChannelPort
+  fullName: Opi.Sdk.OpiOptions.DeviceChannelPort
+  nameWithType: OpiOptions.DeviceChannelPort
+- uid: Opi.Sdk.OpiOptions.DeviceChannelPort*
+  name: DeviceChannelPort
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_DeviceChannelPort_
+  commentId: Overload:Opi.Sdk.OpiOptions.DeviceChannelPort
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.DeviceChannelPort
+  nameWithType: OpiOptions.DeviceChannelPort
+- uid: Opi.Sdk.OpiOptions.ForceAcceptance
+  name: ForceAcceptance
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ForceAcceptance
+  commentId: P:Opi.Sdk.OpiOptions.ForceAcceptance
+  fullName: Opi.Sdk.OpiOptions.ForceAcceptance
+  nameWithType: OpiOptions.ForceAcceptance
+- uid: Opi.Sdk.OpiOptions.ForceAcceptance*
+  name: ForceAcceptance
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ForceAcceptance_
+  commentId: Overload:Opi.Sdk.OpiOptions.ForceAcceptance
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.ForceAcceptance
+  nameWithType: OpiOptions.ForceAcceptance
+- uid: Opi.Sdk.OpiOptions.Language
+  name: Language
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_Language
+  commentId: P:Opi.Sdk.OpiOptions.Language
+  fullName: Opi.Sdk.OpiOptions.Language
+  nameWithType: OpiOptions.Language
+- uid: Opi.Sdk.OpiOptions.Language*
+  name: Language
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_Language_
+  commentId: Overload:Opi.Sdk.OpiOptions.Language
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.Language
+  nameWithType: OpiOptions.Language
+- uid: Opi.Sdk.OpiOptions.Logger
+  name: Logger
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_Logger
+  commentId: P:Opi.Sdk.OpiOptions.Logger
+  fullName: Opi.Sdk.OpiOptions.Logger
+  nameWithType: OpiOptions.Logger
+- uid: Opi.Sdk.OpiOptions.Logger*
+  name: Logger
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_Logger_
+  commentId: Overload:Opi.Sdk.OpiOptions.Logger
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.Logger
+  nameWithType: OpiOptions.Logger
+- uid: Opi.Sdk.OpiOptions.LoggingEnabled
+  name: LoggingEnabled
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_LoggingEnabled
+  commentId: P:Opi.Sdk.OpiOptions.LoggingEnabled
+  fullName: Opi.Sdk.OpiOptions.LoggingEnabled
+  nameWithType: OpiOptions.LoggingEnabled
+- uid: Opi.Sdk.OpiOptions.LoggingEnabled*
+  name: LoggingEnabled
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_LoggingEnabled_
+  commentId: Overload:Opi.Sdk.OpiOptions.LoggingEnabled
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.LoggingEnabled
+  nameWithType: OpiOptions.LoggingEnabled
+- uid: Opi.Sdk.OpiOptions.MaxAbortAttempts
+  name: MaxAbortAttempts
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_MaxAbortAttempts
+  commentId: P:Opi.Sdk.OpiOptions.MaxAbortAttempts
+  fullName: Opi.Sdk.OpiOptions.MaxAbortAttempts
+  nameWithType: OpiOptions.MaxAbortAttempts
+- uid: Opi.Sdk.OpiOptions.MaxAbortAttempts*
+  name: MaxAbortAttempts
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_MaxAbortAttempts_
+  commentId: Overload:Opi.Sdk.OpiOptions.MaxAbortAttempts
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.MaxAbortAttempts
+  nameWithType: OpiOptions.MaxAbortAttempts
+- uid: Opi.Sdk.OpiOptions.MaxLogStorageBytes
+  name: MaxLogStorageBytes
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_MaxLogStorageBytes
+  commentId: P:Opi.Sdk.OpiOptions.MaxLogStorageBytes
+  fullName: Opi.Sdk.OpiOptions.MaxLogStorageBytes
+  nameWithType: OpiOptions.MaxLogStorageBytes
+- uid: Opi.Sdk.OpiOptions.MaxLogStorageBytes*
+  name: MaxLogStorageBytes
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_MaxLogStorageBytes_
+  commentId: Overload:Opi.Sdk.OpiOptions.MaxLogStorageBytes
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.MaxLogStorageBytes
+  nameWithType: OpiOptions.MaxLogStorageBytes
+- uid: Opi.Sdk.OpiOptions.OperationTimeout
+  name: OperationTimeout
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_OperationTimeout
+  commentId: P:Opi.Sdk.OpiOptions.OperationTimeout
+  fullName: Opi.Sdk.OpiOptions.OperationTimeout
+  nameWithType: OpiOptions.OperationTimeout
+- uid: Opi.Sdk.OpiOptions.OperationTimeout*
+  name: OperationTimeout
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_OperationTimeout_
+  commentId: Overload:Opi.Sdk.OpiOptions.OperationTimeout
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.OperationTimeout
+  nameWithType: OpiOptions.OperationTimeout
+- uid: Opi.Sdk.OpiOptions.Overlay
+  name: Overlay
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_Overlay
+  commentId: P:Opi.Sdk.OpiOptions.Overlay
+  fullName: Opi.Sdk.OpiOptions.Overlay
+  nameWithType: OpiOptions.Overlay
+- uid: Opi.Sdk.OpiOptions.Overlay*
+  name: Overlay
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_Overlay_
+  commentId: Overload:Opi.Sdk.OpiOptions.Overlay
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.Overlay
+  nameWithType: OpiOptions.Overlay
+- uid: Opi.Sdk.OpiOptions.PayChannelPort
+  name: PayChannelPort
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_PayChannelPort
+  commentId: P:Opi.Sdk.OpiOptions.PayChannelPort
+  fullName: Opi.Sdk.OpiOptions.PayChannelPort
+  nameWithType: OpiOptions.PayChannelPort
+- uid: Opi.Sdk.OpiOptions.PayChannelPort*
+  name: PayChannelPort
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_PayChannelPort_
+  commentId: Overload:Opi.Sdk.OpiOptions.PayChannelPort
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.PayChannelPort
+  nameWithType: OpiOptions.PayChannelPort
+- uid: Opi.Sdk.OpiOptions.ReceiptRecoveryDelay
+  name: ReceiptRecoveryDelay
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ReceiptRecoveryDelay
+  commentId: P:Opi.Sdk.OpiOptions.ReceiptRecoveryDelay
+  fullName: Opi.Sdk.OpiOptions.ReceiptRecoveryDelay
+  nameWithType: OpiOptions.ReceiptRecoveryDelay
+- uid: Opi.Sdk.OpiOptions.ReceiptRecoveryDelay*
+  name: ReceiptRecoveryDelay
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ReceiptRecoveryDelay_
+  commentId: Overload:Opi.Sdk.OpiOptions.ReceiptRecoveryDelay
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.ReceiptRecoveryDelay
+  nameWithType: OpiOptions.ReceiptRecoveryDelay
+- uid: Opi.Sdk.OpiOptions.Receipts
+  name: Receipts
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_Receipts
+  commentId: P:Opi.Sdk.OpiOptions.Receipts
+  fullName: Opi.Sdk.OpiOptions.Receipts
+  nameWithType: OpiOptions.Receipts
+- uid: Opi.Sdk.OpiOptions.Receipts*
+  name: Receipts
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_Receipts_
+  commentId: Overload:Opi.Sdk.OpiOptions.Receipts
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.Receipts
+  nameWithType: OpiOptions.Receipts
+- uid: Opi.Sdk.OpiOptions.RecoveryDelays
+  name: RecoveryDelays
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_RecoveryDelays
+  commentId: P:Opi.Sdk.OpiOptions.RecoveryDelays
+  fullName: Opi.Sdk.OpiOptions.RecoveryDelays
+  nameWithType: OpiOptions.RecoveryDelays
+- uid: Opi.Sdk.OpiOptions.RecoveryDelays*
+  name: RecoveryDelays
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_RecoveryDelays_
+  commentId: Overload:Opi.Sdk.OpiOptions.RecoveryDelays
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.RecoveryDelays
+  nameWithType: OpiOptions.RecoveryDelays
+- uid: Opi.Sdk.OpiOptions.ReprintAfterAbort
+  name: ReprintAfterAbort
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ReprintAfterAbort
+  commentId: P:Opi.Sdk.OpiOptions.ReprintAfterAbort
+  fullName: Opi.Sdk.OpiOptions.ReprintAfterAbort
+  nameWithType: OpiOptions.ReprintAfterAbort
+- uid: Opi.Sdk.OpiOptions.ReprintAfterAbort*
+  name: ReprintAfterAbort
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ReprintAfterAbort_
+  commentId: Overload:Opi.Sdk.OpiOptions.ReprintAfterAbort
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.ReprintAfterAbort
+  nameWithType: OpiOptions.ReprintAfterAbort
+- uid: Opi.Sdk.OpiOptions.RequestFullPan
+  name: RequestFullPan
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_RequestFullPan
+  commentId: P:Opi.Sdk.OpiOptions.RequestFullPan
+  fullName: Opi.Sdk.OpiOptions.RequestFullPan
+  nameWithType: OpiOptions.RequestFullPan
+- uid: Opi.Sdk.OpiOptions.RequestFullPan*
+  name: RequestFullPan
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_RequestFullPan_
+  commentId: Overload:Opi.Sdk.OpiOptions.RequestFullPan
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.RequestFullPan
+  nameWithType: OpiOptions.RequestFullPan
+- uid: Opi.Sdk.OpiOptions.ShowAbortButton
+  name: ShowAbortButton
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ShowAbortButton
+  commentId: P:Opi.Sdk.OpiOptions.ShowAbortButton
+  fullName: Opi.Sdk.OpiOptions.ShowAbortButton
+  nameWithType: OpiOptions.ShowAbortButton
+- uid: Opi.Sdk.OpiOptions.ShowAbortButton*
+  name: ShowAbortButton
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_ShowAbortButton_
+  commentId: Overload:Opi.Sdk.OpiOptions.ShowAbortButton
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.ShowAbortButton
+  nameWithType: OpiOptions.ShowAbortButton
+- uid: Opi.Sdk.OpiOptions.TerminalHost
+  name: TerminalHost
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_TerminalHost
+  commentId: P:Opi.Sdk.OpiOptions.TerminalHost
+  fullName: Opi.Sdk.OpiOptions.TerminalHost
+  nameWithType: OpiOptions.TerminalHost
+- uid: Opi.Sdk.OpiOptions.TerminalHost*
+  name: TerminalHost
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_TerminalHost_
+  commentId: Overload:Opi.Sdk.OpiOptions.TerminalHost
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.TerminalHost
+  nameWithType: OpiOptions.TerminalHost
+- uid: Opi.Sdk.OpiOptions.WorkstationId
+  name: WorkstationId
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_WorkstationId
+  commentId: P:Opi.Sdk.OpiOptions.WorkstationId
+  fullName: Opi.Sdk.OpiOptions.WorkstationId
+  nameWithType: OpiOptions.WorkstationId
+- uid: Opi.Sdk.OpiOptions.WorkstationId*
+  name: WorkstationId
+  href: api/Opi.Sdk.OpiOptions.html#Opi_Sdk_OpiOptions_WorkstationId_
+  commentId: Overload:Opi.Sdk.OpiOptions.WorkstationId
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiOptions.WorkstationId
+  nameWithType: OpiOptions.WorkstationId
+- uid: Opi.Sdk.OpiResult
+  name: OpiResult
+  href: api/Opi.Sdk.OpiResult.html
+  commentId: T:Opi.Sdk.OpiResult
+  fullName: Opi.Sdk.OpiResult
+  nameWithType: OpiResult
+- uid: Opi.Sdk.OpiResult.#ctor(Opi.Sdk.ResultState,System.String)
+  name: OpiResult(ResultState, string)
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult__ctor_Opi_Sdk_ResultState_System_String_
+  commentId: M:Opi.Sdk.OpiResult.#ctor(Opi.Sdk.ResultState,System.String)
+  name.vb: New(ResultState, String)
+  fullName: Opi.Sdk.OpiResult.OpiResult(Opi.Sdk.ResultState, string)
+  fullName.vb: Opi.Sdk.OpiResult.New(Opi.Sdk.ResultState, String)
+  nameWithType: OpiResult.OpiResult(ResultState, string)
+  nameWithType.vb: OpiResult.New(ResultState, String)
+- uid: Opi.Sdk.OpiResult.#ctor*
+  name: OpiResult
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult__ctor_
+  commentId: Overload:Opi.Sdk.OpiResult.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Opi.Sdk.OpiResult.OpiResult
+  fullName.vb: Opi.Sdk.OpiResult.New
+  nameWithType: OpiResult.OpiResult
+  nameWithType.vb: OpiResult.New
+- uid: Opi.Sdk.OpiResult.CorrelationId
+  name: CorrelationId
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_CorrelationId
+  commentId: P:Opi.Sdk.OpiResult.CorrelationId
+  fullName: Opi.Sdk.OpiResult.CorrelationId
+  nameWithType: OpiResult.CorrelationId
+- uid: Opi.Sdk.OpiResult.CorrelationId*
+  name: CorrelationId
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_CorrelationId_
+  commentId: Overload:Opi.Sdk.OpiResult.CorrelationId
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiResult.CorrelationId
+  nameWithType: OpiResult.CorrelationId
+- uid: Opi.Sdk.OpiResult.Error
+  name: Error
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_Error
+  commentId: P:Opi.Sdk.OpiResult.Error
+  fullName: Opi.Sdk.OpiResult.Error
+  nameWithType: OpiResult.Error
+- uid: Opi.Sdk.OpiResult.Error*
+  name: Error
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_Error_
+  commentId: Overload:Opi.Sdk.OpiResult.Error
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiResult.Error
+  nameWithType: OpiResult.Error
+- uid: Opi.Sdk.OpiResult.ErrorCode
+  name: ErrorCode
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_ErrorCode
+  commentId: P:Opi.Sdk.OpiResult.ErrorCode
+  fullName: Opi.Sdk.OpiResult.ErrorCode
+  nameWithType: OpiResult.ErrorCode
+- uid: Opi.Sdk.OpiResult.ErrorCode*
+  name: ErrorCode
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_ErrorCode_
+  commentId: Overload:Opi.Sdk.OpiResult.ErrorCode
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiResult.ErrorCode
+  nameWithType: OpiResult.ErrorCode
+- uid: Opi.Sdk.OpiResult.IsSuccessful
+  name: IsSuccessful
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_IsSuccessful
+  commentId: P:Opi.Sdk.OpiResult.IsSuccessful
+  fullName: Opi.Sdk.OpiResult.IsSuccessful
+  nameWithType: OpiResult.IsSuccessful
+- uid: Opi.Sdk.OpiResult.IsSuccessful*
+  name: IsSuccessful
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_IsSuccessful_
+  commentId: Overload:Opi.Sdk.OpiResult.IsSuccessful
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiResult.IsSuccessful
+  nameWithType: OpiResult.IsSuccessful
+- uid: Opi.Sdk.OpiResult.Status
+  name: Status
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_Status
+  commentId: P:Opi.Sdk.OpiResult.Status
+  fullName: Opi.Sdk.OpiResult.Status
+  nameWithType: OpiResult.Status
+- uid: Opi.Sdk.OpiResult.Status*
+  name: Status
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_Status_
+  commentId: Overload:Opi.Sdk.OpiResult.Status
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiResult.Status
+  nameWithType: OpiResult.Status
+- uid: Opi.Sdk.OpiResult.Terminal
+  name: Terminal
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_Terminal
+  commentId: P:Opi.Sdk.OpiResult.Terminal
+  fullName: Opi.Sdk.OpiResult.Terminal
+  nameWithType: OpiResult.Terminal
+- uid: Opi.Sdk.OpiResult.Terminal*
+  name: Terminal
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_Terminal_
+  commentId: Overload:Opi.Sdk.OpiResult.Terminal
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiResult.Terminal
+  nameWithType: OpiResult.Terminal
+- uid: Opi.Sdk.OpiResult.Transaction
+  name: Transaction
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_Transaction
+  commentId: P:Opi.Sdk.OpiResult.Transaction
+  fullName: Opi.Sdk.OpiResult.Transaction
+  nameWithType: OpiResult.Transaction
+- uid: Opi.Sdk.OpiResult.Transaction*
+  name: Transaction
+  href: api/Opi.Sdk.OpiResult.html#Opi_Sdk_OpiResult_Transaction_
+  commentId: Overload:Opi.Sdk.OpiResult.Transaction
+  isSpec: "True"
+  fullName: Opi.Sdk.OpiResult.Transaction
+  nameWithType: OpiResult.Transaction
+- uid: Opi.Sdk.PaymentRequest
   name: PaymentRequest
-  href: api/Nexi.Sdk.PaymentRequest.html
-  commentId: T:Nexi.Sdk.PaymentRequest
-  fullName: Nexi.Sdk.PaymentRequest
+  href: api/Opi.Sdk.PaymentRequest.html
+  commentId: T:Opi.Sdk.PaymentRequest
+  fullName: Opi.Sdk.PaymentRequest
   nameWithType: PaymentRequest
-- uid: Nexi.Sdk.PaymentRequest.#ctor(System.Int64,System.String,System.String)
+- uid: Opi.Sdk.PaymentRequest.#ctor(System.Int64,System.String,System.String)
   name: PaymentRequest(long, string, string?)
-  href: api/Nexi.Sdk.PaymentRequest.html#Nexi_Sdk_PaymentRequest__ctor_System_Int64_System_String_System_String_
-  commentId: M:Nexi.Sdk.PaymentRequest.#ctor(System.Int64,System.String,System.String)
+  href: api/Opi.Sdk.PaymentRequest.html#Opi_Sdk_PaymentRequest__ctor_System_Int64_System_String_System_String_
+  commentId: M:Opi.Sdk.PaymentRequest.#ctor(System.Int64,System.String,System.String)
   name.vb: New(Long, String, String)
-  fullName: Nexi.Sdk.PaymentRequest.PaymentRequest(long, string, string?)
-  fullName.vb: Nexi.Sdk.PaymentRequest.New(Long, String, String)
+  fullName: Opi.Sdk.PaymentRequest.PaymentRequest(long, string, string?)
+  fullName.vb: Opi.Sdk.PaymentRequest.New(Long, String, String)
   nameWithType: PaymentRequest.PaymentRequest(long, string, string?)
   nameWithType.vb: PaymentRequest.New(Long, String, String)
-- uid: Nexi.Sdk.PaymentRequest.#ctor*
+- uid: Opi.Sdk.PaymentRequest.#ctor*
   name: PaymentRequest
-  href: api/Nexi.Sdk.PaymentRequest.html#Nexi_Sdk_PaymentRequest__ctor_
-  commentId: Overload:Nexi.Sdk.PaymentRequest.#ctor
+  href: api/Opi.Sdk.PaymentRequest.html#Opi_Sdk_PaymentRequest__ctor_
+  commentId: Overload:Opi.Sdk.PaymentRequest.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Nexi.Sdk.PaymentRequest.PaymentRequest
-  fullName.vb: Nexi.Sdk.PaymentRequest.New
+  fullName: Opi.Sdk.PaymentRequest.PaymentRequest
+  fullName.vb: Opi.Sdk.PaymentRequest.New
   nameWithType: PaymentRequest.PaymentRequest
   nameWithType.vb: PaymentRequest.New
-- uid: Nexi.Sdk.PaymentRequest.Amount
+- uid: Opi.Sdk.PaymentRequest.Amount
   name: Amount
-  href: api/Nexi.Sdk.PaymentRequest.html#Nexi_Sdk_PaymentRequest_Amount
-  commentId: P:Nexi.Sdk.PaymentRequest.Amount
-  fullName: Nexi.Sdk.PaymentRequest.Amount
+  href: api/Opi.Sdk.PaymentRequest.html#Opi_Sdk_PaymentRequest_Amount
+  commentId: P:Opi.Sdk.PaymentRequest.Amount
+  fullName: Opi.Sdk.PaymentRequest.Amount
   nameWithType: PaymentRequest.Amount
-- uid: Nexi.Sdk.PaymentRequest.Amount*
+- uid: Opi.Sdk.PaymentRequest.Amount*
   name: Amount
-  href: api/Nexi.Sdk.PaymentRequest.html#Nexi_Sdk_PaymentRequest_Amount_
-  commentId: Overload:Nexi.Sdk.PaymentRequest.Amount
+  href: api/Opi.Sdk.PaymentRequest.html#Opi_Sdk_PaymentRequest_Amount_
+  commentId: Overload:Opi.Sdk.PaymentRequest.Amount
   isSpec: "True"
-  fullName: Nexi.Sdk.PaymentRequest.Amount
+  fullName: Opi.Sdk.PaymentRequest.Amount
   nameWithType: PaymentRequest.Amount
-- uid: Nexi.Sdk.PaymentRequest.Currency
+- uid: Opi.Sdk.PaymentRequest.Currency
   name: Currency
-  href: api/Nexi.Sdk.PaymentRequest.html#Nexi_Sdk_PaymentRequest_Currency
-  commentId: P:Nexi.Sdk.PaymentRequest.Currency
-  fullName: Nexi.Sdk.PaymentRequest.Currency
+  href: api/Opi.Sdk.PaymentRequest.html#Opi_Sdk_PaymentRequest_Currency
+  commentId: P:Opi.Sdk.PaymentRequest.Currency
+  fullName: Opi.Sdk.PaymentRequest.Currency
   nameWithType: PaymentRequest.Currency
-- uid: Nexi.Sdk.PaymentRequest.Currency*
+- uid: Opi.Sdk.PaymentRequest.Currency*
   name: Currency
-  href: api/Nexi.Sdk.PaymentRequest.html#Nexi_Sdk_PaymentRequest_Currency_
-  commentId: Overload:Nexi.Sdk.PaymentRequest.Currency
+  href: api/Opi.Sdk.PaymentRequest.html#Opi_Sdk_PaymentRequest_Currency_
+  commentId: Overload:Opi.Sdk.PaymentRequest.Currency
   isSpec: "True"
-  fullName: Nexi.Sdk.PaymentRequest.Currency
+  fullName: Opi.Sdk.PaymentRequest.Currency
   nameWithType: PaymentRequest.Currency
-- uid: Nexi.Sdk.PaymentRequest.Reference
+- uid: Opi.Sdk.PaymentRequest.Reference
   name: Reference
-  href: api/Nexi.Sdk.PaymentRequest.html#Nexi_Sdk_PaymentRequest_Reference
-  commentId: P:Nexi.Sdk.PaymentRequest.Reference
-  fullName: Nexi.Sdk.PaymentRequest.Reference
+  href: api/Opi.Sdk.PaymentRequest.html#Opi_Sdk_PaymentRequest_Reference
+  commentId: P:Opi.Sdk.PaymentRequest.Reference
+  fullName: Opi.Sdk.PaymentRequest.Reference
   nameWithType: PaymentRequest.Reference
-- uid: Nexi.Sdk.PaymentRequest.Reference*
+- uid: Opi.Sdk.PaymentRequest.Reference*
   name: Reference
-  href: api/Nexi.Sdk.PaymentRequest.html#Nexi_Sdk_PaymentRequest_Reference_
-  commentId: Overload:Nexi.Sdk.PaymentRequest.Reference
+  href: api/Opi.Sdk.PaymentRequest.html#Opi_Sdk_PaymentRequest_Reference_
+  commentId: Overload:Opi.Sdk.PaymentRequest.Reference
   isSpec: "True"
-  fullName: Nexi.Sdk.PaymentRequest.Reference
+  fullName: Opi.Sdk.PaymentRequest.Reference
   nameWithType: PaymentRequest.Reference
-- uid: Nexi.Sdk.Receipt
+- uid: Opi.Sdk.Receipt
   name: Receipt
-  href: api/Nexi.Sdk.Receipt.html
-  commentId: T:Nexi.Sdk.Receipt
-  fullName: Nexi.Sdk.Receipt
+  href: api/Opi.Sdk.Receipt.html
+  commentId: T:Opi.Sdk.Receipt
+  fullName: Opi.Sdk.Receipt
   nameWithType: Receipt
-- uid: Nexi.Sdk.Receipt.#ctor(System.String,System.String)
+- uid: Opi.Sdk.Receipt.#ctor(System.String,System.String)
   name: Receipt(string, string)
-  href: api/Nexi.Sdk.Receipt.html#Nexi_Sdk_Receipt__ctor_System_String_System_String_
-  commentId: M:Nexi.Sdk.Receipt.#ctor(System.String,System.String)
+  href: api/Opi.Sdk.Receipt.html#Opi_Sdk_Receipt__ctor_System_String_System_String_
+  commentId: M:Opi.Sdk.Receipt.#ctor(System.String,System.String)
   name.vb: New(String, String)
-  fullName: Nexi.Sdk.Receipt.Receipt(string, string)
-  fullName.vb: Nexi.Sdk.Receipt.New(String, String)
+  fullName: Opi.Sdk.Receipt.Receipt(string, string)
+  fullName.vb: Opi.Sdk.Receipt.New(String, String)
   nameWithType: Receipt.Receipt(string, string)
   nameWithType.vb: Receipt.New(String, String)
-- uid: Nexi.Sdk.Receipt.#ctor*
+- uid: Opi.Sdk.Receipt.#ctor*
   name: Receipt
-  href: api/Nexi.Sdk.Receipt.html#Nexi_Sdk_Receipt__ctor_
-  commentId: Overload:Nexi.Sdk.Receipt.#ctor
+  href: api/Opi.Sdk.Receipt.html#Opi_Sdk_Receipt__ctor_
+  commentId: Overload:Opi.Sdk.Receipt.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Nexi.Sdk.Receipt.Receipt
-  fullName.vb: Nexi.Sdk.Receipt.New
+  fullName: Opi.Sdk.Receipt.Receipt
+  fullName.vb: Opi.Sdk.Receipt.New
   nameWithType: Receipt.Receipt
   nameWithType.vb: Receipt.New
-- uid: Nexi.Sdk.Receipt.Content
+- uid: Opi.Sdk.Receipt.Content
   name: Content
-  href: api/Nexi.Sdk.Receipt.html#Nexi_Sdk_Receipt_Content
-  commentId: P:Nexi.Sdk.Receipt.Content
-  fullName: Nexi.Sdk.Receipt.Content
+  href: api/Opi.Sdk.Receipt.html#Opi_Sdk_Receipt_Content
+  commentId: P:Opi.Sdk.Receipt.Content
+  fullName: Opi.Sdk.Receipt.Content
   nameWithType: Receipt.Content
-- uid: Nexi.Sdk.Receipt.Content*
+- uid: Opi.Sdk.Receipt.Content*
   name: Content
-  href: api/Nexi.Sdk.Receipt.html#Nexi_Sdk_Receipt_Content_
-  commentId: Overload:Nexi.Sdk.Receipt.Content
+  href: api/Opi.Sdk.Receipt.html#Opi_Sdk_Receipt_Content_
+  commentId: Overload:Opi.Sdk.Receipt.Content
   isSpec: "True"
-  fullName: Nexi.Sdk.Receipt.Content
+  fullName: Opi.Sdk.Receipt.Content
   nameWithType: Receipt.Content
-- uid: Nexi.Sdk.Receipt.ContentType
+- uid: Opi.Sdk.Receipt.ContentType
   name: ContentType
-  href: api/Nexi.Sdk.Receipt.html#Nexi_Sdk_Receipt_ContentType
-  commentId: P:Nexi.Sdk.Receipt.ContentType
-  fullName: Nexi.Sdk.Receipt.ContentType
+  href: api/Opi.Sdk.Receipt.html#Opi_Sdk_Receipt_ContentType
+  commentId: P:Opi.Sdk.Receipt.ContentType
+  fullName: Opi.Sdk.Receipt.ContentType
   nameWithType: Receipt.ContentType
-- uid: Nexi.Sdk.Receipt.ContentType*
+- uid: Opi.Sdk.Receipt.ContentType*
   name: ContentType
-  href: api/Nexi.Sdk.Receipt.html#Nexi_Sdk_Receipt_ContentType_
-  commentId: Overload:Nexi.Sdk.Receipt.ContentType
+  href: api/Opi.Sdk.Receipt.html#Opi_Sdk_Receipt_ContentType_
+  commentId: Overload:Opi.Sdk.Receipt.ContentType
   isSpec: "True"
-  fullName: Nexi.Sdk.Receipt.ContentType
+  fullName: Opi.Sdk.Receipt.ContentType
   nameWithType: Receipt.ContentType
-- uid: Nexi.Sdk.ReceiptDetails
+- uid: Opi.Sdk.ReceiptDetails
   name: ReceiptDetails
-  href: api/Nexi.Sdk.ReceiptDetails.html
-  commentId: T:Nexi.Sdk.ReceiptDetails
-  fullName: Nexi.Sdk.ReceiptDetails
+  href: api/Opi.Sdk.ReceiptDetails.html
+  commentId: T:Opi.Sdk.ReceiptDetails
+  fullName: Opi.Sdk.ReceiptDetails
   nameWithType: ReceiptDetails
-- uid: Nexi.Sdk.ReceiptDetails.#ctor(Nexi.Sdk.Receipt,Nexi.Sdk.Receipt)
+- uid: Opi.Sdk.ReceiptDetails.#ctor(Opi.Sdk.Receipt,Opi.Sdk.Receipt)
   name: ReceiptDetails(Receipt?, Receipt?)
-  href: api/Nexi.Sdk.ReceiptDetails.html#Nexi_Sdk_ReceiptDetails__ctor_Nexi_Sdk_Receipt_Nexi_Sdk_Receipt_
-  commentId: M:Nexi.Sdk.ReceiptDetails.#ctor(Nexi.Sdk.Receipt,Nexi.Sdk.Receipt)
+  href: api/Opi.Sdk.ReceiptDetails.html#Opi_Sdk_ReceiptDetails__ctor_Opi_Sdk_Receipt_Opi_Sdk_Receipt_
+  commentId: M:Opi.Sdk.ReceiptDetails.#ctor(Opi.Sdk.Receipt,Opi.Sdk.Receipt)
   name.vb: New(Receipt, Receipt)
-  fullName: Nexi.Sdk.ReceiptDetails.ReceiptDetails(Nexi.Sdk.Receipt?, Nexi.Sdk.Receipt?)
-  fullName.vb: Nexi.Sdk.ReceiptDetails.New(Nexi.Sdk.Receipt, Nexi.Sdk.Receipt)
+  fullName: Opi.Sdk.ReceiptDetails.ReceiptDetails(Opi.Sdk.Receipt?, Opi.Sdk.Receipt?)
+  fullName.vb: Opi.Sdk.ReceiptDetails.New(Opi.Sdk.Receipt, Opi.Sdk.Receipt)
   nameWithType: ReceiptDetails.ReceiptDetails(Receipt?, Receipt?)
   nameWithType.vb: ReceiptDetails.New(Receipt, Receipt)
-- uid: Nexi.Sdk.ReceiptDetails.#ctor*
+- uid: Opi.Sdk.ReceiptDetails.#ctor*
   name: ReceiptDetails
-  href: api/Nexi.Sdk.ReceiptDetails.html#Nexi_Sdk_ReceiptDetails__ctor_
-  commentId: Overload:Nexi.Sdk.ReceiptDetails.#ctor
+  href: api/Opi.Sdk.ReceiptDetails.html#Opi_Sdk_ReceiptDetails__ctor_
+  commentId: Overload:Opi.Sdk.ReceiptDetails.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Nexi.Sdk.ReceiptDetails.ReceiptDetails
-  fullName.vb: Nexi.Sdk.ReceiptDetails.New
+  fullName: Opi.Sdk.ReceiptDetails.ReceiptDetails
+  fullName.vb: Opi.Sdk.ReceiptDetails.New
   nameWithType: ReceiptDetails.ReceiptDetails
   nameWithType.vb: ReceiptDetails.New
-- uid: Nexi.Sdk.ReceiptDetails.CustomerReceipt
+- uid: Opi.Sdk.ReceiptDetails.CustomerReceipt
   name: CustomerReceipt
-  href: api/Nexi.Sdk.ReceiptDetails.html#Nexi_Sdk_ReceiptDetails_CustomerReceipt
-  commentId: P:Nexi.Sdk.ReceiptDetails.CustomerReceipt
-  fullName: Nexi.Sdk.ReceiptDetails.CustomerReceipt
+  href: api/Opi.Sdk.ReceiptDetails.html#Opi_Sdk_ReceiptDetails_CustomerReceipt
+  commentId: P:Opi.Sdk.ReceiptDetails.CustomerReceipt
+  fullName: Opi.Sdk.ReceiptDetails.CustomerReceipt
   nameWithType: ReceiptDetails.CustomerReceipt
-- uid: Nexi.Sdk.ReceiptDetails.CustomerReceipt*
+- uid: Opi.Sdk.ReceiptDetails.CustomerReceipt*
   name: CustomerReceipt
-  href: api/Nexi.Sdk.ReceiptDetails.html#Nexi_Sdk_ReceiptDetails_CustomerReceipt_
-  commentId: Overload:Nexi.Sdk.ReceiptDetails.CustomerReceipt
+  href: api/Opi.Sdk.ReceiptDetails.html#Opi_Sdk_ReceiptDetails_CustomerReceipt_
+  commentId: Overload:Opi.Sdk.ReceiptDetails.CustomerReceipt
   isSpec: "True"
-  fullName: Nexi.Sdk.ReceiptDetails.CustomerReceipt
+  fullName: Opi.Sdk.ReceiptDetails.CustomerReceipt
   nameWithType: ReceiptDetails.CustomerReceipt
-- uid: Nexi.Sdk.ReceiptDetails.MerchantReceipt
+- uid: Opi.Sdk.ReceiptDetails.MerchantReceipt
   name: MerchantReceipt
-  href: api/Nexi.Sdk.ReceiptDetails.html#Nexi_Sdk_ReceiptDetails_MerchantReceipt
-  commentId: P:Nexi.Sdk.ReceiptDetails.MerchantReceipt
-  fullName: Nexi.Sdk.ReceiptDetails.MerchantReceipt
+  href: api/Opi.Sdk.ReceiptDetails.html#Opi_Sdk_ReceiptDetails_MerchantReceipt
+  commentId: P:Opi.Sdk.ReceiptDetails.MerchantReceipt
+  fullName: Opi.Sdk.ReceiptDetails.MerchantReceipt
   nameWithType: ReceiptDetails.MerchantReceipt
-- uid: Nexi.Sdk.ReceiptDetails.MerchantReceipt*
+- uid: Opi.Sdk.ReceiptDetails.MerchantReceipt*
   name: MerchantReceipt
-  href: api/Nexi.Sdk.ReceiptDetails.html#Nexi_Sdk_ReceiptDetails_MerchantReceipt_
-  commentId: Overload:Nexi.Sdk.ReceiptDetails.MerchantReceipt
+  href: api/Opi.Sdk.ReceiptDetails.html#Opi_Sdk_ReceiptDetails_MerchantReceipt_
+  commentId: Overload:Opi.Sdk.ReceiptDetails.MerchantReceipt
   isSpec: "True"
-  fullName: Nexi.Sdk.ReceiptDetails.MerchantReceipt
+  fullName: Opi.Sdk.ReceiptDetails.MerchantReceipt
   nameWithType: ReceiptDetails.MerchantReceipt
-- uid: Nexi.Sdk.ReceiptHandling
+- uid: Opi.Sdk.ReceiptHandling
   name: ReceiptHandling
-  href: api/Nexi.Sdk.ReceiptHandling.html
-  commentId: T:Nexi.Sdk.ReceiptHandling
-  fullName: Nexi.Sdk.ReceiptHandling
+  href: api/Opi.Sdk.ReceiptHandling.html
+  commentId: T:Opi.Sdk.ReceiptHandling
+  fullName: Opi.Sdk.ReceiptHandling
   nameWithType: ReceiptHandling
-- uid: Nexi.Sdk.ReceiptHandling.CustomerReceipt
+- uid: Opi.Sdk.ReceiptHandling.CustomerReceipt
   name: CustomerReceipt
-  href: api/Nexi.Sdk.ReceiptHandling.html#Nexi_Sdk_ReceiptHandling_CustomerReceipt
-  commentId: P:Nexi.Sdk.ReceiptHandling.CustomerReceipt
-  fullName: Nexi.Sdk.ReceiptHandling.CustomerReceipt
+  href: api/Opi.Sdk.ReceiptHandling.html#Opi_Sdk_ReceiptHandling_CustomerReceipt
+  commentId: P:Opi.Sdk.ReceiptHandling.CustomerReceipt
+  fullName: Opi.Sdk.ReceiptHandling.CustomerReceipt
   nameWithType: ReceiptHandling.CustomerReceipt
-- uid: Nexi.Sdk.ReceiptHandling.CustomerReceipt*
+- uid: Opi.Sdk.ReceiptHandling.CustomerReceipt*
   name: CustomerReceipt
-  href: api/Nexi.Sdk.ReceiptHandling.html#Nexi_Sdk_ReceiptHandling_CustomerReceipt_
-  commentId: Overload:Nexi.Sdk.ReceiptHandling.CustomerReceipt
+  href: api/Opi.Sdk.ReceiptHandling.html#Opi_Sdk_ReceiptHandling_CustomerReceipt_
+  commentId: Overload:Opi.Sdk.ReceiptHandling.CustomerReceipt
   isSpec: "True"
-  fullName: Nexi.Sdk.ReceiptHandling.CustomerReceipt
+  fullName: Opi.Sdk.ReceiptHandling.CustomerReceipt
   nameWithType: ReceiptHandling.CustomerReceipt
-- uid: Nexi.Sdk.ReceiptHandling.MerchantReceipt
+- uid: Opi.Sdk.ReceiptHandling.MerchantReceipt
   name: MerchantReceipt
-  href: api/Nexi.Sdk.ReceiptHandling.html#Nexi_Sdk_ReceiptHandling_MerchantReceipt
-  commentId: P:Nexi.Sdk.ReceiptHandling.MerchantReceipt
-  fullName: Nexi.Sdk.ReceiptHandling.MerchantReceipt
+  href: api/Opi.Sdk.ReceiptHandling.html#Opi_Sdk_ReceiptHandling_MerchantReceipt
+  commentId: P:Opi.Sdk.ReceiptHandling.MerchantReceipt
+  fullName: Opi.Sdk.ReceiptHandling.MerchantReceipt
   nameWithType: ReceiptHandling.MerchantReceipt
-- uid: Nexi.Sdk.ReceiptHandling.MerchantReceipt*
+- uid: Opi.Sdk.ReceiptHandling.MerchantReceipt*
   name: MerchantReceipt
-  href: api/Nexi.Sdk.ReceiptHandling.html#Nexi_Sdk_ReceiptHandling_MerchantReceipt_
-  commentId: Overload:Nexi.Sdk.ReceiptHandling.MerchantReceipt
+  href: api/Opi.Sdk.ReceiptHandling.html#Opi_Sdk_ReceiptHandling_MerchantReceipt_
+  commentId: Overload:Opi.Sdk.ReceiptHandling.MerchantReceipt
   isSpec: "True"
-  fullName: Nexi.Sdk.ReceiptHandling.MerchantReceipt
+  fullName: Opi.Sdk.ReceiptHandling.MerchantReceipt
   nameWithType: ReceiptHandling.MerchantReceipt
-- uid: Nexi.Sdk.ReceiptHandlingMode
+- uid: Opi.Sdk.ReceiptHandlingMode
   name: ReceiptHandlingMode
-  href: api/Nexi.Sdk.ReceiptHandlingMode.html
-  commentId: T:Nexi.Sdk.ReceiptHandlingMode
-  fullName: Nexi.Sdk.ReceiptHandlingMode
+  href: api/Opi.Sdk.ReceiptHandlingMode.html
+  commentId: T:Opi.Sdk.ReceiptHandlingMode
+  fullName: Opi.Sdk.ReceiptHandlingMode
   nameWithType: ReceiptHandlingMode
-- uid: Nexi.Sdk.ReceiptHandlingMode.Available
+- uid: Opi.Sdk.ReceiptHandlingMode.Available
   name: Available
-  href: api/Nexi.Sdk.ReceiptHandlingMode.html#Nexi_Sdk_ReceiptHandlingMode_Available
-  commentId: F:Nexi.Sdk.ReceiptHandlingMode.Available
-  fullName: Nexi.Sdk.ReceiptHandlingMode.Available
+  href: api/Opi.Sdk.ReceiptHandlingMode.html#Opi_Sdk_ReceiptHandlingMode_Available
+  commentId: F:Opi.Sdk.ReceiptHandlingMode.Available
+  fullName: Opi.Sdk.ReceiptHandlingMode.Available
   nameWithType: ReceiptHandlingMode.Available
-- uid: Nexi.Sdk.ReceiptHandlingMode.PrintLocal
+- uid: Opi.Sdk.ReceiptHandlingMode.PrintLocal
   name: PrintLocal
-  href: api/Nexi.Sdk.ReceiptHandlingMode.html#Nexi_Sdk_ReceiptHandlingMode_PrintLocal
-  commentId: F:Nexi.Sdk.ReceiptHandlingMode.PrintLocal
-  fullName: Nexi.Sdk.ReceiptHandlingMode.PrintLocal
+  href: api/Opi.Sdk.ReceiptHandlingMode.html#Opi_Sdk_ReceiptHandlingMode_PrintLocal
+  commentId: F:Opi.Sdk.ReceiptHandlingMode.PrintLocal
+  fullName: Opi.Sdk.ReceiptHandlingMode.PrintLocal
   nameWithType: ReceiptHandlingMode.PrintLocal
-- uid: Nexi.Sdk.ReceiptHandlingMode.Unavailable
+- uid: Opi.Sdk.ReceiptHandlingMode.Unavailable
   name: Unavailable
-  href: api/Nexi.Sdk.ReceiptHandlingMode.html#Nexi_Sdk_ReceiptHandlingMode_Unavailable
-  commentId: F:Nexi.Sdk.ReceiptHandlingMode.Unavailable
-  fullName: Nexi.Sdk.ReceiptHandlingMode.Unavailable
+  href: api/Opi.Sdk.ReceiptHandlingMode.html#Opi_Sdk_ReceiptHandlingMode_Unavailable
+  commentId: F:Opi.Sdk.ReceiptHandlingMode.Unavailable
+  fullName: Opi.Sdk.ReceiptHandlingMode.Unavailable
   nameWithType: ReceiptHandlingMode.Unavailable
-- uid: Nexi.Sdk.ReceiptType
+- uid: Opi.Sdk.ReceiptType
   name: ReceiptType
-  href: api/Nexi.Sdk.ReceiptType.html
-  commentId: T:Nexi.Sdk.ReceiptType
-  fullName: Nexi.Sdk.ReceiptType
+  href: api/Opi.Sdk.ReceiptType.html
+  commentId: T:Opi.Sdk.ReceiptType
+  fullName: Opi.Sdk.ReceiptType
   nameWithType: ReceiptType
-- uid: Nexi.Sdk.ReceiptType.Customer
+- uid: Opi.Sdk.ReceiptType.Customer
   name: Customer
-  href: api/Nexi.Sdk.ReceiptType.html#Nexi_Sdk_ReceiptType_Customer
-  commentId: F:Nexi.Sdk.ReceiptType.Customer
-  fullName: Nexi.Sdk.ReceiptType.Customer
+  href: api/Opi.Sdk.ReceiptType.html#Opi_Sdk_ReceiptType_Customer
+  commentId: F:Opi.Sdk.ReceiptType.Customer
+  fullName: Opi.Sdk.ReceiptType.Customer
   nameWithType: ReceiptType.Customer
-- uid: Nexi.Sdk.ReceiptType.Merchant
+- uid: Opi.Sdk.ReceiptType.Merchant
   name: Merchant
-  href: api/Nexi.Sdk.ReceiptType.html#Nexi_Sdk_ReceiptType_Merchant
-  commentId: F:Nexi.Sdk.ReceiptType.Merchant
-  fullName: Nexi.Sdk.ReceiptType.Merchant
+  href: api/Opi.Sdk.ReceiptType.html#Opi_Sdk_ReceiptType_Merchant
+  commentId: F:Opi.Sdk.ReceiptType.Merchant
+  fullName: Opi.Sdk.ReceiptType.Merchant
   nameWithType: ReceiptType.Merchant
-- uid: Nexi.Sdk.ResultState
+- uid: Opi.Sdk.ResultState
   name: ResultState
-  href: api/Nexi.Sdk.ResultState.html
-  commentId: T:Nexi.Sdk.ResultState
-  fullName: Nexi.Sdk.ResultState
+  href: api/Opi.Sdk.ResultState.html
+  commentId: T:Opi.Sdk.ResultState
+  fullName: Opi.Sdk.ResultState
   nameWithType: ResultState
-- uid: Nexi.Sdk.ResultState.Aborted
+- uid: Opi.Sdk.ResultState.Aborted
   name: Aborted
-  href: api/Nexi.Sdk.ResultState.html#Nexi_Sdk_ResultState_Aborted
-  commentId: F:Nexi.Sdk.ResultState.Aborted
-  fullName: Nexi.Sdk.ResultState.Aborted
+  href: api/Opi.Sdk.ResultState.html#Opi_Sdk_ResultState_Aborted
+  commentId: F:Opi.Sdk.ResultState.Aborted
+  fullName: Opi.Sdk.ResultState.Aborted
   nameWithType: ResultState.Aborted
-- uid: Nexi.Sdk.ResultState.CommunicationError
+- uid: Opi.Sdk.ResultState.CommunicationError
   name: CommunicationError
-  href: api/Nexi.Sdk.ResultState.html#Nexi_Sdk_ResultState_CommunicationError
-  commentId: F:Nexi.Sdk.ResultState.CommunicationError
-  fullName: Nexi.Sdk.ResultState.CommunicationError
+  href: api/Opi.Sdk.ResultState.html#Opi_Sdk_ResultState_CommunicationError
+  commentId: F:Opi.Sdk.ResultState.CommunicationError
+  fullName: Opi.Sdk.ResultState.CommunicationError
   nameWithType: ResultState.CommunicationError
-- uid: Nexi.Sdk.ResultState.Declined
+- uid: Opi.Sdk.ResultState.Declined
   name: Declined
-  href: api/Nexi.Sdk.ResultState.html#Nexi_Sdk_ResultState_Declined
-  commentId: F:Nexi.Sdk.ResultState.Declined
-  fullName: Nexi.Sdk.ResultState.Declined
+  href: api/Opi.Sdk.ResultState.html#Opi_Sdk_ResultState_Declined
+  commentId: F:Opi.Sdk.ResultState.Declined
+  fullName: Opi.Sdk.ResultState.Declined
   nameWithType: ResultState.Declined
-- uid: Nexi.Sdk.ResultState.InProgress
+- uid: Opi.Sdk.ResultState.InProgress
   name: InProgress
-  href: api/Nexi.Sdk.ResultState.html#Nexi_Sdk_ResultState_InProgress
-  commentId: F:Nexi.Sdk.ResultState.InProgress
-  fullName: Nexi.Sdk.ResultState.InProgress
+  href: api/Opi.Sdk.ResultState.html#Opi_Sdk_ResultState_InProgress
+  commentId: F:Opi.Sdk.ResultState.InProgress
+  fullName: Opi.Sdk.ResultState.InProgress
   nameWithType: ResultState.InProgress
-- uid: Nexi.Sdk.ResultState.InvalidRequest
+- uid: Opi.Sdk.ResultState.InvalidRequest
   name: InvalidRequest
-  href: api/Nexi.Sdk.ResultState.html#Nexi_Sdk_ResultState_InvalidRequest
-  commentId: F:Nexi.Sdk.ResultState.InvalidRequest
-  fullName: Nexi.Sdk.ResultState.InvalidRequest
+  href: api/Opi.Sdk.ResultState.html#Opi_Sdk_ResultState_InvalidRequest
+  commentId: F:Opi.Sdk.ResultState.InvalidRequest
+  fullName: Opi.Sdk.ResultState.InvalidRequest
   nameWithType: ResultState.InvalidRequest
-- uid: Nexi.Sdk.ResultState.Success
+- uid: Opi.Sdk.ResultState.Success
   name: Success
-  href: api/Nexi.Sdk.ResultState.html#Nexi_Sdk_ResultState_Success
-  commentId: F:Nexi.Sdk.ResultState.Success
-  fullName: Nexi.Sdk.ResultState.Success
+  href: api/Opi.Sdk.ResultState.html#Opi_Sdk_ResultState_Success
+  commentId: F:Opi.Sdk.ResultState.Success
+  fullName: Opi.Sdk.ResultState.Success
   nameWithType: ResultState.Success
-- uid: Nexi.Sdk.ResultState.TerminalError
+- uid: Opi.Sdk.ResultState.TerminalError
   name: TerminalError
-  href: api/Nexi.Sdk.ResultState.html#Nexi_Sdk_ResultState_TerminalError
-  commentId: F:Nexi.Sdk.ResultState.TerminalError
-  fullName: Nexi.Sdk.ResultState.TerminalError
+  href: api/Opi.Sdk.ResultState.html#Opi_Sdk_ResultState_TerminalError
+  commentId: F:Opi.Sdk.ResultState.TerminalError
+  fullName: Opi.Sdk.ResultState.TerminalError
   nameWithType: ResultState.TerminalError
-- uid: Nexi.Sdk.ResultState.Unknown
+- uid: Opi.Sdk.ResultState.Unknown
   name: Unknown
-  href: api/Nexi.Sdk.ResultState.html#Nexi_Sdk_ResultState_Unknown
-  commentId: F:Nexi.Sdk.ResultState.Unknown
-  fullName: Nexi.Sdk.ResultState.Unknown
+  href: api/Opi.Sdk.ResultState.html#Opi_Sdk_ResultState_Unknown
+  commentId: F:Opi.Sdk.ResultState.Unknown
+  fullName: Opi.Sdk.ResultState.Unknown
   nameWithType: ResultState.Unknown
-- uid: Nexi.Sdk.TerminalInformation
+- uid: Opi.Sdk.TerminalInformation
   name: TerminalInformation
-  href: api/Nexi.Sdk.TerminalInformation.html
-  commentId: T:Nexi.Sdk.TerminalInformation
-  fullName: Nexi.Sdk.TerminalInformation
+  href: api/Opi.Sdk.TerminalInformation.html
+  commentId: T:Opi.Sdk.TerminalInformation
+  fullName: Opi.Sdk.TerminalInformation
   nameWithType: TerminalInformation
-- uid: Nexi.Sdk.TerminalInformation.AppVersion
+- uid: Opi.Sdk.TerminalInformation.AppVersion
   name: AppVersion
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_AppVersion
-  commentId: P:Nexi.Sdk.TerminalInformation.AppVersion
-  fullName: Nexi.Sdk.TerminalInformation.AppVersion
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_AppVersion
+  commentId: P:Opi.Sdk.TerminalInformation.AppVersion
+  fullName: Opi.Sdk.TerminalInformation.AppVersion
   nameWithType: TerminalInformation.AppVersion
-- uid: Nexi.Sdk.TerminalInformation.AppVersion*
+- uid: Opi.Sdk.TerminalInformation.AppVersion*
   name: AppVersion
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_AppVersion_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.AppVersion
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_AppVersion_
+  commentId: Overload:Opi.Sdk.TerminalInformation.AppVersion
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.AppVersion
+  fullName: Opi.Sdk.TerminalInformation.AppVersion
   nameWithType: TerminalInformation.AppVersion
-- uid: Nexi.Sdk.TerminalInformation.ConfigurationName
+- uid: Opi.Sdk.TerminalInformation.ConfigurationName
   name: ConfigurationName
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_ConfigurationName
-  commentId: P:Nexi.Sdk.TerminalInformation.ConfigurationName
-  fullName: Nexi.Sdk.TerminalInformation.ConfigurationName
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_ConfigurationName
+  commentId: P:Opi.Sdk.TerminalInformation.ConfigurationName
+  fullName: Opi.Sdk.TerminalInformation.ConfigurationName
   nameWithType: TerminalInformation.ConfigurationName
-- uid: Nexi.Sdk.TerminalInformation.ConfigurationName*
+- uid: Opi.Sdk.TerminalInformation.ConfigurationName*
   name: ConfigurationName
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_ConfigurationName_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.ConfigurationName
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_ConfigurationName_
+  commentId: Overload:Opi.Sdk.TerminalInformation.ConfigurationName
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.ConfigurationName
+  fullName: Opi.Sdk.TerminalInformation.ConfigurationName
   nameWithType: TerminalInformation.ConfigurationName
-- uid: Nexi.Sdk.TerminalInformation.ConfigurationVersion
+- uid: Opi.Sdk.TerminalInformation.ConfigurationVersion
   name: ConfigurationVersion
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_ConfigurationVersion
-  commentId: P:Nexi.Sdk.TerminalInformation.ConfigurationVersion
-  fullName: Nexi.Sdk.TerminalInformation.ConfigurationVersion
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_ConfigurationVersion
+  commentId: P:Opi.Sdk.TerminalInformation.ConfigurationVersion
+  fullName: Opi.Sdk.TerminalInformation.ConfigurationVersion
   nameWithType: TerminalInformation.ConfigurationVersion
-- uid: Nexi.Sdk.TerminalInformation.ConfigurationVersion*
+- uid: Opi.Sdk.TerminalInformation.ConfigurationVersion*
   name: ConfigurationVersion
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_ConfigurationVersion_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.ConfigurationVersion
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_ConfigurationVersion_
+  commentId: Overload:Opi.Sdk.TerminalInformation.ConfigurationVersion
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.ConfigurationVersion
+  fullName: Opi.Sdk.TerminalInformation.ConfigurationVersion
   nameWithType: TerminalInformation.ConfigurationVersion
-- uid: Nexi.Sdk.TerminalInformation.Hardware
+- uid: Opi.Sdk.TerminalInformation.Hardware
   name: Hardware
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_Hardware
-  commentId: P:Nexi.Sdk.TerminalInformation.Hardware
-  fullName: Nexi.Sdk.TerminalInformation.Hardware
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_Hardware
+  commentId: P:Opi.Sdk.TerminalInformation.Hardware
+  fullName: Opi.Sdk.TerminalInformation.Hardware
   nameWithType: TerminalInformation.Hardware
-- uid: Nexi.Sdk.TerminalInformation.Hardware*
+- uid: Opi.Sdk.TerminalInformation.Hardware*
   name: Hardware
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_Hardware_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.Hardware
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_Hardware_
+  commentId: Overload:Opi.Sdk.TerminalInformation.Hardware
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.Hardware
+  fullName: Opi.Sdk.TerminalInformation.Hardware
   nameWithType: TerminalInformation.Hardware
-- uid: Nexi.Sdk.TerminalInformation.InitialisedAcquirers
+- uid: Opi.Sdk.TerminalInformation.InitialisedAcquirers
   name: InitialisedAcquirers
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_InitialisedAcquirers
-  commentId: P:Nexi.Sdk.TerminalInformation.InitialisedAcquirers
-  fullName: Nexi.Sdk.TerminalInformation.InitialisedAcquirers
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_InitialisedAcquirers
+  commentId: P:Opi.Sdk.TerminalInformation.InitialisedAcquirers
+  fullName: Opi.Sdk.TerminalInformation.InitialisedAcquirers
   nameWithType: TerminalInformation.InitialisedAcquirers
-- uid: Nexi.Sdk.TerminalInformation.InitialisedAcquirers*
+- uid: Opi.Sdk.TerminalInformation.InitialisedAcquirers*
   name: InitialisedAcquirers
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_InitialisedAcquirers_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.InitialisedAcquirers
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_InitialisedAcquirers_
+  commentId: Overload:Opi.Sdk.TerminalInformation.InitialisedAcquirers
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.InitialisedAcquirers
+  fullName: Opi.Sdk.TerminalInformation.InitialisedAcquirers
   nameWithType: TerminalInformation.InitialisedAcquirers
-- uid: Nexi.Sdk.TerminalInformation.MerchantId
+- uid: Opi.Sdk.TerminalInformation.MerchantId
   name: MerchantId
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_MerchantId
-  commentId: P:Nexi.Sdk.TerminalInformation.MerchantId
-  fullName: Nexi.Sdk.TerminalInformation.MerchantId
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_MerchantId
+  commentId: P:Opi.Sdk.TerminalInformation.MerchantId
+  fullName: Opi.Sdk.TerminalInformation.MerchantId
   nameWithType: TerminalInformation.MerchantId
-- uid: Nexi.Sdk.TerminalInformation.MerchantId*
+- uid: Opi.Sdk.TerminalInformation.MerchantId*
   name: MerchantId
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_MerchantId_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.MerchantId
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_MerchantId_
+  commentId: Overload:Opi.Sdk.TerminalInformation.MerchantId
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.MerchantId
+  fullName: Opi.Sdk.TerminalInformation.MerchantId
   nameWithType: TerminalInformation.MerchantId
-- uid: Nexi.Sdk.TerminalInformation.SerialNumber
+- uid: Opi.Sdk.TerminalInformation.SerialNumber
   name: SerialNumber
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_SerialNumber
-  commentId: P:Nexi.Sdk.TerminalInformation.SerialNumber
-  fullName: Nexi.Sdk.TerminalInformation.SerialNumber
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_SerialNumber
+  commentId: P:Opi.Sdk.TerminalInformation.SerialNumber
+  fullName: Opi.Sdk.TerminalInformation.SerialNumber
   nameWithType: TerminalInformation.SerialNumber
-- uid: Nexi.Sdk.TerminalInformation.SerialNumber*
+- uid: Opi.Sdk.TerminalInformation.SerialNumber*
   name: SerialNumber
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_SerialNumber_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.SerialNumber
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_SerialNumber_
+  commentId: Overload:Opi.Sdk.TerminalInformation.SerialNumber
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.SerialNumber
+  fullName: Opi.Sdk.TerminalInformation.SerialNumber
   nameWithType: TerminalInformation.SerialNumber
-- uid: Nexi.Sdk.TerminalInformation.Status
+- uid: Opi.Sdk.TerminalInformation.Status
   name: Status
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_Status
-  commentId: P:Nexi.Sdk.TerminalInformation.Status
-  fullName: Nexi.Sdk.TerminalInformation.Status
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_Status
+  commentId: P:Opi.Sdk.TerminalInformation.Status
+  fullName: Opi.Sdk.TerminalInformation.Status
   nameWithType: TerminalInformation.Status
-- uid: Nexi.Sdk.TerminalInformation.Status*
+- uid: Opi.Sdk.TerminalInformation.Status*
   name: Status
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_Status_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.Status
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_Status_
+  commentId: Overload:Opi.Sdk.TerminalInformation.Status
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.Status
+  fullName: Opi.Sdk.TerminalInformation.Status
   nameWithType: TerminalInformation.Status
-- uid: Nexi.Sdk.TerminalInformation.SubStatus
+- uid: Opi.Sdk.TerminalInformation.SubStatus
   name: SubStatus
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_SubStatus
-  commentId: P:Nexi.Sdk.TerminalInformation.SubStatus
-  fullName: Nexi.Sdk.TerminalInformation.SubStatus
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_SubStatus
+  commentId: P:Opi.Sdk.TerminalInformation.SubStatus
+  fullName: Opi.Sdk.TerminalInformation.SubStatus
   nameWithType: TerminalInformation.SubStatus
-- uid: Nexi.Sdk.TerminalInformation.SubStatus*
+- uid: Opi.Sdk.TerminalInformation.SubStatus*
   name: SubStatus
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_SubStatus_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.SubStatus
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_SubStatus_
+  commentId: Overload:Opi.Sdk.TerminalInformation.SubStatus
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.SubStatus
+  fullName: Opi.Sdk.TerminalInformation.SubStatus
   nameWithType: TerminalInformation.SubStatus
-- uid: Nexi.Sdk.TerminalInformation.SupportedBrands
+- uid: Opi.Sdk.TerminalInformation.SupportedBrands
   name: SupportedBrands
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_SupportedBrands
-  commentId: P:Nexi.Sdk.TerminalInformation.SupportedBrands
-  fullName: Nexi.Sdk.TerminalInformation.SupportedBrands
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_SupportedBrands
+  commentId: P:Opi.Sdk.TerminalInformation.SupportedBrands
+  fullName: Opi.Sdk.TerminalInformation.SupportedBrands
   nameWithType: TerminalInformation.SupportedBrands
-- uid: Nexi.Sdk.TerminalInformation.SupportedBrands*
+- uid: Opi.Sdk.TerminalInformation.SupportedBrands*
   name: SupportedBrands
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_SupportedBrands_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.SupportedBrands
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_SupportedBrands_
+  commentId: Overload:Opi.Sdk.TerminalInformation.SupportedBrands
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.SupportedBrands
+  fullName: Opi.Sdk.TerminalInformation.SupportedBrands
   nameWithType: TerminalInformation.SupportedBrands
-- uid: Nexi.Sdk.TerminalInformation.TerminalId
+- uid: Opi.Sdk.TerminalInformation.TerminalId
   name: TerminalId
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_TerminalId
-  commentId: P:Nexi.Sdk.TerminalInformation.TerminalId
-  fullName: Nexi.Sdk.TerminalInformation.TerminalId
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_TerminalId
+  commentId: P:Opi.Sdk.TerminalInformation.TerminalId
+  fullName: Opi.Sdk.TerminalInformation.TerminalId
   nameWithType: TerminalInformation.TerminalId
-- uid: Nexi.Sdk.TerminalInformation.TerminalId*
+- uid: Opi.Sdk.TerminalInformation.TerminalId*
   name: TerminalId
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_TerminalId_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.TerminalId
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_TerminalId_
+  commentId: Overload:Opi.Sdk.TerminalInformation.TerminalId
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.TerminalId
+  fullName: Opi.Sdk.TerminalInformation.TerminalId
   nameWithType: TerminalInformation.TerminalId
-- uid: Nexi.Sdk.TerminalInformation.TerminalIp
+- uid: Opi.Sdk.TerminalInformation.TerminalIp
   name: TerminalIp
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_TerminalIp
-  commentId: P:Nexi.Sdk.TerminalInformation.TerminalIp
-  fullName: Nexi.Sdk.TerminalInformation.TerminalIp
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_TerminalIp
+  commentId: P:Opi.Sdk.TerminalInformation.TerminalIp
+  fullName: Opi.Sdk.TerminalInformation.TerminalIp
   nameWithType: TerminalInformation.TerminalIp
-- uid: Nexi.Sdk.TerminalInformation.TerminalIp*
+- uid: Opi.Sdk.TerminalInformation.TerminalIp*
   name: TerminalIp
-  href: api/Nexi.Sdk.TerminalInformation.html#Nexi_Sdk_TerminalInformation_TerminalIp_
-  commentId: Overload:Nexi.Sdk.TerminalInformation.TerminalIp
+  href: api/Opi.Sdk.TerminalInformation.html#Opi_Sdk_TerminalInformation_TerminalIp_
+  commentId: Overload:Opi.Sdk.TerminalInformation.TerminalIp
   isSpec: "True"
-  fullName: Nexi.Sdk.TerminalInformation.TerminalIp
+  fullName: Opi.Sdk.TerminalInformation.TerminalIp
   nameWithType: TerminalInformation.TerminalIp
-- uid: Nexi.Sdk.TransactionResult
+- uid: Opi.Sdk.TransactionResult
   name: TransactionResult
-  href: api/Nexi.Sdk.TransactionResult.html
-  commentId: T:Nexi.Sdk.TransactionResult
-  fullName: Nexi.Sdk.TransactionResult
+  href: api/Opi.Sdk.TransactionResult.html
+  commentId: T:Opi.Sdk.TransactionResult
+  fullName: Opi.Sdk.TransactionResult
   nameWithType: TransactionResult
-- uid: Nexi.Sdk.TransactionResult.AcquirerId
+- uid: Opi.Sdk.TransactionResult.AcquirerId
   name: AcquirerId
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_AcquirerId
-  commentId: P:Nexi.Sdk.TransactionResult.AcquirerId
-  fullName: Nexi.Sdk.TransactionResult.AcquirerId
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_AcquirerId
+  commentId: P:Opi.Sdk.TransactionResult.AcquirerId
+  fullName: Opi.Sdk.TransactionResult.AcquirerId
   nameWithType: TransactionResult.AcquirerId
-- uid: Nexi.Sdk.TransactionResult.AcquirerId*
+- uid: Opi.Sdk.TransactionResult.AcquirerId*
   name: AcquirerId
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_AcquirerId_
-  commentId: Overload:Nexi.Sdk.TransactionResult.AcquirerId
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_AcquirerId_
+  commentId: Overload:Opi.Sdk.TransactionResult.AcquirerId
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.AcquirerId
+  fullName: Opi.Sdk.TransactionResult.AcquirerId
   nameWithType: TransactionResult.AcquirerId
-- uid: Nexi.Sdk.TransactionResult.Amount
+- uid: Opi.Sdk.TransactionResult.Amount
   name: Amount
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Amount
-  commentId: P:Nexi.Sdk.TransactionResult.Amount
-  fullName: Nexi.Sdk.TransactionResult.Amount
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Amount
+  commentId: P:Opi.Sdk.TransactionResult.Amount
+  fullName: Opi.Sdk.TransactionResult.Amount
   nameWithType: TransactionResult.Amount
-- uid: Nexi.Sdk.TransactionResult.Amount*
+- uid: Opi.Sdk.TransactionResult.Amount*
   name: Amount
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Amount_
-  commentId: Overload:Nexi.Sdk.TransactionResult.Amount
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Amount_
+  commentId: Overload:Opi.Sdk.TransactionResult.Amount
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.Amount
+  fullName: Opi.Sdk.TransactionResult.Amount
   nameWithType: TransactionResult.Amount
-- uid: Nexi.Sdk.TransactionResult.ApprovalCode
+- uid: Opi.Sdk.TransactionResult.ApprovalCode
   name: ApprovalCode
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_ApprovalCode
-  commentId: P:Nexi.Sdk.TransactionResult.ApprovalCode
-  fullName: Nexi.Sdk.TransactionResult.ApprovalCode
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_ApprovalCode
+  commentId: P:Opi.Sdk.TransactionResult.ApprovalCode
+  fullName: Opi.Sdk.TransactionResult.ApprovalCode
   nameWithType: TransactionResult.ApprovalCode
-- uid: Nexi.Sdk.TransactionResult.ApprovalCode*
+- uid: Opi.Sdk.TransactionResult.ApprovalCode*
   name: ApprovalCode
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_ApprovalCode_
-  commentId: Overload:Nexi.Sdk.TransactionResult.ApprovalCode
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_ApprovalCode_
+  commentId: Overload:Opi.Sdk.TransactionResult.ApprovalCode
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.ApprovalCode
+  fullName: Opi.Sdk.TransactionResult.ApprovalCode
   nameWithType: TransactionResult.ApprovalCode
-- uid: Nexi.Sdk.TransactionResult.AuthReference
+- uid: Opi.Sdk.TransactionResult.AuthReference
   name: AuthReference
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_AuthReference
-  commentId: P:Nexi.Sdk.TransactionResult.AuthReference
-  fullName: Nexi.Sdk.TransactionResult.AuthReference
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_AuthReference
+  commentId: P:Opi.Sdk.TransactionResult.AuthReference
+  fullName: Opi.Sdk.TransactionResult.AuthReference
   nameWithType: TransactionResult.AuthReference
-- uid: Nexi.Sdk.TransactionResult.AuthReference*
+- uid: Opi.Sdk.TransactionResult.AuthReference*
   name: AuthReference
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_AuthReference_
-  commentId: Overload:Nexi.Sdk.TransactionResult.AuthReference
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_AuthReference_
+  commentId: Overload:Opi.Sdk.TransactionResult.AuthReference
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.AuthReference
+  fullName: Opi.Sdk.TransactionResult.AuthReference
   nameWithType: TransactionResult.AuthReference
-- uid: Nexi.Sdk.TransactionResult.Currency
+- uid: Opi.Sdk.TransactionResult.Currency
   name: Currency
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Currency
-  commentId: P:Nexi.Sdk.TransactionResult.Currency
-  fullName: Nexi.Sdk.TransactionResult.Currency
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Currency
+  commentId: P:Opi.Sdk.TransactionResult.Currency
+  fullName: Opi.Sdk.TransactionResult.Currency
   nameWithType: TransactionResult.Currency
-- uid: Nexi.Sdk.TransactionResult.Currency*
+- uid: Opi.Sdk.TransactionResult.Currency*
   name: Currency
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Currency_
-  commentId: Overload:Nexi.Sdk.TransactionResult.Currency
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Currency_
+  commentId: Overload:Opi.Sdk.TransactionResult.Currency
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.Currency
+  fullName: Opi.Sdk.TransactionResult.Currency
   nameWithType: TransactionResult.Currency
-- uid: Nexi.Sdk.TransactionResult.Dcc
+- uid: Opi.Sdk.TransactionResult.Dcc
   name: Dcc
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Dcc
-  commentId: P:Nexi.Sdk.TransactionResult.Dcc
-  fullName: Nexi.Sdk.TransactionResult.Dcc
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Dcc
+  commentId: P:Opi.Sdk.TransactionResult.Dcc
+  fullName: Opi.Sdk.TransactionResult.Dcc
   nameWithType: TransactionResult.Dcc
-- uid: Nexi.Sdk.TransactionResult.Dcc*
+- uid: Opi.Sdk.TransactionResult.Dcc*
   name: Dcc
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Dcc_
-  commentId: Overload:Nexi.Sdk.TransactionResult.Dcc
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Dcc_
+  commentId: Overload:Opi.Sdk.TransactionResult.Dcc
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.Dcc
+  fullName: Opi.Sdk.TransactionResult.Dcc
   nameWithType: TransactionResult.Dcc
-- uid: Nexi.Sdk.TransactionResult.MaskedCardNumber
+- uid: Opi.Sdk.TransactionResult.MaskedCardNumber
   name: MaskedCardNumber
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_MaskedCardNumber
-  commentId: P:Nexi.Sdk.TransactionResult.MaskedCardNumber
-  fullName: Nexi.Sdk.TransactionResult.MaskedCardNumber
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_MaskedCardNumber
+  commentId: P:Opi.Sdk.TransactionResult.MaskedCardNumber
+  fullName: Opi.Sdk.TransactionResult.MaskedCardNumber
   nameWithType: TransactionResult.MaskedCardNumber
-- uid: Nexi.Sdk.TransactionResult.MaskedCardNumber*
+- uid: Opi.Sdk.TransactionResult.MaskedCardNumber*
   name: MaskedCardNumber
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_MaskedCardNumber_
-  commentId: Overload:Nexi.Sdk.TransactionResult.MaskedCardNumber
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_MaskedCardNumber_
+  commentId: Overload:Opi.Sdk.TransactionResult.MaskedCardNumber
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.MaskedCardNumber
+  fullName: Opi.Sdk.TransactionResult.MaskedCardNumber
   nameWithType: TransactionResult.MaskedCardNumber
-- uid: Nexi.Sdk.TransactionResult.PaymentMethod
+- uid: Opi.Sdk.TransactionResult.PaymentMethod
   name: PaymentMethod
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_PaymentMethod
-  commentId: P:Nexi.Sdk.TransactionResult.PaymentMethod
-  fullName: Nexi.Sdk.TransactionResult.PaymentMethod
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_PaymentMethod
+  commentId: P:Opi.Sdk.TransactionResult.PaymentMethod
+  fullName: Opi.Sdk.TransactionResult.PaymentMethod
   nameWithType: TransactionResult.PaymentMethod
-- uid: Nexi.Sdk.TransactionResult.PaymentMethod*
+- uid: Opi.Sdk.TransactionResult.PaymentMethod*
   name: PaymentMethod
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_PaymentMethod_
-  commentId: Overload:Nexi.Sdk.TransactionResult.PaymentMethod
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_PaymentMethod_
+  commentId: Overload:Opi.Sdk.TransactionResult.PaymentMethod
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.PaymentMethod
+  fullName: Opi.Sdk.TransactionResult.PaymentMethod
   nameWithType: TransactionResult.PaymentMethod
-- uid: Nexi.Sdk.TransactionResult.Receipts
+- uid: Opi.Sdk.TransactionResult.Receipts
   name: Receipts
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Receipts
-  commentId: P:Nexi.Sdk.TransactionResult.Receipts
-  fullName: Nexi.Sdk.TransactionResult.Receipts
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Receipts
+  commentId: P:Opi.Sdk.TransactionResult.Receipts
+  fullName: Opi.Sdk.TransactionResult.Receipts
   nameWithType: TransactionResult.Receipts
-- uid: Nexi.Sdk.TransactionResult.Receipts*
+- uid: Opi.Sdk.TransactionResult.Receipts*
   name: Receipts
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Receipts_
-  commentId: Overload:Nexi.Sdk.TransactionResult.Receipts
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Receipts_
+  commentId: Overload:Opi.Sdk.TransactionResult.Receipts
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.Receipts
+  fullName: Opi.Sdk.TransactionResult.Receipts
   nameWithType: TransactionResult.Receipts
-- uid: Nexi.Sdk.TransactionResult.Reference
+- uid: Opi.Sdk.TransactionResult.Reference
   name: Reference
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Reference
-  commentId: P:Nexi.Sdk.TransactionResult.Reference
-  fullName: Nexi.Sdk.TransactionResult.Reference
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Reference
+  commentId: P:Opi.Sdk.TransactionResult.Reference
+  fullName: Opi.Sdk.TransactionResult.Reference
   nameWithType: TransactionResult.Reference
-- uid: Nexi.Sdk.TransactionResult.Reference*
+- uid: Opi.Sdk.TransactionResult.Reference*
   name: Reference
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Reference_
-  commentId: Overload:Nexi.Sdk.TransactionResult.Reference
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Reference_
+  commentId: Overload:Opi.Sdk.TransactionResult.Reference
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.Reference
+  fullName: Opi.Sdk.TransactionResult.Reference
   nameWithType: TransactionResult.Reference
-- uid: Nexi.Sdk.TransactionResult.Tip
+- uid: Opi.Sdk.TransactionResult.Tip
   name: Tip
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Tip
-  commentId: P:Nexi.Sdk.TransactionResult.Tip
-  fullName: Nexi.Sdk.TransactionResult.Tip
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Tip
+  commentId: P:Opi.Sdk.TransactionResult.Tip
+  fullName: Opi.Sdk.TransactionResult.Tip
   nameWithType: TransactionResult.Tip
-- uid: Nexi.Sdk.TransactionResult.Tip*
+- uid: Opi.Sdk.TransactionResult.Tip*
   name: Tip
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_Tip_
-  commentId: Overload:Nexi.Sdk.TransactionResult.Tip
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_Tip_
+  commentId: Overload:Opi.Sdk.TransactionResult.Tip
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.Tip
+  fullName: Opi.Sdk.TransactionResult.Tip
   nameWithType: TransactionResult.Tip
-- uid: Nexi.Sdk.TransactionResult.TransactionDate
+- uid: Opi.Sdk.TransactionResult.TransactionDate
   name: TransactionDate
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_TransactionDate
-  commentId: P:Nexi.Sdk.TransactionResult.TransactionDate
-  fullName: Nexi.Sdk.TransactionResult.TransactionDate
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_TransactionDate
+  commentId: P:Opi.Sdk.TransactionResult.TransactionDate
+  fullName: Opi.Sdk.TransactionResult.TransactionDate
   nameWithType: TransactionResult.TransactionDate
-- uid: Nexi.Sdk.TransactionResult.TransactionDate*
+- uid: Opi.Sdk.TransactionResult.TransactionDate*
   name: TransactionDate
-  href: api/Nexi.Sdk.TransactionResult.html#Nexi_Sdk_TransactionResult_TransactionDate_
-  commentId: Overload:Nexi.Sdk.TransactionResult.TransactionDate
+  href: api/Opi.Sdk.TransactionResult.html#Opi_Sdk_TransactionResult_TransactionDate_
+  commentId: Overload:Opi.Sdk.TransactionResult.TransactionDate
   isSpec: "True"
-  fullName: Nexi.Sdk.TransactionResult.TransactionDate
+  fullName: Opi.Sdk.TransactionResult.TransactionDate
   nameWithType: TransactionResult.TransactionDate
-- uid: Nexi.Sdk.Windows
-  name: Nexi.Sdk.Windows
-  href: api/Nexi.Sdk.Windows.html
-  commentId: N:Nexi.Sdk.Windows
-  fullName: Nexi.Sdk.Windows
-  nameWithType: Nexi.Sdk.Windows
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay
+- uid: Opi.Sdk.Windows
+  name: Opi.Sdk.Windows
+  href: api/Opi.Sdk.Windows.html
+  commentId: N:Opi.Sdk.Windows
+  fullName: Opi.Sdk.Windows
+  nameWithType: Opi.Sdk.Windows
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay
   name: EmbeddedTransactionOverlay
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html
-  commentId: T:Nexi.Sdk.Windows.EmbeddedTransactionOverlay
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html
+  commentId: T:Opi.Sdk.Windows.EmbeddedTransactionOverlay
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay
   nameWithType: EmbeddedTransactionOverlay
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor(System.Windows.Controls.Grid,System.Windows.UIElement,System.Nullable{System.TimeSpan})
-  name: EmbeddedTransactionOverlay(Grid, UIElement, TimeSpan?)
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay__ctor_System_Windows_Controls_Grid_System_Windows_UIElement_System_Nullable_System_TimeSpan__
-  commentId: M:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor(System.Windows.Controls.Grid,System.Windows.UIElement,System.Nullable{System.TimeSpan})
-  name.vb: New(Grid, UIElement, TimeSpan?)
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.EmbeddedTransactionOverlay(System.Windows.Controls.Grid, System.Windows.UIElement, System.TimeSpan?)
-  fullName.vb: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.New(System.Windows.Controls.Grid, System.Windows.UIElement, System.TimeSpan?)
-  nameWithType: EmbeddedTransactionOverlay.EmbeddedTransactionOverlay(Grid, UIElement, TimeSpan?)
-  nameWithType.vb: EmbeddedTransactionOverlay.New(Grid, UIElement, TimeSpan?)
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor*
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor(System.Windows.Controls.Grid,System.Windows.UIElement,System.Nullable{System.TimeSpan},Opi.Sdk.Windows.OverlayBrandingOptions)
+  name: EmbeddedTransactionOverlay(Grid, UIElement, TimeSpan?, OverlayBrandingOptions?)
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay__ctor_System_Windows_Controls_Grid_System_Windows_UIElement_System_Nullable_System_TimeSpan__Opi_Sdk_Windows_OverlayBrandingOptions_
+  commentId: M:Opi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor(System.Windows.Controls.Grid,System.Windows.UIElement,System.Nullable{System.TimeSpan},Opi.Sdk.Windows.OverlayBrandingOptions)
+  name.vb: New(Grid, UIElement, TimeSpan?, OverlayBrandingOptions)
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.EmbeddedTransactionOverlay(System.Windows.Controls.Grid, System.Windows.UIElement, System.TimeSpan?, Opi.Sdk.Windows.OverlayBrandingOptions?)
+  fullName.vb: Opi.Sdk.Windows.EmbeddedTransactionOverlay.New(System.Windows.Controls.Grid, System.Windows.UIElement, System.TimeSpan?, Opi.Sdk.Windows.OverlayBrandingOptions)
+  nameWithType: EmbeddedTransactionOverlay.EmbeddedTransactionOverlay(Grid, UIElement, TimeSpan?, OverlayBrandingOptions?)
+  nameWithType.vb: EmbeddedTransactionOverlay.New(Grid, UIElement, TimeSpan?, OverlayBrandingOptions)
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor*
   name: EmbeddedTransactionOverlay
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay__ctor_
-  commentId: Overload:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay__ctor_
+  commentId: Overload:Opi.Sdk.Windows.EmbeddedTransactionOverlay.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.EmbeddedTransactionOverlay
-  fullName.vb: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.New
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.EmbeddedTransactionOverlay
+  fullName.vb: Opi.Sdk.Windows.EmbeddedTransactionOverlay.New
   nameWithType: EmbeddedTransactionOverlay.EmbeddedTransactionOverlay
   nameWithType.vb: EmbeddedTransactionOverlay.New
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync
   name: CloseAsync()
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay_CloseAsync
-  commentId: M:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync()
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay_CloseAsync
+  commentId: M:Opi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync()
   nameWithType: EmbeddedTransactionOverlay.CloseAsync()
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync*
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync*
   name: CloseAsync
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay_CloseAsync_
-  commentId: Overload:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay_CloseAsync_
+  commentId: Overload:Opi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync
   isSpec: "True"
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.CloseAsync
   nameWithType: EmbeddedTransactionOverlay.CloseAsync
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync
   name: DisposeAsync()
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay_DisposeAsync
-  commentId: M:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync()
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay_DisposeAsync
+  commentId: M:Opi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync()
   nameWithType: EmbeddedTransactionOverlay.DisposeAsync()
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync*
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync*
   name: DisposeAsync
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay_DisposeAsync_
-  commentId: Overload:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay_DisposeAsync_
+  commentId: Overload:Opi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync
   isSpec: "True"
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.DisposeAsync
   nameWithType: EmbeddedTransactionOverlay.DisposeAsync
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
   name: OnEvent(OperationEvent)
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay_OnEvent_Nexi_Sdk_OperationEvent_
-  commentId: M:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay_OnEvent_Opi_Sdk_OperationEvent_
+  commentId: M:Opi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
   nameWithType: EmbeddedTransactionOverlay.OnEvent(OperationEvent)
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent*
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent*
   name: OnEvent
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay_OnEvent_
-  commentId: Overload:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay_OnEvent_
+  commentId: Overload:Opi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent
   isSpec: "True"
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.OnEvent
   nameWithType: EmbeddedTransactionOverlay.OnEvent
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})
-  name: ShowAsync(NexiOperation, string, Func<Task<NexiResult>>?)
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay_ShowAsync_Nexi_Sdk_NexiOperation_System_String_System_Func_System_Threading_Tasks_Task_Nexi_Sdk_NexiResult___
-  commentId: M:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})
-  name.vb: ShowAsync(NexiOperation, String, Func(Of Task(Of NexiResult)))
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation, string, System.Func<System.Threading.Tasks.Task<Nexi.Sdk.NexiResult>>?)
-  fullName.vb: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation, String, System.Func(Of System.Threading.Tasks.Task(Of Nexi.Sdk.NexiResult)))
-  nameWithType: EmbeddedTransactionOverlay.ShowAsync(NexiOperation, string, Func<Task<NexiResult>>?)
-  nameWithType.vb: EmbeddedTransactionOverlay.ShowAsync(NexiOperation, String, Func(Of Task(Of NexiResult)))
-- uid: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync*
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation,System.String,System.Func{System.Threading.Tasks.Task{Opi.Sdk.OpiResult}})
+  name: ShowAsync(OpiOperation, string, Func<Task<OpiResult>>?)
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay_ShowAsync_Opi_Sdk_OpiOperation_System_String_System_Func_System_Threading_Tasks_Task_Opi_Sdk_OpiResult___
+  commentId: M:Opi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation,System.String,System.Func{System.Threading.Tasks.Task{Opi.Sdk.OpiResult}})
+  name.vb: ShowAsync(OpiOperation, String, Func(Of Task(Of OpiResult)))
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation, string, System.Func<System.Threading.Tasks.Task<Opi.Sdk.OpiResult>>?)
+  fullName.vb: Opi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation, String, System.Func(Of System.Threading.Tasks.Task(Of Opi.Sdk.OpiResult)))
+  nameWithType: EmbeddedTransactionOverlay.ShowAsync(OpiOperation, string, Func<Task<OpiResult>>?)
+  nameWithType.vb: EmbeddedTransactionOverlay.ShowAsync(OpiOperation, String, Func(Of Task(Of OpiResult)))
+- uid: Opi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync*
   name: ShowAsync
-  href: api/Nexi.Sdk.Windows.EmbeddedTransactionOverlay.html#Nexi_Sdk_Windows_EmbeddedTransactionOverlay_ShowAsync_
-  commentId: Overload:Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync
+  href: api/Opi.Sdk.Windows.EmbeddedTransactionOverlay.html#Opi_Sdk_Windows_EmbeddedTransactionOverlay_ShowAsync_
+  commentId: Overload:Opi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync
   isSpec: "True"
-  fullName: Nexi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync
+  fullName: Opi.Sdk.Windows.EmbeddedTransactionOverlay.ShowAsync
   nameWithType: EmbeddedTransactionOverlay.ShowAsync
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay
+- uid: Opi.Sdk.Windows.OverlayBrandingOptions
+  name: OverlayBrandingOptions
+  href: api/Opi.Sdk.Windows.OverlayBrandingOptions.html
+  commentId: T:Opi.Sdk.Windows.OverlayBrandingOptions
+  fullName: Opi.Sdk.Windows.OverlayBrandingOptions
+  nameWithType: OverlayBrandingOptions
+- uid: Opi.Sdk.Windows.OverlayBrandingOptions.BrandColor
+  name: BrandColor
+  href: api/Opi.Sdk.Windows.OverlayBrandingOptions.html#Opi_Sdk_Windows_OverlayBrandingOptions_BrandColor
+  commentId: P:Opi.Sdk.Windows.OverlayBrandingOptions.BrandColor
+  fullName: Opi.Sdk.Windows.OverlayBrandingOptions.BrandColor
+  nameWithType: OverlayBrandingOptions.BrandColor
+- uid: Opi.Sdk.Windows.OverlayBrandingOptions.BrandColor*
+  name: BrandColor
+  href: api/Opi.Sdk.Windows.OverlayBrandingOptions.html#Opi_Sdk_Windows_OverlayBrandingOptions_BrandColor_
+  commentId: Overload:Opi.Sdk.Windows.OverlayBrandingOptions.BrandColor
+  isSpec: "True"
+  fullName: Opi.Sdk.Windows.OverlayBrandingOptions.BrandColor
+  nameWithType: OverlayBrandingOptions.BrandColor
+- uid: Opi.Sdk.Windows.OverlayBrandingOptions.SvgLogo
+  name: SvgLogo
+  href: api/Opi.Sdk.Windows.OverlayBrandingOptions.html#Opi_Sdk_Windows_OverlayBrandingOptions_SvgLogo
+  commentId: P:Opi.Sdk.Windows.OverlayBrandingOptions.SvgLogo
+  fullName: Opi.Sdk.Windows.OverlayBrandingOptions.SvgLogo
+  nameWithType: OverlayBrandingOptions.SvgLogo
+- uid: Opi.Sdk.Windows.OverlayBrandingOptions.SvgLogo*
+  name: SvgLogo
+  href: api/Opi.Sdk.Windows.OverlayBrandingOptions.html#Opi_Sdk_Windows_OverlayBrandingOptions_SvgLogo_
+  commentId: Overload:Opi.Sdk.Windows.OverlayBrandingOptions.SvgLogo
+  isSpec: "True"
+  fullName: Opi.Sdk.Windows.OverlayBrandingOptions.SvgLogo
+  nameWithType: OverlayBrandingOptions.SvgLogo
+- uid: Opi.Sdk.Windows.OverlayBrandingOptions.TextColor
+  name: TextColor
+  href: api/Opi.Sdk.Windows.OverlayBrandingOptions.html#Opi_Sdk_Windows_OverlayBrandingOptions_TextColor
+  commentId: P:Opi.Sdk.Windows.OverlayBrandingOptions.TextColor
+  fullName: Opi.Sdk.Windows.OverlayBrandingOptions.TextColor
+  nameWithType: OverlayBrandingOptions.TextColor
+- uid: Opi.Sdk.Windows.OverlayBrandingOptions.TextColor*
+  name: TextColor
+  href: api/Opi.Sdk.Windows.OverlayBrandingOptions.html#Opi_Sdk_Windows_OverlayBrandingOptions_TextColor_
+  commentId: Overload:Opi.Sdk.Windows.OverlayBrandingOptions.TextColor
+  isSpec: "True"
+  fullName: Opi.Sdk.Windows.OverlayBrandingOptions.TextColor
+  nameWithType: OverlayBrandingOptions.TextColor
+- uid: Opi.Sdk.Windows.OverlayTextColor
+  name: OverlayTextColor
+  href: api/Opi.Sdk.Windows.OverlayTextColor.html
+  commentId: T:Opi.Sdk.Windows.OverlayTextColor
+  fullName: Opi.Sdk.Windows.OverlayTextColor
+  nameWithType: OverlayTextColor
+- uid: Opi.Sdk.Windows.OverlayTextColor.Black
+  name: Black
+  href: api/Opi.Sdk.Windows.OverlayTextColor.html#Opi_Sdk_Windows_OverlayTextColor_Black
+  commentId: F:Opi.Sdk.Windows.OverlayTextColor.Black
+  fullName: Opi.Sdk.Windows.OverlayTextColor.Black
+  nameWithType: OverlayTextColor.Black
+- uid: Opi.Sdk.Windows.OverlayTextColor.White
+  name: White
+  href: api/Opi.Sdk.Windows.OverlayTextColor.html#Opi_Sdk_Windows_OverlayTextColor_White
+  commentId: F:Opi.Sdk.Windows.OverlayTextColor.White
+  fullName: Opi.Sdk.Windows.OverlayTextColor.White
+  nameWithType: OverlayTextColor.White
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay
   name: WindowsTransactionOverlay
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html
-  commentId: T:Nexi.Sdk.Windows.WindowsTransactionOverlay
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html
+  commentId: T:Opi.Sdk.Windows.WindowsTransactionOverlay
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay
   nameWithType: WindowsTransactionOverlay
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.#ctor(System.IntPtr)
-  name: WindowsTransactionOverlay(nint)
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay__ctor_System_IntPtr_
-  commentId: M:Nexi.Sdk.Windows.WindowsTransactionOverlay.#ctor(System.IntPtr)
-  name.vb: New(IntPtr)
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.WindowsTransactionOverlay(nint)
-  fullName.vb: Nexi.Sdk.Windows.WindowsTransactionOverlay.New(System.IntPtr)
-  nameWithType: WindowsTransactionOverlay.WindowsTransactionOverlay(nint)
-  nameWithType.vb: WindowsTransactionOverlay.New(IntPtr)
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.#ctor*
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.#ctor(System.IntPtr,Opi.Sdk.Windows.OverlayBrandingOptions)
+  name: WindowsTransactionOverlay(nint, OverlayBrandingOptions?)
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay__ctor_System_IntPtr_Opi_Sdk_Windows_OverlayBrandingOptions_
+  commentId: M:Opi.Sdk.Windows.WindowsTransactionOverlay.#ctor(System.IntPtr,Opi.Sdk.Windows.OverlayBrandingOptions)
+  name.vb: New(IntPtr, OverlayBrandingOptions)
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.WindowsTransactionOverlay(nint, Opi.Sdk.Windows.OverlayBrandingOptions?)
+  fullName.vb: Opi.Sdk.Windows.WindowsTransactionOverlay.New(System.IntPtr, Opi.Sdk.Windows.OverlayBrandingOptions)
+  nameWithType: WindowsTransactionOverlay.WindowsTransactionOverlay(nint, OverlayBrandingOptions?)
+  nameWithType.vb: WindowsTransactionOverlay.New(IntPtr, OverlayBrandingOptions)
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.#ctor*
   name: WindowsTransactionOverlay
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay__ctor_
-  commentId: Overload:Nexi.Sdk.Windows.WindowsTransactionOverlay.#ctor
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay__ctor_
+  commentId: Overload:Opi.Sdk.Windows.WindowsTransactionOverlay.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.WindowsTransactionOverlay
-  fullName.vb: Nexi.Sdk.Windows.WindowsTransactionOverlay.New
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.WindowsTransactionOverlay
+  fullName.vb: Opi.Sdk.Windows.WindowsTransactionOverlay.New
   nameWithType: WindowsTransactionOverlay.WindowsTransactionOverlay
   nameWithType.vb: WindowsTransactionOverlay.New
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync
   name: CloseAsync()
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay_CloseAsync
-  commentId: M:Nexi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync()
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay_CloseAsync
+  commentId: M:Opi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync()
   nameWithType: WindowsTransactionOverlay.CloseAsync()
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync*
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync*
   name: CloseAsync
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay_CloseAsync_
-  commentId: Overload:Nexi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay_CloseAsync_
+  commentId: Overload:Opi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync
   isSpec: "True"
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.CloseAsync
   nameWithType: WindowsTransactionOverlay.CloseAsync
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync
   name: DisposeAsync()
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay_DisposeAsync
-  commentId: M:Nexi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync()
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay_DisposeAsync
+  commentId: M:Opi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync()
   nameWithType: WindowsTransactionOverlay.DisposeAsync()
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync*
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync*
   name: DisposeAsync
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay_DisposeAsync_
-  commentId: Overload:Nexi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay_DisposeAsync_
+  commentId: Overload:Opi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync
   isSpec: "True"
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.DisposeAsync
   nameWithType: WindowsTransactionOverlay.DisposeAsync
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
   name: OnEvent(OperationEvent)
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay_OnEvent_Nexi_Sdk_OperationEvent_
-  commentId: M:Nexi.Sdk.Windows.WindowsTransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.OnEvent(Nexi.Sdk.OperationEvent)
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay_OnEvent_Opi_Sdk_OperationEvent_
+  commentId: M:Opi.Sdk.Windows.WindowsTransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.OnEvent(Opi.Sdk.OperationEvent)
   nameWithType: WindowsTransactionOverlay.OnEvent(OperationEvent)
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.OnEvent*
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.OnEvent*
   name: OnEvent
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay_OnEvent_
-  commentId: Overload:Nexi.Sdk.Windows.WindowsTransactionOverlay.OnEvent
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay_OnEvent_
+  commentId: Overload:Opi.Sdk.Windows.WindowsTransactionOverlay.OnEvent
   isSpec: "True"
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.OnEvent
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.OnEvent
   nameWithType: WindowsTransactionOverlay.OnEvent
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})
-  name: ShowAsync(NexiOperation, string, Func<Task<NexiResult>>?)
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay_ShowAsync_Nexi_Sdk_NexiOperation_System_String_System_Func_System_Threading_Tasks_Task_Nexi_Sdk_NexiResult___
-  commentId: M:Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation,System.String,System.Func{System.Threading.Tasks.Task{Nexi.Sdk.NexiResult}})
-  name.vb: ShowAsync(NexiOperation, String, Func(Of Task(Of NexiResult)))
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation, string, System.Func<System.Threading.Tasks.Task<Nexi.Sdk.NexiResult>>?)
-  fullName.vb: Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Nexi.Sdk.NexiOperation, String, System.Func(Of System.Threading.Tasks.Task(Of Nexi.Sdk.NexiResult)))
-  nameWithType: WindowsTransactionOverlay.ShowAsync(NexiOperation, string, Func<Task<NexiResult>>?)
-  nameWithType.vb: WindowsTransactionOverlay.ShowAsync(NexiOperation, String, Func(Of Task(Of NexiResult)))
-- uid: Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync*
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation,System.String,System.Func{System.Threading.Tasks.Task{Opi.Sdk.OpiResult}})
+  name: ShowAsync(OpiOperation, string, Func<Task<OpiResult>>?)
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay_ShowAsync_Opi_Sdk_OpiOperation_System_String_System_Func_System_Threading_Tasks_Task_Opi_Sdk_OpiResult___
+  commentId: M:Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation,System.String,System.Func{System.Threading.Tasks.Task{Opi.Sdk.OpiResult}})
+  name.vb: ShowAsync(OpiOperation, String, Func(Of Task(Of OpiResult)))
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation, string, System.Func<System.Threading.Tasks.Task<Opi.Sdk.OpiResult>>?)
+  fullName.vb: Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync(Opi.Sdk.OpiOperation, String, System.Func(Of System.Threading.Tasks.Task(Of Opi.Sdk.OpiResult)))
+  nameWithType: WindowsTransactionOverlay.ShowAsync(OpiOperation, string, Func<Task<OpiResult>>?)
+  nameWithType.vb: WindowsTransactionOverlay.ShowAsync(OpiOperation, String, Func(Of Task(Of OpiResult)))
+- uid: Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync*
   name: ShowAsync
-  href: api/Nexi.Sdk.Windows.WindowsTransactionOverlay.html#Nexi_Sdk_Windows_WindowsTransactionOverlay_ShowAsync_
-  commentId: Overload:Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync
+  href: api/Opi.Sdk.Windows.WindowsTransactionOverlay.html#Opi_Sdk_Windows_WindowsTransactionOverlay_ShowAsync_
+  commentId: Overload:Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync
   isSpec: "True"
-  fullName: Nexi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync
+  fullName: Opi.Sdk.Windows.WindowsTransactionOverlay.ShowAsync
   nameWithType: WindowsTransactionOverlay.ShowAsync

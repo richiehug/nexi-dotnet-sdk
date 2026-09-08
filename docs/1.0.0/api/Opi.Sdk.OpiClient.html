@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class NexiClient | Nexi .NET SDK </title>
+      <title>Class OpiClient | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class NexiClient | Nexi .NET SDK ">
+      <meta name="title" content="Class OpiClient | OPI .NET SDK ">
       
-      <meta name="description" content="Nexi .NET SDK. Retain one instance per terminal. Financial calls are serialized; AbortAsync uses a separate connection. Once a financial request starts, use AbortAsync rather than cancelling the local wait. Dispose only after operations have finished.">
+      <meta name="description" content="OPI .NET SDK. Retain one instance per terminal. Financial calls are serialized; AbortAsync uses a separate connection. Once a financial request starts, use AbortAsync rather than cancelling the local wait. Dispose only after operations have finished.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,27 +70,27 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.NexiClient">
+        <article data-uid="Opi.Sdk.OpiClient">
 
 
 
-  <h1 id="Nexi_Sdk_NexiClient" data-uid="Nexi.Sdk.NexiClient" class="text-break">
-Class NexiClient  
+  <h1 id="Opi_Sdk_OpiClient" data-uid="Opi.Sdk.OpiClient" class="text-break">
+Class OpiClient  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Nexi .NET SDK. Retain one instance per terminal. Financial calls are serialized;
+  <div class="markdown summary"><p>OPI .NET SDK. Retain one instance per terminal. Financial calls are serialized;
 AbortAsync uses a separate connection. Once a financial request starts, use AbortAsync
 rather than cancelling the local wait. Dispose only after operations have finished.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class NexiClient : IAsyncDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class OpiClient : IAsyncDisposable</code></pre>
   </div>
 
 
@@ -100,7 +100,7 @@ rather than cancelling the local wait. Dispose only after operations have finish
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">NexiClient</span></div>
+      <div><span class="xref">OpiClient</span></div>
     </dd>
   </dl>
 
@@ -144,10 +144,10 @@ rather than cancelling the local wait. Dispose only after operations have finish
 </h2>
 
 
-  <a id="Nexi_Sdk_NexiClient__ctor_" data-uid="Nexi.Sdk.NexiClient.#ctor*"></a>
+  <a id="Opi_Sdk_OpiClient__ctor_" data-uid="Opi.Sdk.OpiClient.#ctor*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient__ctor_Nexi_Sdk_NexiOptions_" data-uid="Nexi.Sdk.NexiClient.#ctor(Nexi.Sdk.NexiOptions)">
-  NexiClient(NexiOptions)
+  <h3 id="Opi_Sdk_OpiClient__ctor_Opi_Sdk_OpiOptions_" data-uid="Opi.Sdk.OpiClient.#ctor(Opi.Sdk.OpiOptions)">
+  OpiClient(OpiOptions)
   
   </h3>
 
@@ -155,12 +155,12 @@ rather than cancelling the local wait. Dispose only after operations have finish
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NexiClient(NexiOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public OpiClient(OpiOptions options)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>options</code> <a class="xref" href="Nexi.Sdk.NexiOptions.html">NexiOptions</a></dt>
+    <dt><code>options</code> <a class="xref" href="Opi.Sdk.OpiOptions.html">OpiOptions</a></dt>
     <dd></dd>
   </dl>
 
@@ -179,9 +179,9 @@ rather than cancelling the local wait. Dispose only after operations have finish
 </h2>
 
 
-  <a id="Nexi_Sdk_NexiClient_AbortAsync_" data-uid="Nexi.Sdk.NexiClient.AbortAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_AbortAsync_" data-uid="Opi.Sdk.OpiClient.AbortAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_AbortAsync" data-uid="Nexi.Sdk.NexiClient.AbortAsync">
+  <h3 id="Opi_Sdk_OpiClient_AbortAsync" data-uid="Opi.Sdk.OpiClient.AbortAsync">
   AbortAsync()
   
   </h3>
@@ -190,13 +190,13 @@ rather than cancelling the local wait. Dispose only after operations have finish
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; AbortAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; AbortAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -210,9 +210,9 @@ rather than cancelling the local wait. Dispose only after operations have finish
 
 
 
-  <a id="Nexi_Sdk_NexiClient_ActivateAsync_" data-uid="Nexi.Sdk.NexiClient.ActivateAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_ActivateAsync_" data-uid="Opi.Sdk.OpiClient.ActivateAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_ActivateAsync" data-uid="Nexi.Sdk.NexiClient.ActivateAsync">
+  <h3 id="Opi_Sdk_OpiClient_ActivateAsync" data-uid="Opi.Sdk.OpiClient.ActivateAsync">
   ActivateAsync()
   
   </h3>
@@ -222,13 +222,13 @@ rather than cancelling the local wait. Dispose only after operations have finish
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; ActivateAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; ActivateAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -242,9 +242,9 @@ rather than cancelling the local wait. Dispose only after operations have finish
 
 
 
-  <a id="Nexi_Sdk_NexiClient_CloseAsync_" data-uid="Nexi.Sdk.NexiClient.CloseAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_CloseAsync_" data-uid="Opi.Sdk.OpiClient.CloseAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_CloseAsync" data-uid="Nexi.Sdk.NexiClient.CloseAsync">
+  <h3 id="Opi_Sdk_OpiClient_CloseAsync" data-uid="Opi.Sdk.OpiClient.CloseAsync">
   CloseAsync()
   
   </h3>
@@ -254,13 +254,13 @@ rather than cancelling the local wait. Dispose only after operations have finish
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; CloseAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; CloseAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -274,9 +274,9 @@ rather than cancelling the local wait. Dispose only after operations have finish
 
 
 
-  <a id="Nexi_Sdk_NexiClient_ConfigAsync_" data-uid="Nexi.Sdk.NexiClient.ConfigAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_ConfigAsync_" data-uid="Opi.Sdk.OpiClient.ConfigAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_ConfigAsync" data-uid="Nexi.Sdk.NexiClient.ConfigAsync">
+  <h3 id="Opi_Sdk_OpiClient_ConfigAsync" data-uid="Opi.Sdk.OpiClient.ConfigAsync">
   ConfigAsync()
   
   </h3>
@@ -286,13 +286,13 @@ rather than cancelling the local wait. Dispose only after operations have finish
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; ConfigAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; ConfigAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -306,9 +306,9 @@ rather than cancelling the local wait. Dispose only after operations have finish
 
 
 
-  <a id="Nexi_Sdk_NexiClient_DeactivateAsync_" data-uid="Nexi.Sdk.NexiClient.DeactivateAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_DeactivateAsync_" data-uid="Opi.Sdk.OpiClient.DeactivateAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_DeactivateAsync" data-uid="Nexi.Sdk.NexiClient.DeactivateAsync">
+  <h3 id="Opi_Sdk_OpiClient_DeactivateAsync" data-uid="Opi.Sdk.OpiClient.DeactivateAsync">
   DeactivateAsync()
   
   </h3>
@@ -318,13 +318,13 @@ rather than cancelling the local wait. Dispose only after operations have finish
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; DeactivateAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; DeactivateAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -338,9 +338,9 @@ rather than cancelling the local wait. Dispose only after operations have finish
 
 
 
-  <a id="Nexi_Sdk_NexiClient_DisposeAsync_" data-uid="Nexi.Sdk.NexiClient.DisposeAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_DisposeAsync_" data-uid="Opi.Sdk.OpiClient.DisposeAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_DisposeAsync" data-uid="Nexi.Sdk.NexiClient.DisposeAsync">
+  <h3 id="Opi_Sdk_OpiClient_DisposeAsync" data-uid="Opi.Sdk.OpiClient.DisposeAsync">
   DisposeAsync()
   
   </h3>
@@ -372,9 +372,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_InfoAsync_" data-uid="Nexi.Sdk.NexiClient.InfoAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_InfoAsync_" data-uid="Opi.Sdk.OpiClient.InfoAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_InfoAsync" data-uid="Nexi.Sdk.NexiClient.InfoAsync">
+  <h3 id="Opi_Sdk_OpiClient_InfoAsync" data-uid="Opi.Sdk.OpiClient.InfoAsync">
   InfoAsync()
   
   </h3>
@@ -384,13 +384,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; InfoAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; InfoAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -404,9 +404,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_InitAsync_" data-uid="Nexi.Sdk.NexiClient.InitAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_InitAsync_" data-uid="Opi.Sdk.OpiClient.InitAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_InitAsync" data-uid="Nexi.Sdk.NexiClient.InitAsync">
+  <h3 id="Opi_Sdk_OpiClient_InitAsync" data-uid="Opi.Sdk.OpiClient.InitAsync">
   InitAsync()
   
   </h3>
@@ -416,13 +416,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; InitAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; InitAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -436,9 +436,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_LoginAsync_" data-uid="Nexi.Sdk.NexiClient.LoginAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_LoginAsync_" data-uid="Opi.Sdk.OpiClient.LoginAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_LoginAsync" data-uid="Nexi.Sdk.NexiClient.LoginAsync">
+  <h3 id="Opi_Sdk_OpiClient_LoginAsync" data-uid="Opi.Sdk.OpiClient.LoginAsync">
   LoginAsync()
   
   </h3>
@@ -448,13 +448,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; LoginAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; LoginAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -468,9 +468,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_LogoffAsync_" data-uid="Nexi.Sdk.NexiClient.LogoffAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_LogoffAsync_" data-uid="Opi.Sdk.OpiClient.LogoffAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_LogoffAsync" data-uid="Nexi.Sdk.NexiClient.LogoffAsync">
+  <h3 id="Opi_Sdk_OpiClient_LogoffAsync" data-uid="Opi.Sdk.OpiClient.LogoffAsync">
   LogoffAsync()
   
   </h3>
@@ -480,13 +480,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; LogoffAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; LogoffAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -500,9 +500,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_PaymentAsync_" data-uid="Nexi.Sdk.NexiClient.PaymentAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_PaymentAsync_" data-uid="Opi.Sdk.OpiClient.PaymentAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_PaymentAsync_Nexi_Sdk_PaymentRequest_" data-uid="Nexi.Sdk.NexiClient.PaymentAsync(Nexi.Sdk.PaymentRequest)">
+  <h3 id="Opi_Sdk_OpiClient_PaymentAsync_Opi_Sdk_PaymentRequest_" data-uid="Opi.Sdk.OpiClient.PaymentAsync(Opi.Sdk.PaymentRequest)">
   PaymentAsync(PaymentRequest)
   
   </h3>
@@ -512,18 +512,18 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; PaymentAsync(PaymentRequest request)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; PaymentAsync(PaymentRequest request)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="Nexi.Sdk.PaymentRequest.html">PaymentRequest</a></dt>
+    <dt><code>request</code> <a class="xref" href="Opi.Sdk.PaymentRequest.html">PaymentRequest</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -537,9 +537,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_PaymentAsync_" data-uid="Nexi.Sdk.NexiClient.PaymentAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_PaymentAsync_" data-uid="Opi.Sdk.OpiClient.PaymentAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_PaymentAsync_System_Int64_System_String_System_String_" data-uid="Nexi.Sdk.NexiClient.PaymentAsync(System.Int64,System.String,System.String)">
+  <h3 id="Opi_Sdk_OpiClient_PaymentAsync_System_Int64_System_String_System_String_" data-uid="Opi.Sdk.OpiClient.PaymentAsync(System.Int64,System.String,System.String)">
   PaymentAsync(long, string, string?)
   
   </h3>
@@ -549,7 +549,7 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; PaymentAsync(long amount, string currency, string? reference = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; PaymentAsync(long amount, string currency, string? reference = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -564,7 +564,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -578,9 +578,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_PaymentWithRecoveryAsync_" data-uid="Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_PaymentWithRecoveryAsync_" data-uid="Opi.Sdk.OpiClient.PaymentWithRecoveryAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_PaymentWithRecoveryAsync_Nexi_Sdk_PaymentRequest_" data-uid="Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(Nexi.Sdk.PaymentRequest)">
+  <h3 id="Opi_Sdk_OpiClient_PaymentWithRecoveryAsync_Opi_Sdk_PaymentRequest_" data-uid="Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(Opi.Sdk.PaymentRequest)">
   PaymentWithRecoveryAsync(PaymentRequest)
   
   </h3>
@@ -590,18 +590,18 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; PaymentWithRecoveryAsync(PaymentRequest request)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; PaymentWithRecoveryAsync(PaymentRequest request)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="Nexi.Sdk.PaymentRequest.html">PaymentRequest</a></dt>
+    <dt><code>request</code> <a class="xref" href="Opi.Sdk.PaymentRequest.html">PaymentRequest</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -615,9 +615,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_PaymentWithRecoveryAsync_" data-uid="Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_PaymentWithRecoveryAsync_" data-uid="Opi.Sdk.OpiClient.PaymentWithRecoveryAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_PaymentWithRecoveryAsync_System_Int64_System_String_System_String_" data-uid="Nexi.Sdk.NexiClient.PaymentWithRecoveryAsync(System.Int64,System.String,System.String)">
+  <h3 id="Opi_Sdk_OpiClient_PaymentWithRecoveryAsync_System_Int64_System_String_System_String_" data-uid="Opi.Sdk.OpiClient.PaymentWithRecoveryAsync(System.Int64,System.String,System.String)">
   PaymentWithRecoveryAsync(long, string, string?)
   
   </h3>
@@ -626,7 +626,7 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; PaymentWithRecoveryAsync(long amount, string currency, string? reference = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; PaymentWithRecoveryAsync(long amount, string currency, string? reference = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -641,7 +641,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -655,9 +655,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_ReconcilePendingAsync_" data-uid="Nexi.Sdk.NexiClient.ReconcilePendingAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_ReconcilePendingAsync_" data-uid="Opi.Sdk.OpiClient.ReconcilePendingAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_ReconcilePendingAsync" data-uid="Nexi.Sdk.NexiClient.ReconcilePendingAsync">
+  <h3 id="Opi_Sdk_OpiClient_ReconcilePendingAsync" data-uid="Opi.Sdk.OpiClient.ReconcilePendingAsync">
   ReconcilePendingAsync()
   
   </h3>
@@ -667,13 +667,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult?&gt; ReconcilePendingAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult?&gt; ReconcilePendingAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -687,9 +687,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_RefundAsync_" data-uid="Nexi.Sdk.NexiClient.RefundAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_RefundAsync_" data-uid="Opi.Sdk.OpiClient.RefundAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_RefundAsync_System_Int64_System_String_System_String_" data-uid="Nexi.Sdk.NexiClient.RefundAsync(System.Int64,System.String,System.String)">
+  <h3 id="Opi_Sdk_OpiClient_RefundAsync_System_Int64_System_String_System_String_" data-uid="Opi.Sdk.OpiClient.RefundAsync(System.Int64,System.String,System.String)">
   RefundAsync(long, string, string?)
   
   </h3>
@@ -699,7 +699,7 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; RefundAsync(long amount, string currency, string? authReference = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; RefundAsync(long amount, string currency, string? authReference = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -714,7 +714,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -728,9 +728,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_RepeatLastMessageAsync_" data-uid="Nexi.Sdk.NexiClient.RepeatLastMessageAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_RepeatLastMessageAsync_" data-uid="Opi.Sdk.OpiClient.RepeatLastMessageAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_RepeatLastMessageAsync" data-uid="Nexi.Sdk.NexiClient.RepeatLastMessageAsync">
+  <h3 id="Opi_Sdk_OpiClient_RepeatLastMessageAsync" data-uid="Opi.Sdk.OpiClient.RepeatLastMessageAsync">
   RepeatLastMessageAsync()
   
   </h3>
@@ -740,13 +740,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; RepeatLastMessageAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; RepeatLastMessageAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -760,9 +760,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_ReprintAsync_" data-uid="Nexi.Sdk.NexiClient.ReprintAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_ReprintAsync_" data-uid="Opi.Sdk.OpiClient.ReprintAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_ReprintAsync" data-uid="Nexi.Sdk.NexiClient.ReprintAsync">
+  <h3 id="Opi_Sdk_OpiClient_ReprintAsync" data-uid="Opi.Sdk.OpiClient.ReprintAsync">
   ReprintAsync()
   
   </h3>
@@ -772,13 +772,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; ReprintAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; ReprintAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -792,9 +792,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_ResetAsync_" data-uid="Nexi.Sdk.NexiClient.ResetAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_ResetAsync_" data-uid="Opi.Sdk.OpiClient.ResetAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_ResetAsync" data-uid="Nexi.Sdk.NexiClient.ResetAsync">
+  <h3 id="Opi_Sdk_OpiClient_ResetAsync" data-uid="Opi.Sdk.OpiClient.ResetAsync">
   ResetAsync()
   
   </h3>
@@ -804,13 +804,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; ResetAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; ResetAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -824,9 +824,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_ReversalAsync_" data-uid="Nexi.Sdk.NexiClient.ReversalAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_ReversalAsync_" data-uid="Opi.Sdk.OpiClient.ReversalAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_ReversalAsync" data-uid="Nexi.Sdk.NexiClient.ReversalAsync">
+  <h3 id="Opi_Sdk_OpiClient_ReversalAsync" data-uid="Opi.Sdk.OpiClient.ReversalAsync">
   ReversalAsync()
   
   </h3>
@@ -836,13 +836,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; ReversalAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; ReversalAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -856,9 +856,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_StatusAsync_" data-uid="Nexi.Sdk.NexiClient.StatusAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_StatusAsync_" data-uid="Opi.Sdk.OpiClient.StatusAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_StatusAsync" data-uid="Nexi.Sdk.NexiClient.StatusAsync">
+  <h3 id="Opi_Sdk_OpiClient_StatusAsync" data-uid="Opi.Sdk.OpiClient.StatusAsync">
   StatusAsync()
   
   </h3>
@@ -868,13 +868,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; StatusAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; StatusAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -888,9 +888,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_SubmitAsync_" data-uid="Nexi.Sdk.NexiClient.SubmitAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_SubmitAsync_" data-uid="Opi.Sdk.OpiClient.SubmitAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_SubmitAsync" data-uid="Nexi.Sdk.NexiClient.SubmitAsync">
+  <h3 id="Opi_Sdk_OpiClient_SubmitAsync" data-uid="Opi.Sdk.OpiClient.SubmitAsync">
   SubmitAsync()
   
   </h3>
@@ -900,13 +900,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; SubmitAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; SubmitAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -920,9 +920,9 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <a id="Nexi_Sdk_NexiClient_TerminalInfoAsync_" data-uid="Nexi.Sdk.NexiClient.TerminalInfoAsync*"></a>
+  <a id="Opi_Sdk_OpiClient_TerminalInfoAsync_" data-uid="Opi.Sdk.OpiClient.TerminalInfoAsync*"></a>
 
-  <h3 id="Nexi_Sdk_NexiClient_TerminalInfoAsync" data-uid="Nexi.Sdk.NexiClient.TerminalInfoAsync">
+  <h3 id="Opi_Sdk_OpiClient_TerminalInfoAsync" data-uid="Opi.Sdk.OpiClient.TerminalInfoAsync">
   TerminalInfoAsync()
   
   </h3>
@@ -932,13 +932,13 @@ resetting unmanaged resources asynchronously.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;NexiResult&gt; TerminalInfoAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;OpiResult&gt; TerminalInfoAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Opi.Sdk.OpiResult.html">OpiResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -957,7 +957,7 @@ resetting unmanaged resources asynchronously.</p>
 
 
 
-  <h3 id="Nexi_Sdk_NexiClient_OperationEvent" data-uid="Nexi.Sdk.NexiClient.OperationEvent">
+  <h3 id="Opi_Sdk_OpiClient_OperationEvent" data-uid="Opi.Sdk.OpiClient.OperationEvent">
   OperationEvent
   
   </h3>
@@ -977,7 +977,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Nexi.Sdk.OperationEvent.html">OperationEvent</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Opi.Sdk.OperationEvent.html">OperationEvent</a>&gt;</dt>
     <dd></dd>
   </dl>
 

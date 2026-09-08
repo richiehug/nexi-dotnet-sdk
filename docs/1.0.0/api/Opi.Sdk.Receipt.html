@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class NexiResult | Nexi .NET SDK </title>
+      <title>Class Receipt | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class NexiResult | Nexi .NET SDK ">
+      <meta name="title" content="Class Receipt | OPI .NET SDK ">
       
-      <meta name="description" content="Final operation outcome with SDK correlation identity, optional financial details, terminal information and error evidence.">
+      <meta name="description" content="Receipt text with its content type. Preserve whitespace and line breaks when displaying or storing.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,25 +70,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.NexiResult">
+        <article data-uid="Opi.Sdk.Receipt">
 
 
 
-  <h1 id="Nexi_Sdk_NexiResult" data-uid="Nexi.Sdk.NexiResult" class="text-break">
-Class NexiResult  
+  <h1 id="Opi_Sdk_Receipt" data-uid="Opi.Sdk.Receipt" class="text-break">
+Class Receipt  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Final operation outcome with SDK correlation identity, optional financial details, terminal information and error evidence.</p>
+  <div class="markdown summary"><p>Receipt text with its content type. Preserve whitespace and line breaks when displaying or storing.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record NexiResult : IEquatable&lt;NexiResult&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record Receipt : IEquatable&lt;Receipt&gt;</code></pre>
   </div>
 
 
@@ -98,14 +98,14 @@ Class NexiResult
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">NexiResult</span></div>
+      <div><span class="xref">Receipt</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nexi.Sdk.NexiResult.html">NexiResult</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Opi.Sdk.Receipt.html">Receipt</a>&gt;</div>
     </dd>
   </dl>
 
@@ -142,26 +142,26 @@ Class NexiResult
 </h2>
 
 
-  <a id="Nexi_Sdk_NexiResult__ctor_" data-uid="Nexi.Sdk.NexiResult.#ctor*"></a>
+  <a id="Opi_Sdk_Receipt__ctor_" data-uid="Opi.Sdk.Receipt.#ctor*"></a>
 
-  <h3 id="Nexi_Sdk_NexiResult__ctor_Nexi_Sdk_ResultState_System_String_" data-uid="Nexi.Sdk.NexiResult.#ctor(Nexi.Sdk.ResultState,System.String)">
-  NexiResult(ResultState, string)
+  <h3 id="Opi_Sdk_Receipt__ctor_System_String_System_String_" data-uid="Opi.Sdk.Receipt.#ctor(System.String,System.String)">
+  Receipt(string, string)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Final operation outcome with SDK correlation identity, optional financial details, terminal information and error evidence.</p>
+  <div class="markdown level1 summary"><p>Receipt text with its content type. Preserve whitespace and line breaks when displaying or storing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NexiResult(ResultState Status, string CorrelationId)</code></pre>
+    <pre><code class="lang-csharp hljs">public Receipt(string Content, string ContentType = &quot;text/plain&quot;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Status</code> <a class="xref" href="Nexi.Sdk.ResultState.html">ResultState</a></dt>
+    <dt><code>Content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>CorrelationId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>ContentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -180,10 +180,10 @@ Class NexiResult
 </h2>
 
 
-  <a id="Nexi_Sdk_NexiResult_CorrelationId_" data-uid="Nexi.Sdk.NexiResult.CorrelationId*"></a>
+  <a id="Opi_Sdk_Receipt_Content_" data-uid="Opi.Sdk.Receipt.Content*"></a>
 
-  <h3 id="Nexi_Sdk_NexiResult_CorrelationId" data-uid="Nexi.Sdk.NexiResult.CorrelationId">
-  CorrelationId
+  <h3 id="Opi_Sdk_Receipt_Content" data-uid="Opi.Sdk.Receipt.Content">
+  Content
   
   </h3>
 
@@ -191,7 +191,7 @@ Class NexiResult
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CorrelationId { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Content { get; init; }</code></pre>
   </div>
 
 
@@ -211,10 +211,10 @@ Class NexiResult
 
 
 
-  <a id="Nexi_Sdk_NexiResult_Error_" data-uid="Nexi.Sdk.NexiResult.Error*"></a>
+  <a id="Opi_Sdk_Receipt_ContentType_" data-uid="Opi.Sdk.Receipt.ContentType*"></a>
 
-  <h3 id="Nexi_Sdk_NexiResult_Error" data-uid="Nexi.Sdk.NexiResult.Error">
-  Error
+  <h3 id="Opi_Sdk_Receipt_ContentType" data-uid="Opi.Sdk.Receipt.ContentType">
+  ContentType
   
   </h3>
 
@@ -222,39 +222,7 @@ Class NexiResult
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NexiError? Error { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.NexiError.html">NexiError</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_NexiResult_ErrorCode_" data-uid="Nexi.Sdk.NexiResult.ErrorCode*"></a>
-
-  <h3 id="Nexi_Sdk_NexiResult_ErrorCode" data-uid="Nexi.Sdk.NexiResult.ErrorCode">
-  ErrorCode
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Specific terminal or SDK error code; inspect Status and Error alongside it.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? ErrorCode { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string ContentType { get; init; }</code></pre>
   </div>
 
 
@@ -264,130 +232,6 @@ Class NexiResult
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_NexiResult_IsSuccessful_" data-uid="Nexi.Sdk.NexiResult.IsSuccessful*"></a>
-
-  <h3 id="Nexi_Sdk_NexiResult_IsSuccessful" data-uid="Nexi.Sdk.NexiResult.IsSuccessful">
-  IsSuccessful
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsSuccessful { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_NexiResult_Status_" data-uid="Nexi.Sdk.NexiResult.Status*"></a>
-
-  <h3 id="Nexi_Sdk_NexiResult_Status" data-uid="Nexi.Sdk.NexiResult.Status">
-  Status
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ResultState Status { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.ResultState.html">ResultState</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_NexiResult_Terminal_" data-uid="Nexi.Sdk.NexiResult.Terminal*"></a>
-
-  <h3 id="Nexi_Sdk_NexiResult_Terminal" data-uid="Nexi.Sdk.NexiResult.Terminal">
-  Terminal
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TerminalInformation? Terminal { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.TerminalInformation.html">TerminalInformation</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_NexiResult_Transaction_" data-uid="Nexi.Sdk.NexiResult.Transaction*"></a>
-
-  <h3 id="Nexi_Sdk_NexiResult_Transaction" data-uid="Nexi.Sdk.NexiResult.Transaction">
-  Transaction
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionResult? Transaction { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.TransactionResult.html">TransactionResult</a></dt>
     <dd></dd>
   </dl>
 

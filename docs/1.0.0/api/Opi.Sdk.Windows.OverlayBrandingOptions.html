@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ReceiptHandling | Nexi .NET SDK </title>
+      <title>Class OverlayBrandingOptions | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ReceiptHandling | Nexi .NET SDK ">
+      <meta name="title" content="Class OverlayBrandingOptions | OPI .NET SDK ">
       
-      <meta name="description" content="Independent merchant and customer receipt routing. Both copies default to terminal printing.">
+      <meta name="description" content="Optional branding for either Full-edition Windows overlay. Omit for a generic OPI design.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,25 +70,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.ReceiptHandling">
+        <article data-uid="Opi.Sdk.Windows.OverlayBrandingOptions">
 
 
 
-  <h1 id="Nexi_Sdk_ReceiptHandling" data-uid="Nexi.Sdk.ReceiptHandling" class="text-break">
-Class ReceiptHandling  
+  <h1 id="Opi_Sdk_Windows_OverlayBrandingOptions" data-uid="Opi.Sdk.Windows.OverlayBrandingOptions" class="text-break">
+Class OverlayBrandingOptions  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a>.<a class="xref" href="Opi.Sdk.Windows.html">Windows</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Independent merchant and customer receipt routing. Both copies default to terminal printing.</p>
+  <div class="markdown summary"><p>Optional branding for either Full-edition Windows overlay. Omit for a generic OPI design.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record ReceiptHandling : IEquatable&lt;ReceiptHandling&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record OverlayBrandingOptions : IEquatable&lt;OverlayBrandingOptions&gt;</code></pre>
   </div>
 
 
@@ -98,14 +98,14 @@ Class ReceiptHandling
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">ReceiptHandling</span></div>
+      <div><span class="xref">OverlayBrandingOptions</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nexi.Sdk.ReceiptHandling.html">ReceiptHandling</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Opi.Sdk.Windows.OverlayBrandingOptions.html">OverlayBrandingOptions</a>&gt;</div>
     </dd>
   </dl>
 
@@ -142,18 +142,19 @@ Class ReceiptHandling
 </h2>
 
 
-  <a id="Nexi_Sdk_ReceiptHandling_CustomerReceipt_" data-uid="Nexi.Sdk.ReceiptHandling.CustomerReceipt*"></a>
+  <a id="Opi_Sdk_Windows_OverlayBrandingOptions_BrandColor_" data-uid="Opi.Sdk.Windows.OverlayBrandingOptions.BrandColor*"></a>
 
-  <h3 id="Nexi_Sdk_ReceiptHandling_CustomerReceipt" data-uid="Nexi.Sdk.ReceiptHandling.CustomerReceipt">
-  CustomerReceipt
+  <h3 id="Opi_Sdk_Windows_OverlayBrandingOptions_BrandColor" data-uid="Opi.Sdk.Windows.OverlayBrandingOptions.BrandColor">
+  BrandColor
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Opaque RGB color in #RRGGBB format. Invalid values use neutral #334155.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ReceiptHandlingMode CustomerReceipt { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? BrandColor { get; init; }</code></pre>
   </div>
 
 
@@ -162,7 +163,7 @@ Class ReceiptHandling
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.ReceiptHandlingMode.html">ReceiptHandlingMode</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -173,18 +174,21 @@ Class ReceiptHandling
 
 
 
-  <a id="Nexi_Sdk_ReceiptHandling_MerchantReceipt_" data-uid="Nexi.Sdk.ReceiptHandling.MerchantReceipt*"></a>
+  <a id="Opi_Sdk_Windows_OverlayBrandingOptions_SvgLogo_" data-uid="Opi.Sdk.Windows.OverlayBrandingOptions.SvgLogo*"></a>
 
-  <h3 id="Nexi_Sdk_ReceiptHandling_MerchantReceipt" data-uid="Nexi.Sdk.ReceiptHandling.MerchantReceipt">
-  MerchantReceipt
+  <h3 id="Opi_Sdk_Windows_OverlayBrandingOptions_SvgLogo" data-uid="Opi.Sdk.Windows.OverlayBrandingOptions.SvgLogo">
+  SvgLogo
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inline SVG XML, not a filename or URL. Supported static vector input is fitted into
+a 154 by 54 device-independent-pixel area with its aspect ratio preserved.
+Malformed, oversized or unsupported SVG falls back to the generic OPI label.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ReceiptHandlingMode MerchantReceipt { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? SvgLogo { get; init; }</code></pre>
   </div>
 
 
@@ -193,7 +197,40 @@ Class ReceiptHandling
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.ReceiptHandlingMode.html">ReceiptHandlingMode</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_Windows_OverlayBrandingOptions_TextColor_" data-uid="Opi.Sdk.Windows.OverlayBrandingOptions.TextColor*"></a>
+
+  <h3 id="Opi_Sdk_Windows_OverlayBrandingOptions_TextColor" data-uid="Opi.Sdk.Windows.OverlayBrandingOptions.TextColor">
+  TextColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Header label and button text color. Default: white. Invalid enum values use white.
+SVG artwork retains its own colors; currentColor uses this choice.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverlayTextColor TextColor { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Opi.Sdk.Windows.OverlayTextColor.html">OverlayTextColor</a></dt>
     <dd></dd>
   </dl>
 

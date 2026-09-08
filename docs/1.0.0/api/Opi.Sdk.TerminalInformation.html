@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class TransactionResult | Nexi .NET SDK </title>
+      <title>Class TerminalInformation | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class TransactionResult | Nexi .NET SDK ">
+      <meta name="title" content="Class TerminalInformation | OPI .NET SDK ">
       
-      <meta name="description" content="Terminal-provided financial details. All fields are optional and must not be used to infer success; inspect NexiResult.Status.">
+      <meta name="description" content="Terminal identity, software, configuration and capabilities when returned by a service operation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,25 +70,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.TransactionResult">
+        <article data-uid="Opi.Sdk.TerminalInformation">
 
 
 
-  <h1 id="Nexi_Sdk_TransactionResult" data-uid="Nexi.Sdk.TransactionResult" class="text-break">
-Class TransactionResult  
+  <h1 id="Opi_Sdk_TerminalInformation" data-uid="Opi.Sdk.TerminalInformation" class="text-break">
+Class TerminalInformation  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Terminal-provided financial details. All fields are optional and must not be used to infer success; inspect NexiResult.Status.</p>
+  <div class="markdown summary"><p>Terminal identity, software, configuration and capabilities when returned by a service operation.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record TransactionResult : IEquatable&lt;TransactionResult&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record TerminalInformation : IEquatable&lt;TerminalInformation&gt;</code></pre>
   </div>
 
 
@@ -98,14 +98,14 @@ Class TransactionResult
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">TransactionResult</span></div>
+      <div><span class="xref">TerminalInformation</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nexi.Sdk.TransactionResult.html">TransactionResult</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Opi.Sdk.TerminalInformation.html">TerminalInformation</a>&gt;</div>
     </dd>
   </dl>
 
@@ -142,170 +142,10 @@ Class TransactionResult
 </h2>
 
 
-  <a id="Nexi_Sdk_TransactionResult_AcquirerId_" data-uid="Nexi.Sdk.TransactionResult.AcquirerId*"></a>
+  <a id="Opi_Sdk_TerminalInformation_AppVersion_" data-uid="Opi.Sdk.TerminalInformation.AppVersion*"></a>
 
-  <h3 id="Nexi_Sdk_TransactionResult_AcquirerId" data-uid="Nexi.Sdk.TransactionResult.AcquirerId">
-  AcquirerId
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Acquirer identifier returned by the terminal.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? AcquirerId { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TransactionResult_Amount_" data-uid="Nexi.Sdk.TransactionResult.Amount*"></a>
-
-  <h3 id="Nexi_Sdk_TransactionResult_Amount" data-uid="Nexi.Sdk.TransactionResult.Amount">
-  Amount
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Terminal amount in minor units; includes any positive reported tip.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long? Amount { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TransactionResult_ApprovalCode_" data-uid="Nexi.Sdk.TransactionResult.ApprovalCode*"></a>
-
-  <h3 id="Nexi_Sdk_TransactionResult_ApprovalCode" data-uid="Nexi.Sdk.TransactionResult.ApprovalCode">
-  ApprovalCode
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Approval code returned by the terminal.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? ApprovalCode { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TransactionResult_AuthReference_" data-uid="Nexi.Sdk.TransactionResult.AuthReference*"></a>
-
-  <h3 id="Nexi_Sdk_TransactionResult_AuthReference" data-uid="Nexi.Sdk.TransactionResult.AuthReference">
-  AuthReference
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Authorization reference returned by the terminal, distinct from the merchant reference.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? AuthReference { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TransactionResult_Currency_" data-uid="Nexi.Sdk.TransactionResult.Currency*"></a>
-
-  <h3 id="Nexi_Sdk_TransactionResult_Currency" data-uid="Nexi.Sdk.TransactionResult.Currency">
-  Currency
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Currency code returned by the terminal.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Currency { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TransactionResult_Dcc_" data-uid="Nexi.Sdk.TransactionResult.Dcc*"></a>
-
-  <h3 id="Nexi_Sdk_TransactionResult_Dcc" data-uid="Nexi.Sdk.TransactionResult.Dcc">
-  Dcc
+  <h3 id="Opi_Sdk_TerminalInformation_AppVersion" data-uid="Opi.Sdk.TerminalInformation.AppVersion">
+  AppVersion
   
   </h3>
 
@@ -313,39 +153,7 @@ Class TransactionResult
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DccDetails? Dcc { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.DccDetails.html">DccDetails</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TransactionResult_MaskedCardNumber_" data-uid="Nexi.Sdk.TransactionResult.MaskedCardNumber*"></a>
-
-  <h3 id="Nexi_Sdk_TransactionResult_MaskedCardNumber" data-uid="Nexi.Sdk.TransactionResult.MaskedCardNumber">
-  MaskedCardNumber
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Card number field as returned by the terminal; handle according to the configured PAN preference.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? MaskedCardNumber { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? AppVersion { get; init; }</code></pre>
   </div>
 
 
@@ -365,42 +173,10 @@ Class TransactionResult
 
 
 
-  <a id="Nexi_Sdk_TransactionResult_PaymentMethod_" data-uid="Nexi.Sdk.TransactionResult.PaymentMethod*"></a>
+  <a id="Opi_Sdk_TerminalInformation_ConfigurationName_" data-uid="Opi.Sdk.TerminalInformation.ConfigurationName*"></a>
 
-  <h3 id="Nexi_Sdk_TransactionResult_PaymentMethod" data-uid="Nexi.Sdk.TransactionResult.PaymentMethod">
-  PaymentMethod
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Optional card brand or payment-method label returned by the terminal.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? PaymentMethod { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TransactionResult_Receipts_" data-uid="Nexi.Sdk.TransactionResult.Receipts*"></a>
-
-  <h3 id="Nexi_Sdk_TransactionResult_Receipts" data-uid="Nexi.Sdk.TransactionResult.Receipts">
-  Receipts
+  <h3 id="Opi_Sdk_TerminalInformation_ConfigurationName" data-uid="Opi.Sdk.TerminalInformation.ConfigurationName">
+  ConfigurationName
   
   </h3>
 
@@ -408,39 +184,7 @@ Class TransactionResult
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ReceiptDetails? Receipts { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nexi.Sdk.ReceiptDetails.html">ReceiptDetails</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Nexi_Sdk_TransactionResult_Reference_" data-uid="Nexi.Sdk.TransactionResult.Reference*"></a>
-
-  <h3 id="Nexi_Sdk_TransactionResult_Reference" data-uid="Nexi.Sdk.TransactionResult.Reference">
-  Reference
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Merchant transaction reference returned by the terminal.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Reference { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? ConfigurationName { get; init; }</code></pre>
   </div>
 
 
@@ -460,19 +204,18 @@ Class TransactionResult
 
 
 
-  <a id="Nexi_Sdk_TransactionResult_Tip_" data-uid="Nexi.Sdk.TransactionResult.Tip*"></a>
+  <a id="Opi_Sdk_TerminalInformation_ConfigurationVersion_" data-uid="Opi.Sdk.TerminalInformation.ConfigurationVersion*"></a>
 
-  <h3 id="Nexi_Sdk_TransactionResult_Tip" data-uid="Nexi.Sdk.TransactionResult.Tip">
-  Tip
+  <h3 id="Opi_Sdk_TerminalInformation_ConfigurationVersion" data-uid="Opi.Sdk.TerminalInformation.ConfigurationVersion">
+  ConfigurationVersion
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Optional tip in minor units, already included in Amount.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long? Tip { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? ConfigurationVersion { get; init; }</code></pre>
   </div>
 
 
@@ -481,7 +224,7 @@ Class TransactionResult
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -492,19 +235,266 @@ Class TransactionResult
 
 
 
-  <a id="Nexi_Sdk_TransactionResult_TransactionDate_" data-uid="Nexi.Sdk.TransactionResult.TransactionDate*"></a>
+  <a id="Opi_Sdk_TerminalInformation_Hardware_" data-uid="Opi.Sdk.TerminalInformation.Hardware*"></a>
 
-  <h3 id="Nexi_Sdk_TransactionResult_TransactionDate" data-uid="Nexi.Sdk.TransactionResult.TransactionDate">
-  TransactionDate
+  <h3 id="Opi_Sdk_TerminalInformation_Hardware" data-uid="Opi.Sdk.TerminalInformation.Hardware">
+  Hardware
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Terminal transaction date/time string; retain its supplied format and timezone.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TransactionDate { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? Hardware { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TerminalInformation_InitialisedAcquirers_" data-uid="Opi.Sdk.TerminalInformation.InitialisedAcquirers*"></a>
+
+  <h3 id="Opi_Sdk_TerminalInformation_InitialisedAcquirers" data-uid="Opi.Sdk.TerminalInformation.InitialisedAcquirers">
+  InitialisedAcquirers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; InitialisedAcquirers { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TerminalInformation_MerchantId_" data-uid="Opi.Sdk.TerminalInformation.MerchantId*"></a>
+
+  <h3 id="Opi_Sdk_TerminalInformation_MerchantId" data-uid="Opi.Sdk.TerminalInformation.MerchantId">
+  MerchantId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? MerchantId { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TerminalInformation_SerialNumber_" data-uid="Opi.Sdk.TerminalInformation.SerialNumber*"></a>
+
+  <h3 id="Opi_Sdk_TerminalInformation_SerialNumber" data-uid="Opi.Sdk.TerminalInformation.SerialNumber">
+  SerialNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? SerialNumber { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TerminalInformation_Status_" data-uid="Opi.Sdk.TerminalInformation.Status*"></a>
+
+  <h3 id="Opi_Sdk_TerminalInformation_Status" data-uid="Opi.Sdk.TerminalInformation.Status">
+  Status
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Status { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TerminalInformation_SubStatus_" data-uid="Opi.Sdk.TerminalInformation.SubStatus*"></a>
+
+  <h3 id="Opi_Sdk_TerminalInformation_SubStatus" data-uid="Opi.Sdk.TerminalInformation.SubStatus">
+  SubStatus
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? SubStatus { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TerminalInformation_SupportedBrands_" data-uid="Opi.Sdk.TerminalInformation.SupportedBrands*"></a>
+
+  <h3 id="Opi_Sdk_TerminalInformation_SupportedBrands" data-uid="Opi.Sdk.TerminalInformation.SupportedBrands">
+  SupportedBrands
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; SupportedBrands { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TerminalInformation_TerminalId_" data-uid="Opi.Sdk.TerminalInformation.TerminalId*"></a>
+
+  <h3 id="Opi_Sdk_TerminalInformation_TerminalId" data-uid="Opi.Sdk.TerminalInformation.TerminalId">
+  TerminalId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? TerminalId { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Opi_Sdk_TerminalInformation_TerminalIp_" data-uid="Opi.Sdk.TerminalInformation.TerminalIp*"></a>
+
+  <h3 id="Opi_Sdk_TerminalInformation_TerminalIp" data-uid="Opi.Sdk.TerminalInformation.TerminalIp">
+  TerminalIp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? TerminalIp { get; init; }</code></pre>
   </div>
 
 

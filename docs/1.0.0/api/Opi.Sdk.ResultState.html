@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum NexiError | Nexi .NET SDK </title>
+      <title>Enum ResultState | OPI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum NexiError | Nexi .NET SDK ">
+      <meta name="title" content="Enum ResultState | OPI .NET SDK ">
       
-      <meta name="description" content="Stable error categories; NexiResult.ErrorCode retains a more specific terminal or SDK reason.">
+      <meta name="description" content="Financial or service outcome. Unknown requires reconciliation and must not be treated as a decline.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -70,26 +70,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Nexi.Sdk.NexiError">
+        <article data-uid="Opi.Sdk.ResultState">
 
 
 
 
-  <h1 id="Nexi_Sdk_NexiError" data-uid="Nexi.Sdk.NexiError" class="text-break">
-Enum NexiError  
+  <h1 id="Opi_Sdk_ResultState" data-uid="Opi.Sdk.ResultState" class="text-break">
+Enum ResultState  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Nexi.html">Nexi</a>.<a class="xref" href="Nexi.Sdk.html">Sdk</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Nexi.Sdk.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Opi.html">Opi</a>.<a class="xref" href="Opi.Sdk.html">Sdk</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Opi.Sdk.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Stable error categories; NexiResult.ErrorCode retains a more specific terminal or SDK reason.</p>
+  <div class="markdown summary"><p>Financial or service outcome. Unknown requires reconciliation and must not be treated as a decline.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum NexiError</code></pre>
+    <pre><code class="lang-csharp hljs">public enum ResultState</code></pre>
   </div>
 
 
@@ -103,46 +103,28 @@ Enum NexiError
   <h2 id="fields">Fields
 </h2>
   <dl class="parameters">
-    <dt id="Nexi_Sdk_NexiError_Aborted"><code>Aborted = 1</code></dt>
+    <dt id="Opi_Sdk_ResultState_Aborted"><code>Aborted = 2</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_ConnectionError"><code>ConnectionError = 8</code></dt>
+    <dt id="Opi_Sdk_ResultState_CommunicationError"><code>CommunicationError = 3</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_DeviceUnavailable"><code>DeviceUnavailable = 3</code></dt>
+    <dt id="Opi_Sdk_ResultState_Declined"><code>Declined = 1</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_Failure"><code>Failure = 0</code></dt>
+    <dt id="Opi_Sdk_ResultState_InProgress"><code>InProgress = 6</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_InvalidOpiResponse"><code>InvalidOpiResponse = 11</code></dt>
+    <dt id="Opi_Sdk_ResultState_InvalidRequest"><code>InvalidRequest = 5</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_InvalidRequest"><code>InvalidRequest = 10</code></dt>
+    <dt id="Opi_Sdk_ResultState_Success"><code>Success = 0</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_LoginRequired"><code>LoginRequired = 5</code></dt>
+    <dt id="Opi_Sdk_ResultState_TerminalError"><code>TerminalError = 4</code></dt>
   
   <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_OperationTimeout"><code>OperationTimeout = 9</code></dt>
-  
-  <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_Other"><code>Other = 13</code></dt>
-  
-  <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_RecoveryMismatch"><code>RecoveryMismatch = 7</code></dt>
-  
-  <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_ReprintRequired"><code>ReprintRequired = 2</code></dt>
-  
-  <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_ResultUnknown"><code>ResultUnknown = 6</code></dt>
-  
-  <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_StorageError"><code>StorageError = 12</code></dt>
-  
-  <dd></dd>
-    <dt id="Nexi_Sdk_NexiError_TerminalBusy"><code>TerminalBusy = 4</code></dt>
+    <dt id="Opi_Sdk_ResultState_Unknown"><code>Unknown = 7</code></dt>
   
   <dd></dd>
   </dl>
