@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Opi.Sdk | OPI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Opi.Sdk | OPI .NET SDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Opi.Sdk">
+<h1 id="opisdk">Opi.Sdk</h1>
+
+<p>Start with <code>OpiClient</code> and <code>OpiOptions</code>, then explore the result and receipt types you need. For an end-to-end example, see the <a href="../integration.html">integration guide</a>.</p>
+<h2 id="start-here">Start here</h2>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Opi.Sdk.OpiClient.html">OpiClient</a></td>
+<td>Create the terminal client and call payments, recovery and terminal operations.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.OpiOptions.html">OpiOptions</a></td>
+<td>Configure the connection, timeouts, receipts, logging.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.PaymentRequest.html">PaymentRequest</a></td>
+<td>Supply the amount, currency and merchant reference.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="results-and-errors">Results and errors</h2>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Opi.Sdk.OpiResult.html">OpiResult</a></td>
+<td>Read the outcome and correlation ID.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.ResultState.html">ResultState</a></td>
+<td>Interpret success, rejection, cancellation and uncertainty.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.OpiError.html">OpiError</a></td>
+<td>Handle stable error categories.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.TransactionResult.html">TransactionResult</a></td>
+<td>Access financial details for the transaction.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.TerminalInformation.html">TerminalInformation</a></td>
+<td>Read terminal identity, status and capabilities.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.DccDetails.html">DccDetails</a></td>
+<td>Read dynamic currency conversion details.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="receipts">Receipts</h2>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Opi.Sdk.ReceiptHandling.html">ReceiptHandling</a></td>
+<td>Choose routing for merchant and customer copies.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.ReceiptHandlingMode.html">ReceiptHandlingMode</a></td>
+<td>Print at the terminal, return to the app or suppress a copy.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.ReceiptDetails.html">ReceiptDetails</a></td>
+<td>Access the two receipt copies in a result.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.Receipt.html">Receipt</a></td>
+<td>Read receipt text and its content type.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.ReceiptType.html">ReceiptType</a></td>
+<td>Identify the merchant or customer copy.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="events-and-operations">Events and operations</h2>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Opi.Sdk.OperationEvent.html">OperationEvent</a></td>
+<td>Follow lifecycle, receipt and recovery notifications.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.OperationEventKind.html">OperationEventKind</a></td>
+<td>Identify what an event represents.</td>
+</tr>
+<tr>
+<td><a href="Opi.Sdk.OpiOperation.html">OpiOperation</a></td>
+<td>Identify the financial or terminal operation.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-apis">Additional APIs</h2>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Opi.Sdk.OpiLogLevel.html">OpiLogLevel</a></td>
+<td>View the generated API reference.</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

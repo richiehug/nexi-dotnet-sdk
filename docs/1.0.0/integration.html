@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Integrating the OPI .NET SDK | OPI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Integrating the OPI .NET SDK | OPI .NET SDK ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="integrating-the-opi-net-sdk">Integrating the OPI .NET SDK</h1>
+
+<p>This guide covers installation, configuration, terminal operations, result handling, recovery, and diagnostics. For platform requirements, see the <a href="README.html">README</a>. The <a href="https://richiehug.github.io/opi-dotnet-sdk/">generated C# API reference</a> lists every public type, member and overload .</p>
+<h2 id="add-the-sdk-to-an-application">Add the SDK to an application</h2>
+<h3 id="local-dll">Local DLL</h3>
+<p>Choose <strong>Full</strong> for Windows .NET 10 (<code>net10.0</code>) or <strong>Lite</strong> for backward compatibility with .NET Framework 4.8/4.8.1 (<code>net48</code>). Both expose the same <code>Opi.Sdk</code> payment API. Applications consume events and results and control their own transaction experience.</p>
+<p>Copy <code>Opi.Sdk.dll</code> and its XML IntelliSense file from the chosen ZIP to <code>libs/</code>. For Full, add this reference:</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+  &lt;Reference Include=&quot;Opi.Sdk&quot;&gt;
+    &lt;HintPath&gt;libs/Opi.Sdk.dll&lt;/HintPath&gt;
+    &lt;Private&gt;true&lt;/Private&gt;
+  &lt;/Reference&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+<p>For <strong>Lite</strong>, copy <strong>all</strong> DLLs from its ZIP, including the Microsoft dependencies. Reference the complete set instead of the single Full reference:</p>
+<pre><code class="lang-xml">&lt;PropertyGroup&gt;
+  &lt;TargetFramework&gt;net48&lt;/TargetFramework&gt;
+  &lt;AutoGenerateBindingRedirects&gt;true&lt;/AutoGenerateBindingRedirects&gt;
+  &lt;GenerateBindingRedirectsOutputType&gt;true&lt;/GenerateBindingRedirectsOutputType&gt;
+&lt;/PropertyGroup&gt;
+&lt;ItemGroup&gt;
+  &lt;Reference Include=&quot;libs/*.dll&quot;&gt;
+    &lt;Private&gt;true&lt;/Private&gt;
+  &lt;/Reference&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+<p>For older project formats, use <strong>Add Reference → Browse</strong> to select those DLLs and enable automatic binding redirects in the executable project. Deploy the generated application <code>.config</code> file as well. Test with the cashier's existing dependency versions; do not overwrite its Microsoft DLLs blindly.</p>
+<p>Full uses the .NET 10 runtime; Lite uses the installed .NET Framework 4.8/4.8.1 runtime and its bundled dependencies. Distribution remains DLL-only; integrators do not need a NuGet package. Do not reference Full and Lite together.</p>
+<h2 id="initialize-the-sdk">Initialize the SDK</h2>
+<pre><code class="lang-csharp">using Opi.Sdk;
+
+var options = new OpiOptions
+{
+    TerminalHost = &quot;192.168.0.69&quot;,
+    WorkstationId = &quot;CASHIER-01&quot;,
+    PayChannelPort = 4100,
+    DeviceChannelPort = 4102,
+    Language = &quot;de&quot;,
+    DataDirectory = Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+        &quot;YourCashier&quot;, &quot;Opi&quot;),
+    Receipts = new ReceiptHandling
+    {
+        MerchantReceipt = ReceiptHandlingMode.Available,
+        CustomerReceipt = ReceiptHandlingMode.Available
+    }
+};
+
+await using var terminal = new OpiClient(options);
+</code></pre>
+<p>The examples use modern C# syntax. Older C# 7.3 applications can use ordinary object initializers for <code>OpiOptions</code> and <code>ReceiptHandling</code>; <code>required</code> and <code>init</code> are not required to configure the SDK. Replace <code>await using</code> with explicit asynchronous cleanup:</p>
+<pre><code class="lang-csharp">var terminal = new OpiClient(options);
+try
+{
+    var result = await terminal.PaymentAsync(1250, &quot;CHF&quot;);
+    // Handle and persist result, including both receipt copies.
+}
+finally
+{
+    await terminal.DisposeAsync();
+}
+</code></pre>
+<p>In a real cashier retain the client for the terminal's lifetime and dispose it only after outstanding operations finish. <code>CloseAsync()</code> is the terminal close-day operation, not client disposal. A .NET Framework 4.8/C# 7.3 consumer is compiled as part of SDK checks.</p>
+<p>Retain one instance per terminal. Use a stable workstation ID and storage directory across application restarts. The terminal's callback configuration must point to the cashier machine. Configure Windows Firewall to allow callbacks from the terminal on the device port. A callback listener is created internally during each exchange, and callback peers are restricted to the resolved terminal address. This is raw OPI TCP on a trusted shop network; it is not an internet endpoint.</p>
+<p>Do not create competing instances with different host aliases or data directories for the same terminal. Multiple terminals on a single cashier need explicitly coordinated, distinct callback ports and matching terminal configuration. This initial SDK is intended for one owner per terminal.</p>
+<h2 id="payments">Payments</h2>
+<pre><code class="lang-csharp">var payment = await terminal.PaymentAsync(1250, &quot;CHF&quot;);
+</code></pre>
+<p>Amounts are positive integer minor units. CHF 12.50 is <code>1250</code>. Currency codes are normalized and validated; conversion also supports zero-, three- and four-decimal currencies. Merchant and authorization references are separate. References accept 1–20 ASCII letters, digits, underscores or hyphens. Reverse-last has no amount or reference and can only reverse the terminal's last eligible transaction.</p>
+<p>An ordinary operational failure is returned as <code>OpiResult</code>. Invalid SDK configuration and use after disposal can throw. Persist each financial result against its sale using <code>CorrelationId</code>. A final <code>Amount</code> includes any positive <code>Tip</code> reported by the terminal.</p>
+<h2 id="refunds">Refunds</h2>
+<pre><code class="lang-csharp">// Unreferenced refund; no original authorization identifier is needed.
+var refund = await terminal.RefundAsync(1250, &quot;CHF&quot;);
+// Referenced refund, when supported and the original authorization is available.
+var referencedRefund = await terminal.RefundAsync(1250, &quot;CHF&quot;, authReference: &quot;605224&quot;);
+</code></pre>
+<p>Use a positive amount in minor units. The demo application always uses unreferenced refunds; the SDK supports both forms.</p>
+<h2 id="reversals">Reversals</h2>
+<pre><code class="lang-csharp">var reversal = await terminal.ReversalAsync();
+</code></pre>
+<p>This reverses the terminal's last eligible transaction. It does not accept an amount or an arbitrary transaction identifier.</p>
+<h2 id="handle-results">Handle results</h2>
+<pre><code class="lang-csharp">if (payment.IsSuccessful)
+{
+    // Complete the sale and store payment.Transaction and its receipts.
+}
+else if (payment.Status == ResultState.Unknown)
+{
+    // Keep the sale unresolved. Do not retry the payment automatically.
+}
+else
+{
+    // Display the outcome using Status, Error and ErrorCode.
+}
+</code></pre>
+<h3 id="payment-method">Payment method</h3>
+<p><code>Transaction.PaymentMethod</code> is the terminal's brand or payment-method label. It is optional; do not infer approval from its presence. Use <code>Status</code> to decide the outcome.</p>
+<h3 id="tip-results">Tip results</h3>
+<p><code>Transaction.Amount</code> includes a positive <code>Transaction.Tip</code> reported by the terminal. Both use minor units. Do not add the tip a second time.</p>
+<h3 id="dcc-results">DCC results</h3>
+<p><code>Transaction.Dcc</code> optionally contains <code>Offered</code>, <code>Accepted</code>, <code>Amount</code>, <code>Currency</code>, <code>CurrencyCode</code>, <code>ExchangeRate</code> and <code>MarkupPercentage</code>. Preserve the terminal's strings for display; do not recalculate settlement totals from them.</p>
+<h2 id="receipt-handling">Receipt handling</h2>
+<pre><code class="lang-csharp">string? merchant = payment.Transaction?.Receipts?.MerchantReceipt?.Content;
+string? customer = payment.Transaction?.Receipts?.CustomerReceipt?.Content;
+</code></pre>
+<p><strong>Recommended:</strong> configure both copies as <code>ReceiptHandlingMode.Available</code>, as in the initialization example. This supports printerless terminals and lets the ECR store receipts before printing. <code>PrintLocal</code> requires a working terminal printer; otherwise the terminal can return <code>DeviceUnavailable</code> and leave a pending receipt. Both copies default to <code>Available</code>; select <code>PrintLocal</code> explicitly only when the terminal should print them.</p>
+<p><code>PrintLocal</code> means the payment terminal prints. <code>Available</code> means printable text is returned to the cashier. <code>Unavailable</code> suppresses the requested copy. Each copy is configured independently. Missing copies are normal if the terminal did not generate them or the mode did not request their return.</p>
+<p>Receipt content is plain text, with line breaks and leading alignment spaces preserved. Render it in a monospace font. The cashier owns printing and durable storage. A receipt-only reprint has <code>Transaction.Receipts</code> but may have no amount or payment details.</p>
+<h2 id="events-and-cancellation">Events and cancellation</h2>
+<pre><code class="lang-csharp">terminal.OperationEvent += (_, e) =&gt;
+{
+    if (e.Kind == OperationEventKind.TerminalMessage)
+    {
+        // Queue e.Message for application handling.
+    }
+        // Update the ORIGINAL sale using e.Result.CorrelationId.
+    }
+    if (e.Kind == OperationEventKind.ReceiptCaptured)
+    {
+        // Especially useful for receipts recovered by a reprint operation.
+        // Keep e.Operation and e.CorrelationId; do not attach an old ticket to a new sale.
+    }
+};
+
+var abort = await terminal.AbortAsync();
+</code></pre>
+<p>Events are delivered in order on a background worker. Slow or throwing application event handlers do not delay device acknowledgements. Events may arrive just after the awaited result; the result already contains its final receipts. Do not synchronously wait for SDK disposal from an event handler.</p>
+<p>Abort bypasses the regular operation lock and uses a separate control connection. Attempts are delayed and limited. An abort response does not override an approved payment. If the abort response is lost, the abort call returns uncertainty and the financial operation continues resolving its own result. Do not cancel a local task and assume the payment was cancelled.</p>
+<h2 id="transaction-state-and-reconciliation">Transaction state and reconciliation</h2>
+<p><strong>SDK owns OPI communication; ECR owns transaction state and reconciliation.</strong></p>
+<p>The SDK keeps no persistent transaction ledger or cross-restart transaction lock. An overlapping operation is rejected with <code>PENDING_TRANSACTION</code> while an exchange is active. Save the sale intent, terminal identity, result and receipts in your ECR.</p>
+<p><code>PaymentAsync()</code> → <code>PRINTLASTTICKET</code> → ECR decides → <code>ReprintAsync()</code> if required → ECR explicitly starts a new payment.</p>
+<p><code>PRINTLASTTICKET</code> is returned unchanged. The SDK does not reprint, reconcile an older sale, check readiness, or retry the new payment automatically. A successful reprint does not start another payment.</p>
+<p>If a financial request may have been sent but its final response is lost or unusable, the SDK returns <code>UNKNOWN</code> / <code>RESULT_UNKNOWN</code>. This is neither approval nor proof of failure. Keep the sale unresolved and <strong>do not blindly retry</strong>: reconcile using the terminal/acquirer records and any explicitly requested evidence. A connection failure before transmission returns a communication/connection error. A definitive terminal response preserves its outcome and error code.</p>
+<p><code>RepeatLastMessageAsync()</code> explicitly requests the terminal's last registered message. <code>ReprintAsync()</code> explicitly requests its last receipt and available transaction details using the configured receipt handling. These are distinct commands; neither calls the other. The ECR must correlate their evidence with its own sale, especially if another ECR has used the terminal. Neither command updates an SDK ledger.</p>
+<p>An <code>AbortRequest</code> acknowledgement does not prove that a financial transaction was cancelled. Keep awaiting the original financial result. If that response is lost, its outcome remains unknown; do not infer cancellation from an abort acknowledgement or closed socket.</p>
+<h2 id="file-logging-and-deployment">File logging and deployment</h2>
+<p><code>LoggingEnabled = true</code> enables bounded daily files in <code>DataDirectory/logs</code>. Logs include configured ports/timeouts, connection stages, socket error codes, request/response byte counts, elapsed times, lifecycle events, receipt type/length, outcome/error codes. Normal excludes XML and receipt/message content. Extended includes sanitized OPI XML and error details. <code>Logger</code> optionally receives those same diagnostics. Diagnostic writes run on the background event queue rather than delaying callback acknowledgements; dispose the SDK to flush queued entries. A logging failure does not change a payment result.</p>
+<p>Deploy the selected <code>Opi.Sdk.dll</code> alongside the cashier. Lite also needs its dependency DLLs and the host's binding-redirect configuration; .NET Framework 4.8/4.8.1 must be installed. A Full .NET 10 cashier can be published self-contained. No separate OPI Proxy process is needed.</p>
+<h2 id="api-overview">API overview</h2>
+<p>Namespace: <code>Opi.Sdk</code>.</p>
+<h2 id="terminal-operations">Terminal operations</h2>
+<p>All terminal calls return <code>Task&lt;OpiResult&gt;</code> unless indicated otherwise.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PaymentAsync(amount, currency, reference?)</code> / <code>PaymentAsync(PaymentRequest)</code></td>
+<td>Payment</td>
+</tr>
+<tr>
+<td><code>RefundAsync(amount, currency, authReference?)</code></td>
+<td>Referenced or unreferenced refund</td>
+</tr>
+<tr>
+<td><code>ReversalAsync()</code></td>
+<td>Reverse last eligible transaction</td>
+</tr>
+<tr>
+<td><code>AbortAsync()</code></td>
+<td>Out-of-band abort of active payment/refund</td>
+</tr>
+<tr>
+<td><code>ActivateAsync()</code> / <code>DeactivateAsync()</code></td>
+<td>Activate/deactivate terminal</td>
+</tr>
+<tr>
+<td><code>LoginAsync()</code> / <code>LogoffAsync()</code></td>
+<td>OPI login/logoff variants</td>
+</tr>
+<tr>
+<td><code>InfoAsync()</code></td>
+<td>GetInfo</td>
+</tr>
+<tr>
+<td><code>StatusAsync()</code></td>
+<td>GetStatus</td>
+</tr>
+<tr>
+<td><code>ReprintAsync()</code></td>
+<td>TicketReprint</td>
+</tr>
+<tr>
+<td><code>SubmitAsync()</code></td>
+<td>TransmitTrx</td>
+</tr>
+<tr>
+<td><code>CloseAsync()</code></td>
+<td>CloseDay</td>
+</tr>
+<tr>
+<td><code>ConfigAsync()</code></td>
+<td>ContactTMS</td>
+</tr>
+<tr>
+<td><code>InitAsync()</code></td>
+<td>ContactAcq</td>
+</tr>
+<tr>
+<td><code>ResetAsync()</code></td>
+<td>RestartTerminal</td>
+</tr>
+<tr>
+<td><code>RepeatLastMessageAsync()</code></td>
+<td>Read the last financial response for ECR-controlled reconciliation</td>
+</tr>
+<tr>
+<td><code>DisposeAsync()</code></td>
+<td><code>ValueTask</code>; release SDK ownership after operations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="result-and-event-models">Result and event models</h2>
+<p><code>OpiResult</code> contains <code>Status</code>, <code>Error</code>, <code>ErrorCode</code>, <code>CorrelationId</code>, optional <code>Transaction</code>, optional <code>Terminal</code> and <code>IsSuccessful</code>.</p>
+<p><code>TransactionResult</code> contains <code>Reference</code>, <code>Amount</code>, <code>Currency</code>, <code>Tip</code>, <code>PaymentMethod</code>, <code>MaskedCardNumber</code>, <code>AuthReference</code>, <code>ApprovalCode</code>, <code>TransactionDate</code>, <code>AcquirerId</code>, <code>Receipts</code>, and <code>Dcc</code>. Fields are optional and depend on terminal evidence. <code>ReceiptDetails</code> separates <code>MerchantReceipt</code> and <code>CustomerReceipt</code>; <code>Receipt.Content</code> is plain text.</p>
+<p><code>OperationEvent</code> contains <code>Operation</code>, <code>CorrelationId</code>, <code>Kind</code>, and optional <code>Message</code>, <code>ReceiptType</code>, <code>Receipt</code>, and <code>Result</code>. Kinds include Started, Connected, TerminalMessage, ReceiptCaptured, DccCaptured and Completed.</p>
+<p><code>OpiOptions</code> contains the client configuration. The client snapshots these settings when constructed; changing the options afterwards does not reconfigure an existing client. Supply <code>TerminalHost</code> and <code>WorkstationId</code>. Optional settings cover ports, language, receipts, force acceptance, PAN request preference, timeouts, diagnostic directory, logging. See configuration defaults below and the generated API reference for the full property list.</p>
+<h2 id="result-states">Result states</h2>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Success</code></td>
+<td>Operation completed successfully</td>
+</tr>
+<tr>
+<td><code>Declined</code></td>
+<td>Terminal/acquirer decline evidence</td>
+</tr>
+<tr>
+<td><code>Aborted</code></td>
+<td>Completed cancellation</td>
+</tr>
+<tr>
+<td><code>CommunicationError</code></td>
+<td>Connection or exchange problem; examine the error and operation context</td>
+</tr>
+<tr>
+<td><code>TerminalError</code></td>
+<td>Terminal or SDK operational error</td>
+</tr>
+<tr>
+<td><code>InvalidRequest</code></td>
+<td>Invalid input or a request blocked before execution</td>
+</tr>
+<tr>
+<td><code>InProgress</code></td>
+<td>Terminal is busy or still processing</td>
+</tr>
+<tr>
+<td><code>Unknown</code></td>
+<td>No reliable financial outcome; reconcile before another attempt</td>
+</tr>
+</tbody>
+</table>
+<p><code>OpiError</code> provides stable categories: Failure, Aborted, ReprintRequired, DeviceUnavailable, TerminalBusy, LoginRequired, ResultUnknown, RecoveryMismatch, ConnectionError, OperationTimeout, InvalidRequest, InvalidOpiResponse, StorageError and Other. <code>ErrorCode</code> preserves a more specific terminal or SDK reason.</p>
+<h2 id="configuration-defaults">Configuration defaults</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TerminalHost</code>, <code>WorkstationId</code></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><code>PayChannelPort</code>, <code>DeviceChannelPort</code></td>
+<td><code>4100</code>, <code>4102</code></td>
+</tr>
+<tr>
+<td><code>Language</code></td>
+<td><code>en</code>; also supports <code>de</code>, <code>fr</code>, <code>it</code></td>
+</tr>
+<tr>
+<td>Merchant/customer receipt mode</td>
+<td><code>Available</code> for both</td>
+</tr>
+<tr>
+<td><code>ForceAcceptance</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>RequestFullPan</code></td>
+<td><code>null</code> (no explicit preference)</td>
+</tr>
+<tr>
+<td><code>ConnectTimeout</code></td>
+<td>10 seconds</td>
+</tr>
+<tr>
+<td><code>OperationTimeout</code></td>
+<td>5 minutes per exchange</td>
+</tr>
+<tr>
+<td><code>ConnectivityLossGracePeriod</code></td>
+<td>5 seconds</td>
+</tr>
+<tr>
+<td><code>AbortRetryDelay</code>, <code>MaxAbortAttempts</code></td>
+<td>1.5 seconds, 3</td>
+</tr>
+<tr>
+<td><code>DataDirectory</code></td>
+<td>Local application data / Opi / Sdk</td>
+</tr>
+<tr>
+<td><code>LoggingEnabled</code>, <code>LogLevel</code>, <code>MaxLogStorageBytes</code></td>
+<td><code>false</code>, <code>Normal</code>, 20 MiB</td>
+</tr>
+<tr>
+<td><code>Logger</code></td>
+<td><code>null</code></td>
+</tr>
+</tbody>
+</table>
+<p>The API website is generated from the SDK projects and XML comments during each SDK build. Publishing a release copies the matching version into the public website and updates its landing page. New public signatures therefore appear automatically; maintainers update XML comments when behavior changes.</p>
+<h2 id="repeat-last-message">Repeat Last Message</h2>
+<pre><code class="lang-csharp">var last = await terminal.RepeatLastMessageAsync();
+</code></pre>
+<p>This explicitly reads the terminal's original financial outcome for ECR inspection. Its correlation ID belongs to this lookup, not an earlier sale. Missing or unsupported original financial headers return <code>Unknown</code> rather than treating outer success as approval.</p>
+<h2 id="storage-locations">Storage locations</h2>
+<p><code>OpiOptions.DataDirectory</code> selects the SDK diagnostic directory; daily logs are in <code>DataDirectory/logs</code>. The default is the current user's local application data directory followed by <code>Opi/Sdk</code>. The ECR owns transaction and receipt persistence. No SDK transaction ledger is written or loaded.</p>
+<h3 id="diagnostic-levels-and-application-errors">Diagnostic levels and application errors</h3>
+<p><code>LoggingEnabled</code> defaults to <code>false</code>. When enabled, <code>LogLevel = OpiLogLevel.Normal</code> (default) records operation summaries; <code>OpiLogLevel.Extended</code> also records sanitized OPI communication. Extended diagnostics are limited to SDK communication and SDK errors. Application exceptions and crashes are outside SDK logging.</p>
+<p>When the ECR requests <code>ReversalAsync()</code>, the SDK automatically confirms the terminal’s <code>GetConfirmation</code> prompt for that reversal. Receipt confirmations retain their existing automatic handling; other card-consent prompts are not automatically confirmed.</p>
+<p><code>InfoAsync()</code> sends OPI <code>GetInfo</code>. A terminal can emit diagnostic printer reports and still return <code>Failure</code>; the SDK preserves that terminal result. Use <code>StatusAsync()</code> (<code>GetStatus</code>) for current terminal identity and readiness. An idle status is not proof that a pending receipt was cleared.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
